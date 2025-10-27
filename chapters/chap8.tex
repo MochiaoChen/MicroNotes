@@ -1,0 +1,182 @@
+\chapter{Slutsky Equation}\label{chap:slutsky}
+
+When the price of a good changes, the consumer's optimal choice is affected. This overall change in demand can be decomposed into two distinct effects. Understanding this decomposition is crucial for analyzing consumer behavior. The Slutsky equation provides a formal framework for this analysis.
+
+\section{Effects of a Price Change}
+What happens when a commodity's price decreases? The total change in the quantity demanded arises from two separate phenomena:
+
+\begin{itemize}
+    \item \textbf{Substitution Effect:} The commodity becomes relatively cheaper compared to other goods. A rational consumer will substitute towards the cheaper good, away from the now relatively more expensive ones. This effect captures the change in demand due to the change in the rate of exchange between two goods.
+
+    \item \textbf{Income Effect:} The consumer's purchasing power increases. With the same nominal income, say \$m, the consumer can now afford to buy more goods than before. It is as if the consumer's real income has risen. This change in purchasing power leads to a change in quantity demanded, which we call the income effect.
+\end{itemize}
+
+Let's visualize this. Consider a consumer with income \(m\) facing prices \(p_1\) and \(p_2\). The budget line is \(p_1 x_1 + p_2 x_2 = m\). If the price of good 1 falls to \(p_1' < p_1\), the budget line pivots outwards around the vertical intercept (\(m/p_2\)). The consumer can now reach a higher indifference curve, representing a new optimal bundle.
+
+The core idea behind the Slutsky equation is to separate this pivot into two conceptual steps: a pivot and a shift. To isolate the substitution effect, we need to hold the consumer's purchasing power constant.
+
+\subsection{Slutsky Compensation}
+How do we hold purchasing power constant? Slutsky's clever idea was to define it as the ability to purchase the \textit{original bundle} of goods.
+
+\begin{definition}[Slutsky Compensation]
+    The \textbf{Slutsky compensation} is the hypothetical adjustment to a consumer's income such that, at the new prices, they can \textit{just} afford their original consumption bundle. This adjusted income level keeps the consumer's purchasing power constant in the sense that the original choice remains affordable.
+\end{definition}
+
+If the original bundle was \((x_1^*, x_2^*)\) at prices \((p_1, p_2)\), and the price of good 1 changes to \(p_1'\), the compensated income \(m'\) would be:
+\[
+m' = p_1' x_1^* + p_2 x_2^*
+\]
+The change in income required for this compensation is:
+\[
+\Delta m = m' - m = (p_1' x_1^* + p_2 x_2^*) - (p_1 x_1^* + p_2 x_2^*) = (p_1' - p_1)x_1^* = \Delta p_1 x_1^*
+\]
+
+\section{Decomposing the Total Effect}
+
+Let's trace the full decomposition graphically.
+Let the initial optimal choice be bundle A = \((x_1^*, x_2^*)\) at prices \((p_1, p_2)\) and income \(m\).
+Now, let the price of good 1 fall to \(p_1'\). The final optimal choice is bundle C = \((x_1'', x_2'')\) at prices \((p_1', p_2)\) and income \(m\). The total change in demand for good 1 is \(\Delta x_1 = x_1'' - x_1^*\).
+
+\subsection{The Substitution Effect}
+To isolate the substitution effect, we give the consumer the compensated income \(m' = p_1' x_1^* + p_2 x_2^*\). The new (compensated) budget line is \(p_1' x_1 + p_2 x_2 = m'\). Notice that this line has the slope of the \textit{new} price ratio but passes through the \textit{original} bundle A.
+
+The consumer chooses a new optimal bundle on this compensated budget line, let's call it B = \((x_1^s, x_2^s)\).
+The \textbf{Slutsky substitution effect} is the change in demand from A to B\@:
+\[
+\Delta x_1^s = x_1^s - x_1^*
+\]
+
+\begin{proposition}[Sign of the Substitution Effect]
+The Slutsky substitution effect is always negative (or non-positive). That is, the change in quantity demanded due to the substitution effect is always in the opposite direction to the change in price. If price falls (\(\Delta p_1 < 0\)), the substitution effect on demand will be positive (\(\Delta x_1^s \ge 0\)).
+\end{proposition}
+
+\begin{proof}[Justification via WARP]
+At the original prices \((p_1, p_2)\), bundle A was chosen over bundle B (since B was not affordable, assuming B is not A). At the compensated budget with prices \((p_1', p_2)\), bundle B is chosen. Bundle A is also affordable on this line by construction. Therefore, B is revealed preferred to A. If we consider a price increase from \(p_1'\) to \(p_1\), B is chosen at \(p_1'\) and A is chosen at \(p_1\). Since A was affordable at the prices where B was chosen, WARP is not violated. Crucially, the optimal bundle B on the compensated budget line must lie to the right of A if \(p_1' < p_1\), meaning \(x_1^s \ge x_1^*\).
+\end{proof}
+
+\subsection{The Income Effect}
+The substitution effect is a hypothetical construct. The consumer's actual income is still \(m\), not \(m'\). The second part of the decomposition is to restore the consumer's original income, which means moving from the compensated budget line back to the final budget line. This is a parallel shift, representing a change in income from \(m'\) to \(m\).
+
+The \textbf{income effect} is the change in demand from the intermediate bundle B to the final bundle C:
+\[
+\Delta x_1^n = x_1'' - x_1^s
+\]
+This change is purely due to the change in purchasing power, as prices are held constant at \((p_1', p_2)\) during this step.
+
+The overall change in demand is the sum of these two effects:
+\[
+\text{Total Effect} = \text{Substitution Effect} + \text{Income Effect}
+\]
+\[
+(x_1'' - x_1^*) = (x_1^s - x_1^*) + (x_1'' - x_1^s)
+\]
+
+\section{Slutsky's Effects for Different Types of Goods}
+
+The sign of the income effect depends on whether the good is normal or inferior. This determines how the two effects combine. Let's assume a price \textbf{decrease} for good 1 (\(p_1 \downarrow\)).
+
+\subsection{Normal Goods}
+A good is \textbf{normal} if demand increases as income increases (\(\frac{\partial x_1}{\partial m} > 0\)).
+\begin{itemize}
+    \item \textbf{Substitution Effect:} Price falls, so demand increases (\(\Delta x_1^s > 0\)).
+    \item \textbf{Income Effect:} Price falls, real income rises. Since the good is normal, demand increases (\(\Delta x_1^n > 0\)).
+\end{itemize}
+For a normal good, the substitution and income effects \textbf{reinforce} each other. A price decrease unambiguously leads to an increase in quantity demanded. Therefore, the Law of Demand always holds for normal goods.
+
+\subsection{Income-Inferior Goods}
+A good is \textbf{inferior} if demand decreases as income increases (\(\frac{\partial x_1}{\partial m} < 0\)).
+\begin{itemize}
+    \item \textbf{Substitution Effect:} Price falls, so demand increases (\(\Delta x_1^s > 0\)).
+    \item \textbf{Income Effect:} Price falls, real income rises. Since the good is inferior, demand decreases (\(\Delta x_1^n < 0\)).
+\end{itemize}
+For an income-inferior good, the substitution and income effects \textbf{oppose} each other. The total effect depends on which effect is stronger. In most cases, the substitution effect outweighs the income effect, so a price decrease still leads to an increase in total demand.
+
+\subsection{Giffen Goods}
+In rare cases of extreme income-inferiority, the income effect can be stronger than the substitution effect.
+\begin{definition}[Giffen Good]
+A \textbf{Giffen good} is a good for which a decrease in price causes the quantity demanded to fall. This happens when the good is so strongly inferior that the negative income effect outweighs the positive substitution effect.
+\end{definition}
+For a Giffen good, the demand curve is upward-sloping. It is a violation of the Law of Demand. Slutsky's decomposition provides the theoretical explanation for this phenomenon.
+
+\section{The Slutsky Identity}
+We can express the decomposition mathematically. The total change in demand for good 1, \(\Delta x_1\), when its price changes from \(p_1\) to \(p_1'\) is:
+\[
+\Delta x_1 = x_1(p_1', m) - x_1(p_1, m)
+\]
+We can add and subtract the term \(x_1(p_1', m')\), where \(m' = p_1' x_1(p_1, m) + p_2 x_2(p_1, m)\):
+\[
+\Delta x_1 = \underbrace{[x_1(p_1', m') - x_1(p_1, m)]}_{\text{Substitution Effect, } \Delta x_1^s} + \underbrace{[x_1(p_1', m) - x_1(p_1', m')]}_{\text{Income Effect, } \Delta x_1^n}
+\]
+This is the \textbf{Slutsky identity}.
+
+To express this in terms of rates of change, we divide by \(\Delta p_1\):
+\[
+\frac{\Delta x_1}{\Delta p_1} = \frac{\Delta x_1^s}{\Delta p_1} + \frac{\Delta x_1^n}{\Delta p_1}
+\]
+Let's analyze the income effect term. We know \(\Delta m = \Delta p_1 x_1\). Also, \(\Delta x_1^n = x_1(p_1', m) - x_1(p_1', m')\). Notice that income changes from \(m'\) to \(m\), so \(\Delta m = m - m'\).
+Therefore, we can write:
+\[
+\frac{\Delta x_1^n}{\Delta p_1} = \frac{x_1(p_1', m) - x_1(p_1', m')}{\Delta p_1} = \frac{x_1(p_1', m) - x_1(p_1', m')}{m - m'} \frac{m - m'}{\Delta p_1} = -\frac{\Delta x_1^n}{\Delta m} x_1
+\]
+(The minus sign appears because \(\Delta x_1^n\) as defined is for an income change from \(m'\) to \(m\), while \(\Delta m\) from our compensation formula was \(m' - m\)).
+Substituting this back gives the \textbf{Slutsky Equation}:
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, fonttitle=\bfseries, title=The Slutsky Equation]
+The relationship between the total effect, substitution effect, and income effect is given by:
+\[
+\frac{\Delta x_1}{\Delta p_1} = \frac{\Delta x_1^s}{\Delta p_1} - \frac{\Delta x_1}{\Delta m} x_1
+\]
+Or in calculus terms:
+\[
+\frac{\partial x_1(p_1, m)}{\partial p_1} = \frac{\partial x_1^s(p_1, \bar{u})}{\partial p_1} - \frac{\partial x_1(p_1, m)}{\partial m} x_1(p_1, m)
+\]
+\end{tcolorbox}
+
+\begin{itemize}
+    \item \(\frac{\partial x_1}{\partial p_1}\): Total effect --- the slope of the ordinary (Marshallian) demand curve.
+    \item \(\frac{\partial x_1^s}{\partial p_1}\): Substitution effect --- the slope of the compensated (Hicksian) demand curve. This term is always negative.
+    \item \(-\frac{\partial x_1}{\partial m} x_1\): Income effect --- captures how demand changes with income, scaled by the amount of the good being consumed.
+\end{itemize}
+
+\section{Examples of Slutsky Decomposition}
+
+\begin{examplebox}{Perfect Complements}
+For perfect complements (e.g., left shoes and right shoes), the indifference curves are L-shaped. The consumer always consumes at the corner of the indifference curve. When we perform the Slutsky pivot around the original bundle, the optimal choice on the compensated budget line remains the same as the original bundle. Therefore, the \textbf{substitution effect is zero}. The entire change in demand is due to the income effect.
+\end{examplebox}
+
+\begin{examplebox}{Perfect Substitutes}
+For perfect substitutes, the indifference curves are straight lines. The consumer typically consumes only one of the goods (a corner solution). A change in price can cause the consumer to switch entirely from one good to the other. In this case, the shift from the original corner to the new corner can often be entirely attributed to the substitution effect. The compensated bundle is the same as the final bundle, making the \textbf{income effect zero}.
+\end{examplebox}
+
+\begin{examplebox}{Quasilinear Preferences}
+For quasilinear preferences of the form \(u(x_1, x_2) = v(x_1) + x_2\), there is no income effect for good 1 (assuming an interior solution). The demand for \(x_1\) depends only on the price ratio, not on income. Therefore, the change in demand due to a price change is entirely composed of the \textbf{substitution effect}. The income effect is zero.
+\end{examplebox}
+
+\section{The Hicks Substitution Effect}
+An alternative way to define the substitution effect was proposed by John Hicks.
+
+\begin{definition}[Hicks Substitution Effect]
+The \textbf{Hicks substitution effect} is the change in demand when prices change, while adjusting income to keep the consumer on the \textit{original indifference curve}. This holds utility constant, rather than just the affordability of the original bundle.
+\end{definition}
+
+Graphically, instead of pivoting the new budget line around the old bundle (A), we roll it along the original indifference curve until it is tangent at the new price ratio.
+Like the Slutsky effect, the Hicks substitution effect is also always negative. Let bundle \(X = (x_1, x_2)\) be chosen at prices \(P=(p_1, p_2)\) and bundle \(Y=(y_1, y_2)\) be chosen at prices \(Q=(q_1, q_2)\). If the consumer is indifferent between X and Y, then by the logic of revealed preference:
+\[
+p_1 x_1 + p_2 x_2 \leq p_1 y_1 + p_2 y_2
+\]
+\[
+q_1 y_1 + q_2 y_2 \leq q_1 x_1 + q_2 x_2
+\]
+Subtracting the two inequalities yields:
+\[
+(p_1 - q_1)x_1 + (p_2 - q_2)x_2 - (p_1 - q_1)y_1 - (p_2 - q_2)y_2 \geq 0
+\]
+Rearranging gives:
+\[
+(p_1 - q_1)(x_1 - y_1) + (p_2 - q_2)(x_2 - y_2) \leq 0
+\]
+If only the price of good 1 changes, so \(p_2 = q_2\), then we have:
+\[
+(p_1 - q_1)(x_1 - y_1) \leq 0
+\]
+This shows that the change in price (\(p_1 - q_1\)) and the change in quantity demanded from the substitution effect (\(x_1 - y_1\)) must have opposite signs. For practical purposes, the Slutsky and Hicks decompositions are very similar for small price changes.

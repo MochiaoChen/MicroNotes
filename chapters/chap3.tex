@@ -1,0 +1,66 @@
+% ======================
+% FILE: chapters/chap3.tex
+% ======================
+\chapter{Preferences}\label{chap:preferences}
+
+After establishing what a consumer can afford (the budget set), we now turn to modeling what they want to consume. We do this using the concept of preferences.
+
+\section{Consumer Preferences}
+We will consider two consumption bundles, $\mathbf{x}=(x_1, x_2)$ and $\mathbf{y}=(y_1, y_2)$. The consumer can rank these bundles according to their desirability. There are three possibilities:
+\begin{itemize}
+    \item \textbf{Strict Preference:} The consumer strictly prefers bundle $\mathbf{x}$ to bundle $\mathbf{y}$. We write this as $\mathbf{x} \succ \mathbf{y}$.
+    \item \textbf{Indifference:} The consumer is exactly as satisfied with bundle $\mathbf{x}$ as with bundle $\mathbf{y}$. We write this as $\mathbf{x} \sim \mathbf{y}$.
+    \item \textbf{Weak Preference:} The consumer prefers or is indifferent between bundle $\mathbf{x}$ and bundle $\mathbf{y}$. We write this as $\mathbf{x} \succeq \mathbf{y}$.
+\end{itemize}
+These relations are linked. For example, if $\mathbf{x} \succeq \mathbf{y}$ and $\mathbf{y} \succeq \mathbf{x}$, then we can conclude that $\mathbf{x} \sim \mathbf{y}$. If $\mathbf{x} \succeq \mathbf{y}$ but it is \textit{not} the case that $\mathbf{y} \succeq \mathbf{x}$, then we can conclude $\mathbf{x} \succ \mathbf{y}$.
+
+\section{Assumptions about Preferences}
+To have a sensible theory of consumer choice, we need to impose some assumptions on preferences. These are often called axioms of rational choice.
+\begin{itemize}
+    \item \textbf{Completeness:} For any two bundles $\mathbf{x}$ and $\mathbf{y}$, the consumer can make a comparison. That is, either $\mathbf{x} \succeq \mathbf{y}$ or $\mathbf{y} \succeq \mathbf{x}$ (or both).
+    \item \textbf{Reflexivity:} Any bundle $\mathbf{x}$ is at least as good as itself: $\mathbf{x} \succeq \mathbf{x}$. This is a trivial assumption.
+    \item \textbf{Transitivity:} If a consumer thinks that $\mathbf{x}$ is at least as good as $\mathbf{y}$, and that $\mathbf{y}$ is at least as good as $\mathbf{z}$, then they must think that $\mathbf{x}$ is at least as good as $\mathbf{z}$. Formally: If $\mathbf{x} \succeq \mathbf{y}$ and $\mathbf{y} \succeq \mathbf{z}$, then $\mathbf{x} \succeq \mathbf{z}$.
+\end{itemize}
+A consumer with preferences that satisfy these three axioms is said to be \textbf{rational}.
+
+\section{Indifference Curves}
+Preferences can be represented graphically using \textbf{indifference curves}. An indifference curve is a set of all consumption bundles among which a consumer is indifferent.
+\begin{itemize}
+    \item The \textbf{weakly preferred set} for a bundle $\mathbf{x}'$ is the set of all bundles $\mathbf{y}$ such that $\mathbf{y} \succeq \mathbf{x}'$.
+    \item The \textbf{strictly preferred set} for $\mathbf{x}'$ is the set of all bundles $\mathbf{y}$ such that $\mathbf{y} \succ \mathbf{x}'$.
+\end{itemize}
+A key property, derived from transitivity and the ``more is better'' assumption (monotonicity, see below), is that \textbf{indifference curves cannot intersect}. If they did, a point on the intersection would be indifferent to bundles on both curves. By transitivity, all bundles on both curves would have to be indifferent to each other, which contradicts the idea that one curve represents a higher level of preference than the other.
+
+\section{Examples of Preferences}
+
+\begin{itemize}
+    \item \textbf{Perfect Substitutes:} If a consumer always regards units of commodities 1 and 2 as equivalent (e.g., at a one-to-one ratio), the commodities are perfect substitutes. The consumer's preference depends only on the total sum of the goods. The indifference curves are parallel straight lines.
+    \item \textbf{Perfect Complements:} If a consumer always consumes commodities 1 and 2 in a fixed proportion (e.g., one-to-one, like left shoes and right shoes), the commodities are perfect complements. The indifference curves are L-shaped.
+    \item \textbf{Bads:} If less of a commodity is always preferred, it is a \textbf{bad}. If good 1 is a bad and good 2 is a good, the indifference curves will be positively sloped.
+    \item \textbf{Satiation:} A consumer may have a most preferred bundle, called a \textbf{satiation point} or \textbf{bliss point}. Bundles further away from this point are less preferred. The indifference curves are circles or ellipses centered on the bliss point.
+\end{itemize}
+
+\section{Well-Behaved Preferences}
+We often make two further assumptions about preferences, which lead to ``well-behaved'' indifference curves.
+\begin{definition}[Monotonicity]
+Preferences are \textbf{monotonic} if more of any commodity is always preferred to less (holding the other commodity constant). This implies that commodities are \textbf{goods}, not bads, and that there is no satiation. Monotonicity ensures that indifference curves are negatively sloped.
+\end{definition}
+
+\begin{definition}[Convexity]
+Preferences are \textbf{convex} if mixtures of bundles are (at least weakly) preferred to the bundles themselves. If $\mathbf{x} \sim \mathbf{y}$, then for any $t \in (0,1)$, the mixture bundle $\mathbf{z} = t\mathbf{x} + (1-t)\mathbf{y}$ is at least as good as $\mathbf{x}$ or $\mathbf{y}$ (i.e., $\mathbf{z} \succeq \mathbf{x}$).
+\begin{itemize}
+    \item \textbf{Strict convexity} holds if the mixture is always strictly preferred ($\mathbf{z} \succ \mathbf{x}$).
+    \item Convexity implies that consumers prefer balanced bundles over extreme bundles. Graphically, the set of bundles weakly preferred to $\mathbf{x}$ is a convex set.
+\end{itemize}
+\end{definition}
+
+\section{The Marginal Rate of Substitution (MRS)}\label{sec:mrs}
+The slope of an indifference curve at a particular point is called the \textbf{marginal rate-of-substitution (MRS)}.
+\begin{definition}[MRS]
+The MRS measures the rate at which the consumer is just willing to substitute a small amount of good 2 for good 1, while remaining on the same indifference curve. Mathematically, it is the derivative of the indifference curve:
+\[ MRS = \frac{dx_2}{dx_1} \]
+\end{definition}
+\begin{itemize}
+    \item For monotonic preferences (goods), the MRS is negative, as the consumer must give up some of one good to get more of the other.
+    \item For strictly convex preferences, the MRS becomes less negative as $x_1$ increases. This is known as a \textbf{diminishing marginal rate of substitution}. The indifference curve becomes flatter as we move to the right. This means the consumer is willing to give up less of good 2 to get an additional unit of good 1 as they consume more and more of good 1.
+\end{itemize}

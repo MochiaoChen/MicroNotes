@@ -1,0 +1,58 @@
+% ======================
+% FILE: chapters/chap4.tex
+% ======================
+\chapter{Utility}\label{chap:utility}
+
+In the previous chapter, we used indifference curves to describe preferences. While graphical, this can be cumbersome. A more convenient way to describe preferences is through a \textbf{utility function}.
+
+\section{Utility Functions}
+
+A utility function is a way of assigning a number to every possible consumption bundle such that more-preferred bundles get assigned larger numbers than less-preferred bundles.
+
+\begin{definition}[Utility Function]
+A function $U(\mathbf{x})$ represents a preference relation $\succeq$ if for any two bundles $\mathbf{x}'$ and $\mathbf{x}''$:
+\begin{itemize}
+    \item $\mathbf{x}' \succ \mathbf{x}'' \iff U(\mathbf{x}') > U(\mathbf{x}'')$
+    \item $\mathbf{x}' \prec \mathbf{x}'' \iff U(\mathbf{x}') < U(\mathbf{x}'')$
+    \item $\mathbf{x}' \sim \mathbf{x}'' \iff U(\mathbf{x}') = U(\mathbf{x}'')$
+\end{itemize}
+A preference relation can be represented by a continuous utility function if it is complete, reflexive, transitive, and continuous.
+\end{definition}
+
+An indifference curve consists of all bundles that have the same level of utility. The equation for an indifference curve is therefore $U(x_1, x_2) = k$ for some constant $k$.
+
+\subsection{Ordinal Utility}
+Utility is an \textbf{ordinal} concept. This means that the magnitude of the utility function is only important for ranking bundles. The absolute values, or the differences between them, do not have a specific meaning. If $U(\mathbf{x})=6$ and $U(\mathbf{y})=2$, we know $\mathbf{x}$ is preferred to $\mathbf{y}$, but we cannot say that $\mathbf{x}$ is ``three times as good'' as $\mathbf{y}$.
+
+\subsection{Monotonic Transformations}
+Because utility is ordinal, any strictly increasing transformation of a utility function will represent the same preferences. If $U(x_1, x_2)$ is a utility function representing some preferences, and $f$ is a strictly increasing function (i.e., $f'(z)>0$), then $V(x_1, x_2) = f(U(x_1, x_2))$ is a new utility function that represents the exact same preferences.
+
+For example, if $U = x_1x_2$, then $V = {(x_1 x_2)}^{2} = x_1^{2}x_2^{2}$ and $W = \ln(x_1x_2) = \ln(x_1) + \ln(x_2)$ both represent the same preferences as $U$, because squaring (for positive numbers) and taking the natural log are both strictly increasing transformations.
+
+\section{Examples of Utility Functions}
+
+\begin{itemize}
+    \item \textbf{Perfect Substitutes:} Preferences can be represented by a linear utility function of the form $U(x_1, x_2) = ax_1 + bx_2$. The indifference curves are lines with slope $-a/b$.
+    \item \textbf{Perfect Complements:} Preferences for goods consumed in a fixed proportion (e.g., one-to-one) can be represented by a function like $U(x_1, x_2) = \min\{ax_1, bx_2\}$.
+    \item \textbf{Quasi-linear Preferences:} A utility function that is linear in one good, e.g., $U(x_1, x_2) = v(x_1) + x_2$. The indifference curves are vertically shifted copies of each other.
+    \item \textbf{Cobb-Douglas Preferences:} A commonly used functional form is the Cobb-Douglas utility function, $U(x_1, x_2) = x_1^a x_2^b$, where $a, b > 0$. These preferences exhibit well-behaved, convex indifference curves.
+\end{itemize}
+
+\section{Marginal Utility and MRS}
+
+\begin{definition}[Marginal Utility]
+The \textbf{marginal utility} (MU) of a good $i$ is the rate of change in total utility from consuming an infinitesimally small additional amount of good $i$, holding all other goods constant. It is the partial derivative of the utility function with respect to $x_i$:
+\[ MU_i = \frac{\partial U}{\partial x_i} \]
+\end{definition}
+
+The magnitude of marginal utility depends on the specific utility function chosen and is not meaningful on its own (due to the ordinal nature of utility). However, it is useful for calculating the MRS\@.
+
+\subsection{Deriving MRS from Utility}
+Consider a small change in consumption $(dx_1, dx_2)$ that keeps the consumer on the same indifference curve. The total change in utility, $dU$, must be zero. The total differential of the utility function is:
+\[ dU = \frac{\partial U}{\partial x_1}dx_1 + \frac{\partial U}{\partial x_2}dx_2 = 0 \]
+\[ MU_1 dx_1 + MU_2 dx_2 = 0 \]
+Rearranging this equation gives us the slope of the indifference curve:
+\begin{equation}
+    MRS = \frac{dx_2}{dx_1} = - \frac{\partial U / \partial x_1}{\partial U / \partial x_2} = - \frac{MU_1}{MU_2}
+\end{equation}
+The MRS is the ratio of the marginal utilities. This ratio is independent of any monotonic transformation of the utility function, which is a desirable property since the MRS has a real economic meaning (a psychological rate of trade-off) while the MU values do not.

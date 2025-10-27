@@ -1,0 +1,157 @@
+\chapter{Revealed Preference}\label{chap:revealed_preference}
+
+In previous chapters, we started with a consumer's preferences (or utility function) and used this information to derive their optimal choices. This chapter reverses the process. We ask: can we start by observing a consumer's choices at different prices and income levels, and from these observations, deduce their underlying preferences? This is the central question of revealed preference theory.
+
+\section{The Concept of Revealed Preference}
+
+The basic idea is simple yet powerful: a consumer's choice \textit{reveals} information about their preferences. If a consumer chooses a bundle of goods \(x\) when another bundle \(y\) was also affordable, we can infer that the consumer prefers \(x\) to \(y\).
+
+\subsection{Maintained Assumptions}
+To make this inference robust, we rely on a few standard assumptions about consumer behavior:
+\begin{itemize}
+    \item \textbf{Stable Preferences:} The consumer's preferences do not change during the period of observation.
+    \item \textbf{Well-Behaved Preferences:} We assume preferences are monotonic (more is better) and strictly convex. A key implication of strict convexity is that for any given budget, there is a \textit{unique} most-preferred affordable bundle.
+    \item \textbf{Rationality:} The consumer always chooses the most preferred bundle they can afford.
+\end{itemize}
+
+\subsection{Direct and Indirect Revelation}
+
+\begin{definition}[Directly Revealed Preferred]
+    Let \(\mathbf{x} = (x_1, x_2)\) be the bundle chosen at prices \(\mathbf{p} = (p_1, p_2)\), and let \(\mathbf{y} = (y_1, y_2)\) be another bundle. If \(\mathbf{y}\) was affordable at prices \(\mathbf{p}\) when \(\mathbf{x}\) was chosen, i.e., \(p_1 x_1 + p_2 x_2 \geq p_1 y_1 + p_2 y_2\), and \(\mathbf{x} \neq \mathbf{y}\), then we say that \textbf{\(\mathbf{x}\) is directly revealed preferred to \(\mathbf{y}\)}. We denote this by \(\mathbf{x} \succ_D \mathbf{y}\).
+\end{definition}
+
+The logic is that since the consumer could have chosen \(\mathbf{y}\) but instead chose \(\mathbf{x}\), they must prefer \(\mathbf{x}\).
+
+We can extend this idea through transitivity.
+
+\begin{definition}[Indirectly Revealed Preferred]
+    If we have a chain of direct revelations, such as \(\mathbf{x} \succ_D \mathbf{y}\) and \(\mathbf{y} \succ_D \mathbf{z}\), then we say that \textbf{\(\mathbf{x}\) is indirectly revealed preferred to \(\mathbf{z}\)}. We denote this by \(\mathbf{x} \succ_I \mathbf{z}\).
+\end{definition}
+
+This allows us to compare bundles that were not available in the same budget set, by linking them through intermediate choices.
+
+\section{Axioms of Revealed Preference}
+For observed choices to be consistent with our model of a rational, utility-maximizing consumer, they must satisfy certain consistency conditions. These are known as the axioms of revealed preference.
+
+\subsection{The Weak Axiom of Revealed Preference (WARP)}
+WARP is the most basic consistency check. It ensures that if a consumer reveals a preference for one bundle over another, they don't subsequently reveal the opposite preference.
+
+\begin{definition}[Weak Axiom of Revealed Preference (WARP)]
+    If a bundle \(\mathbf{x}\) is directly revealed preferred to a bundle \(\mathbf{y}\) (\(\mathbf{x} \succ_D \mathbf{y}\)), then it can never be the case that \(\mathbf{y}\) is directly revealed preferred to \(\mathbf{x}\) (\(\mathbf{y} \succ_D \mathbf{x}\)).
+    \[
+    \text{If } \mathbf{x} \succ_D \mathbf{y}, \text{ then it cannot be that } \mathbf{y} \succ_D \mathbf{x}.
+    \]
+\end{definition}
+
+Choice data that violate WARP are inconsistent with the model of economic rationality. WARP is a \textit{necessary} condition for choices to be rationalized by a utility function.
+
+\begin{examplebox}{Checking for WARP Violations}
+A consumer makes the following choices:
+\begin{itemize}
+    \item At prices \(\mathbf{p}^A = (\$2, \$2)\), the choice is \(\mathbf{x}^A = (10, 1)\).
+    \item At prices \(\mathbf{p}^B = (\$2, \$1)\), the choice is \(\mathbf{x}^B = (5, 5)\).
+    \item At prices \(\mathbf{p}^C = (\$1, \$2)\), the choice is \(\mathbf{x}^C = (5, 4)\).
+\end{itemize}
+To check for WARP violations, we calculate the cost of each bundle at each set of prices. The chosen bundle's cost represents the consumer's income in that situation.
+
+\begin{center}
+\begin{tabular}{l|ccc}
+\hline
+\textbf{Prices} & \textbf{Cost of \(\mathbf{x}^A\)} & \textbf{Cost of \(\mathbf{x}^B\)} & \textbf{Cost of \(\mathbf{x}^C\)} \\
+\hline
+\(\mathbf{p}^A = (\$2, \$2)\) & \textbf{\$22} & \$20 & \$18 \\
+\(\mathbf{p}^B = (\$2, \$1)\) & \$21 & \textbf{\$15} & \$14 \\
+\(\mathbf{p}^C = (\$1, \$2)\) & \$12 & \$15 & \textbf{\$13} \\
+\hline
+\end{tabular}
+\end{center}
+
+Let's analyze the choices:
+\begin{itemize}
+    \item At prices \(\mathbf{p}^A\), income is \$22. Both \(\mathbf{x}^B\) (\$20) and \(\mathbf{x}^C\) (\$18) were affordable. Thus, \(\mathbf{x}^A \succ_D \mathbf{x}^B\) and \(\mathbf{x}^A \succ_D \mathbf{x}^C\).
+    \item At prices \(\mathbf{p}^B\), income is \$15. \(\mathbf{x}^C\) (\$14) was affordable. Thus, \(\mathbf{x}^B \succ_D \mathbf{x}^C\).
+    \item At prices \(\mathbf{p}^C\), income is \$13. \(\mathbf{x}^A\) (\$12) was affordable. Thus, \(\mathbf{x}^C \succ_D \mathbf{x}^A\).
+\end{itemize}
+We have found that \(\mathbf{x}^A \succ_D \mathbf{x}^C\) and \(\mathbf{x}^C \succ_D \mathbf{x}^A\). This is a direct violation of WARP. These data are not consistent with a rational consumer.
+\end{examplebox}
+
+\subsection{The Strong Axiom of Revealed Preference (SARP)}
+WARP is not sufficient to guarantee that choices can be described by a well-behaved utility function. We need a stronger condition that also rules out cycles in \textit{indirect} revealed preferences.
+
+\begin{definition}[Strong Axiom of Revealed Preference (SARP)]
+    If a bundle \(\mathbf{x}\) is revealed preferred (directly or indirectly) to a bundle \(\mathbf{y}\) (\(\mathbf{x} \succ_D \mathbf{y}\) or \(\mathbf{x} \succ_I \mathbf{y}\)), and \(\mathbf{x} \neq \mathbf{y}\), then it can never be the case that \(\mathbf{y}\) is revealed preferred (directly or indirectly) to \(\mathbf{x}\).
+\end{definition}
+
+SARP is the key condition. It has been proven that if a finite set of observed choices satisfies SARP, then there exists a well-behaved (monotonic, convex) preference relation that ``rationalizes'' these choices. Thus, SARP is both a \textit{necessary and sufficient} condition for the data to be consistent with the standard economic model of consumer choice.
+
+\begin{examplebox}{A SARP Violation (with no WARP violation)}
+Consider the following data:
+\begin{itemize}
+    \item Prices \(\mathbf{p}^A=(1,3,10)\), Choice \(\mathbf{x}^A=(3,1,4)\).
+    \item Prices \(\mathbf{p}^B=(4,3,6)\), Choice \(\mathbf{x}^B=(2,5,3)\).
+    \item Prices \(\mathbf{p}^C=(1,1,5)\), Choice \(\mathbf{x}^C=(4,4,3)\).
+\end{itemize}
+\begin{center}
+\begin{tabular}{l|ccc}
+\hline
+\textbf{Prices} & \textbf{Cost of \(\mathbf{x}^A\)} & \textbf{Cost of \(\mathbf{x}^B\)} & \textbf{Cost of \(\mathbf{x}^C\)} \\
+\hline
+\(\mathbf{p}^A = (1,3,10)\) & \textbf{\$46} & \$47 & \$46 \\
+\(\mathbf{p}^B = (4,3,6)\) & \$39 & \textbf{\$41} & \$46 \\
+\(\mathbf{p}^C = (1,1,5)\) & \$24 & \$22 & \textbf{\$23} \\
+\hline
+\end{tabular}
+\end{center}
+Let's analyze the direct revelations:
+\begin{itemize}
+    \item At prices \(\mathbf{p}^A\), \(\mathbf{x}^C\) was affordable (\(\$46 \leq \$46\)). So, \(\mathbf{x}^A \succ_D \mathbf{x}^C\).
+    \item At prices \(\mathbf{p}^B\), \(\mathbf{x}^A\) was affordable (\(\$39 \leq \$41\)). So, \(\mathbf{x}^B \succ_D \mathbf{x}^A\).
+    \item At prices \(\mathbf{p}^C\), \(\mathbf{x}^B\) was affordable (\(\$22 \leq \$23\)). So, \(\mathbf{x}^C \succ_D \mathbf{x}^B\).
+\end{itemize}
+This dataset does not violate WARP (check: no pairs like \(X \succ_D Y\) and \(Y \succ_D X\)). However, let's look at the indirect revelations. We have a cycle:
+\[
+\mathbf{x}^B \succ_D \mathbf{x}^A \quad \text{and} \quad \mathbf{x}^A \succ_D \mathbf{x}^C \implies \mathbf{x}^B \succ_I \mathbf{x}^C
+\]
+But we also found that \(\mathbf{x}^C \succ_D \mathbf{x}^B\). This is a violation of SARP. These choices cannot be rationalized by a well-behaved preference relation.
+\end{examplebox}
+
+\section{Applications of Revealed Preference}
+The theory of revealed preference provides the foundation for practical economic tools, such as index numbers, which are used to measure changes in welfare and the cost of living.
+
+\subsection{Index Numbers and Welfare}
+Index numbers compare expenditures in a base period (b) and a current period (t). Let \(\mathbf{p}^b, \mathbf{x}^b\) be the prices and chosen bundle in the base period, and \(\mathbf{p}^t, \mathbf{x}^t\) be for the current period.
+
+\subsubsection{Quantity Indices}
+A quantity index measures the change in consumption levels, holding prices constant.
+\begin{itemize}
+    \item The \textbf{Laspeyres Quantity Index} uses base period prices as weights:
+    \[
+    L_q = \frac{\mathbf{p}^b \cdot \mathbf{x}^t}{\mathbf{p}^b \cdot \mathbf{x}^b} = \frac{p_1^b x_1^t + p_2^b x_2^t}{p_1^b x_1^b + p_2^b x_2^b}
+    \]
+    If \(L_q < 1\), it means \(\mathbf{p}^b \cdot \mathbf{x}^b > \mathbf{p}^b \cdot \mathbf{x}^t\). At base period prices, the consumer chose \(\mathbf{x}^b\) when \(\mathbf{x}^t\) was affordable. By revealed preference, the consumer was better off in the base period b.
+
+    \item The \textbf{Paasche Quantity Index} uses current period prices as weights:
+    \[
+    P_q = \frac{\mathbf{p}^t \cdot \mathbf{x}^t}{\mathbf{p}^t \cdot \mathbf{x}^b} = \frac{p_1^t x_1^t + p_2^t x_2^t}{p_1^t x_1^b + p_2^t x_2^b}
+    \]
+    If \(P_q > 1\), it means \(\mathbf{p}^t \cdot \mathbf{x}^t > \mathbf{p}^t \cdot \mathbf{x}^b\). At current period prices, the consumer chose \(\mathbf{x}^t\) when \(\mathbf{x}^b\) was affordable. The consumer is better off in the current period t.
+\end{itemize}
+
+\subsubsection{Price Indices}
+A price index measures the change in prices, holding quantities constant.
+\begin{itemize}
+    \item The \textbf{Laspeyres Price Index} uses the base period bundle as weights:
+    \[
+    L_p = \frac{\mathbf{p}^t \cdot \mathbf{x}^b}{\mathbf{p}^b \cdot \mathbf{x}^b} = \frac{p_1^t x_1^b + p_2^t x_2^b}{p_1^b x_1^b + p_2^b x_2^b}
+    \]
+    \item The \textbf{Paasche Price Index} uses the current period bundle as weights:
+    \[
+    P_p = \frac{\mathbf{p}^t \cdot \mathbf{x}^t}{\mathbf{p}^b \cdot \mathbf{x}^t} = \frac{p_1^t x_1^t + p_2^t x_2^t}{p_1^b x_1^t + p_2^b x_2^t}
+    \]
+\end{itemize}
+Let \(M = \frac{\mathbf{p}^t \cdot \mathbf{x}^t}{\mathbf{p}^b \cdot \mathbf{x}^b}\) be the ratio of total expenditure. If \(L_p < M\), it can be shown this implies \(\mathbf{p}^t \cdot \mathbf{x}^t > \mathbf{p}^t \cdot \mathbf{x}^b\), meaning the consumer is better off in the current period.
+
+\subsection{Application: Indexation}
+Price indices like the Consumer Price Index (CPI), which is a type of Laspeyres price index, are often used to adjust wages or benefits for inflation. This is called \textbf{indexation}. If an individual's income is adjusted by the full amount of the Laspeyres price index, they are typically made \textit{strictly better off}.
+
+Why? Full indexation gives the consumer enough income (\(m' = \mathbf{p}^t \cdot \mathbf{x}^b\)) to buy their \textit{old} base-period bundle \(\mathbf{x}^b\) at the \textit{new} current-period prices \(\mathbf{p}^t\). However, since relative prices have likely changed, the consumer can usually improve their welfare by substituting away from goods that have become relatively more expensive. They will choose a new bundle \(\mathbf{x}^t\) on their new budget line. Since the old bundle \(\mathbf{x}^b\) is still affordable, but a different bundle \(\mathbf{x}^t\) is chosen, it must be that \(\mathbf{x}^t\) is revealed preferred to \(\mathbf{x}^b\). Thus, full indexation tends to overcompensate for price changes.

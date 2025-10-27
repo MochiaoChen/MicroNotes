@@ -1,0 +1,164 @@
+\documentclass{book}
+
+% ====== 书名、作者与自定义命令 ======
+\title{Microeconomics}
+\newcommand{\booksubtitle}{A notes of Intermediate Microeconomics course}
+\newcommand{\booklicense}{Creative Commons Zero 1.0 Universal}
+
+\author{Mochiao Chen}
+\newcommand{\authorsubtitle}{Beijing, China}
+
+% 便捷命令：\booktitle \bookauthor
+\makeatletter
+\newcommand{\booktitle}{\@title}
+\newcommand{\bookauthor}{\@author}
+\makeatother
+
+% ====== 导入导言区（宏包、几何、超链接、索引等）======
+\input{preamble.tex}
+
+\begin{document}
+\frontmatter
+
+% ---- Half Title Page ----
+\newgeometry{top=1.75in,bottom=.5in}
+\begin{titlepage}
+\begin{flushleft}
+
+\textbf{\fontfamily{qcs}\fontsize{48}{54}\selectfont \booktitle\\}
+
+\par\noindent\rule{\textwidth}{4pt}\\
+
+\begin{tikzpicture}
+\shade[bottom color=lightgray,top color=white]
+  (0,0) rectangle (\textwidth, 1.5)
+  node[midway] {\textbf{\large \textit{\booksubtitle}}};
+\end{tikzpicture}
+
+\begin{flushright}
+\Large First Edition
+\end{flushright}
+
+\vspace{\fill}
+
+\end{flushleft}
+\end{titlepage}
+\restoregeometry%
+% ---- End of Half Title Page ----
+
+\thispagestyle{empty}
+
+% ---- Title Page ----
+\newgeometry{top=1.75in,bottom=.5in}
+\begin{titlepage}
+\begin{flushleft}
+
+\textbf{\fontfamily{qcs}\fontsize{48}{54}\selectfont \booktitle\\}
+
+\par\noindent\rule{\textwidth}{4pt}\\
+
+\begin{tikzpicture}
+\shade[bottom color=lightgray,top color=white]
+  (0,0) rectangle (\textwidth, 1.5)
+  node[midway] {\textbf{\large \textit{\booksubtitle}}};
+\end{tikzpicture}
+
+\begin{flushright}
+\Large First Edition
+\end{flushright}
+
+\vspace{\fill}
+
+\textbf{\large \bookauthor}\\[3.5pt]
+\textbf{\large \textit{\authorsubtitle}}
+
+\vspace{\fill}
+
+% 自出版 Logo（若没有 booksvg.pdf，可暂时注释掉下面两行）
+\begin{center}
+\fontfamily{lmtt}\small{
+Published by Mochiao Chen\\
+Beijing, China\\[1em]
+\textit{“Economics is not a set of answers,\\
+but a way of thinking.”}\\[0.5em]
+--- Paul Samuelson
+}
+\end{center}
+
+
+\end{flushleft}
+\end{titlepage}
+\restoregeometry%
+% ---- End of Title Page ----
+
+\thispagestyle{empty}
+
+% 版权页 / colophon
+\begin{flushleft}
+\vspace*{\fill}
+This book was typeset using \LaTeX{} software.\\
+\vspace{\fill}
+Copyright \textcopyright{} \the\year{} \bookauthor\\
+License: \booklicense%
+\end{flushleft}
+
+% 双标题页导致页码校正（保持模板逻辑）
+\addtocounter{page}{2}
+\chapter*{Preface}
+
+\begin{verse}
+\textit{Beneath the curve where want and wisdom meet,\\
+Desire bends softly toward constraint's embrace;\\
+The market hums—a silent, measured beat,\\
+Where countless hearts converge in ordered grace.\\
+
+Each price a whisper, every choice a vow,\\
+The hand unseen adjusts the trembling scale;\\
+From chaos born, an equilibrium now,\\
+So fragile that one breath might tip the veil.\\
+
+Yet reason builds its temples out of thought,\\
+Not marble, but theorems shaped by light;\\
+Each symbol holds the battles reason fought,\\
+Each graph a dawn that conquered human night.\\
+
+Thus study, patient soul, this art of cause and will—\\
+Where freedom bends, yet harmony lies still.}
+\end{verse}
+
+\vspace{1em}
+
+This book of notes is primarily based on Hal R. Varian's \textit{Intermediate Microeconomics},  
+and was compiled during distinguished Professor \textbf{Zhang Haiyang}'s course at the University of International Business and Economics.  
+The author's understanding is limited, and omissions or errors are entirely his own responsibility.
+
+\begin{flushright}
+\textit{Mochiao Chen}\\
+University of International Business and Economics\\
+October 2025
+\end{flushright}
+
+
+% 三层目录
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\mainmatter%
+
+% ====== 逐章插入（建议每章一个文件）======
+\include{chapters/chap1}
+\include{chapters/chap2}
+\include{chapters/chap3}
+\include{chapters/chap4}
+\include{chapters/chap5}
+\include{chapters/chap6}
+\include{chapters/chap7}
+\include{chapters/chap8}
+\include{chapters/chap9}
+% ... 继续添加
+
+\backmatter%
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+\end{document}

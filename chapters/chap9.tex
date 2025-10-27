@@ -1,0 +1,202 @@
+% ===================================================================
+% Chapter 9: Buying and Selling
+% ===================================================================
+
+\chapter{Buying and Selling}\label{chap:buying_selling}
+
+% -------------------------------------------------------------------
+\section{Introduction}
+% -------------------------------------------------------------------
+
+In the preceding chapters, we assumed that a consumer's income was exogenously fixed. We now expand our basic consumer choice framework to a more realistic scenario where consumers are endowed with a bundle of goods, which they can either consume or sell to generate income. This allows us to analyze a broader range of economic decisions, such as labor supply.
+
+The theoretical framework remains fundamentally the same: consumers choose the most preferred bundle from their budget set. The key difference is that the budget constraint is now determined by the market value of the consumer's initial \textbf{endowment}.
+
+% -------------------------------------------------------------------
+\section{The Budget Constraint}
+% -------------------------------------------------------------------
+
+\subsection{Endowments}
+
+We begin by defining the concept of an endowment.
+
+\begin{definition}[Endowment]
+The list of resource units with which a consumer starts is called their \textbf{endowment}. It is denoted by the vector $\boldsymbol{\omega} = (\omega_1, \omega_2, \dots, \omega_n)$.
+\end{definition}
+
+\begin{examplebox}{Endowment Bundle}
+    Consider a consumer in a two-good world. An endowment vector $\boldsymbol{\omega} = (\omega_1, \omega_2) = (10, 2)$ means that the consumer starts with 10 units of good 1 and 2 units of good 2 before entering the market.
+\end{examplebox}
+
+Given this endowment, the consumer can trade these goods at market prices. The fundamental questions are: what is the total value of this endowment, and what consumption bundles can the consumer afford?
+
+\subsection{Constructing the Budget Line}
+
+The consumer's income is no longer a fixed amount of money, but is instead determined by the market value of their endowed goods. If the market prices are $(p_1, p_2)$, the value of the endowment $\boldsymbol{\omega} = (\omega_1, \omega_2)$ is $p_1\omega_1 + p_2\omega_2$.
+
+The consumer can sell their endowment to purchase any other consumption bundle $(x_1, x_2)$ as long as its total cost does not exceed the value of their endowment. The budget constraint is therefore:
+\[
+p_1 x_1 + p_2 x_2 = p_1 \omega_1 + p_2 \omega_2
+\]
+The left-hand side represents the consumer's expenditure, and the right-hand side represents their income from selling the endowment.
+
+The consumer's budget set consists of all affordable bundles $(x_1, x_2)$:
+\[
+\text{Budget Set} = \{ (x_1, x_2) \mid p_1 x_1 + p_2 x_2 \le p_1 \omega_1 + p_2 \omega_2, \text{ and } x_1 \ge 0, x_2 \ge 0 \}
+\]
+
+A crucial feature of this budget line is that it must always pass through the endowment point $(\omega_1, \omega_2)$. This is because if the consumer chooses to consume their endowment bundle, i.e., $(x_1, x_2) = (\omega_1, \omega_2)$, the budget constraint is satisfied: $p_1 \omega_1 + p_2 \omega_2 = p_1 \omega_1 + p_2 \omega_2$.
+
+\begin{remark}
+Because the endowment point is always on the budget line, any change in prices will cause the budget line to \textbf{pivot} around the endowment point. This is different from the parallel shift we saw when money income was fixed.
+\end{remark}
+
+% Placeholder for figure showing the budget line pivoting around the endowment.
+% \begin{figure}[h!]
+%     \centering
+%     % \includegraphics[width=0.7\textwidth]{budget_pivot.png}
+%     \caption{The budget line pivots around the endowment point $\boldsymbol{\omega}$ as prices change.}
+%     \label{fig:budget_pivot}
+% \end{figure}
+
+% -------------------------------------------------------------------
+\section{Net and Gross Demands}
+% -------------------------------------------------------------------
+
+We can rearrange the budget constraint to provide a different perspective on the consumer's decision.
+\begin{align*}
+p_1 x_1 + p_2 x_2 &= p_1 \omega_1 + p_2 \omega_2 \\
+p_1 x_1 - p_1 \omega_1 + p_2 x_2 - p_2 \omega_2 &= 0 \\
+p_1(x_1 - \omega_1) + p_2(x_2 - \omega_2) &= 0
+\end{align*}
+This formulation is insightful. It states that the net value of a consumer's purchases and sales must be zero. To understand this, we define two types of demands.
+
+\begin{definition}[Gross and Net Demands]
+The consumer's final consumption bundle $(x_1, x_2)$ is their \textbf{gross demand}. 
+The quantities $(x_1 - \omega_1)$ and $(x_2 - \omega_2)$ are the consumer's \textbf{net demands}.
+\end{definition}
+
+\begin{itemize}
+    \item If $x_i - \omega_i > 0$, the consumer is a \textbf{net buyer} or \textbf{net demander} of good $i$.
+    \item If $x_i - \omega_i < 0$, the consumer is a \textbf{net seller} or \textbf{net supplier} of good $i$.
+\end{itemize}
+
+The equation $p_1(x_1 - \omega_1) + p_2(x_2 - \omega_2) = 0$ simply means that the value of what the consumer buys must equal the value of what they sell. For example, if a consumer is a net seller of good 1 ($x_1 - \omega_1 < 0$), they must be a net buyer of good 2 ($x_2 - \omega_2 > 0$) for the equation to hold.
+
+% -------------------------------------------------------------------
+\section{Slutsky's Equation with Endowments}
+% -------------------------------------------------------------------
+
+When prices change, not only do relative prices change (affecting substitution), but the value of the consumer's endowment also changes. This alters their income, introducing an additional income effect.
+
+Recall that for a consumer with fixed money income $m$, the Slutsky decomposition was:
+\[
+\frac{\Delta x_1}{\Delta p_1} = \frac{\Delta x_1^s}{\Delta p_1} - x_1 \frac{\Delta x_1^m}{\Delta m}
+\]
+Here, the total effect of a price change on demand is the sum of a substitution effect and an ordinary income effect.
+
+Now, income is not fixed but is given by $m = p_1 \omega_1 + p_2 \omega_2$. A change in $p_1$ affects $m$. The change in money income when $p_1$ changes is:
+\[
+\frac{\Delta m}{\Delta p_1} = \omega_1
+\]
+This change in income generates an additional income effect, which we call the \textbf{endowment income effect}.
+
+The endowment income effect is the change in demand due to the change in the value of the endowment:
+\[
+\text{Endowment Income Effect} = \frac{\Delta m}{\Delta p_1} \times \frac{\Delta x_1^m}{\Delta m} = \omega_1 \frac{\Delta x_1^m}{\Delta m}
+\]
+The overall change in demand is now the sum of three components:
+\begin{enumerate}
+    \item \textbf{Pure Substitution Effect:} The effect from the change in relative prices, holding purchasing power constant.
+    \item \textbf{Ordinary Income Effect:} The effect from the change in purchasing power, as the original bundle is now more or less expensive.
+    \item \textbf{Endowment Income Effect:} The effect from the change in the value of the endowment.
+\end{enumerate}
+
+Combining these, the full Slutsky equation with endowments is:
+\[
+\frac{\Delta x_1}{\Delta p_1} = \underbrace{\frac{\Delta x_1^s}{\Delta p_1}}_{\text{Substitution Effect}} \underbrace{- x_1 \frac{\Delta x_1^m}{\Delta m}}_{\text{Ordinary Income Effect}} + \underbrace{\omega_1 \frac{\Delta x_1^m}{\Delta m}}_{\text{Endowment Income Effect}}
+\]
+We can combine the two income effects into a single term:
+\begin{equation}
+\frac{\Delta x_1}{\Delta p_1} = \frac{\Delta x_1^s}{\Delta p_1} + (\omega_1 - x_1) \frac{\Delta x_1^m}{\Delta m}
+\label{eq:slutsky_endowment}
+\end{equation}
+
+\begin{remark}
+    The term $(\omega_1 - x_1)$ represents the consumer's net supply of good 1.
+    \begin{itemize}
+        \item If the consumer is a net seller of good 1 ($\omega_1 > x_1$) and good 1 is a normal good, an increase in $p_1$ has a positive income effect, encouraging more consumption of good 1. This can potentially outweigh the negative substitution effect.
+        \item If the consumer is a net buyer of good 1 ($\omega_1 < x_1$), the term $(\omega_1 - x_1)$ is negative. The total income effect is reinforced, making the demand curve for a normal good unambiguously downward-sloping.
+    \end{itemize}
+\end{remark}
+
+% -------------------------------------------------------------------
+\section{Application: Labor Supply}
+% -------------------------------------------------------------------
+
+The model of buying and selling is perfectly suited to analyze a worker's decision on how many hours to work.
+
+\subsection{The Labor-Leisure Choice}
+
+Consider a worker who chooses between two goods: a composite consumption good, $C$, and leisure, $R$.
+\begin{itemize}
+    \item The price of the consumption good is $p$.
+    \item The ``price'' of leisure is the wage rate, $w$, as it represents the opportunity cost of not working.
+\end{itemize}
+The worker is endowed with some non-labor income, $M$, and a total amount of time, $\bar{R}$ (e.g., 24 hours a day). The endowment bundle is $(\bar{R}, M)$. The worker sells some of their time endowment as labor to fund consumption.
+Labor supplied, $L$, is the total time endowment minus the amount of leisure consumed: $L = \bar{R} - R$.
+
+The budget constraint can be expressed as:
+\[
+\text{Expenditure} = \text{Income}
+\]
+\[
+pC = w(\bar{R} - R) + M
+\]
+Rearranging this gives us the standard endowment budget line:
+\[
+pC + wR = w\bar{R} + M
+\]
+The left side is the total expenditure on consumption and leisure. The right side is the total potential income, or the value of the endowment of time and non-labor money. The slope of this budget line is $-w/p$, which is the \textbf{real wage}.
+
+The worker chooses the optimal combination $(C^*, R^*)$ that maximizes utility, which in turn determines the amount of labor supplied, $L^* = \bar{R} - R^*$.
+
+\subsection{Backward-Bending Labor Supply Curve}
+
+How does the amount of labor supplied change when the wage rate, $w$, increases? We can use the Slutsky equation to analyze the effect of a change in $w$ on the demand for leisure, $R$. Here, leisure is good 1, and its price is $w$. The endowment of leisure is $\bar{R}$.
+
+From Equation~\eqref{eq:slutsky_endowment}, we have:
+\begin{equation}
+\frac{\Delta R}{\Delta w} = \underbrace{\frac{\Delta R^s}{\Delta w}}_{\text{(-)}} + \underbrace{(\bar{R} - R)}_{\text{(+)}} \underbrace{\frac{\Delta R^m}{\Delta m}}_{\text{(?)}}
+\label{eq:slutsky_labor}
+\end{equation}
+Let's analyze the signs:
+\begin{itemize}
+    \item \textbf{Substitution Effect ($\frac{\Delta R^s}{\Delta w}$):} An increase in the wage rate $w$ makes leisure more expensive. The consumer will substitute away from leisure towards consumption. Thus, the substitution effect on the demand for leisure is negative. This effect implies that the worker supplies more labor.
+    \item \textbf{Income Effect ($(\bar{R} - R)\frac{\Delta R^m}{\Delta m}$):}
+        \begin{itemize}
+            \item $(\bar{R} - R)$ is the amount of labor supplied, which is typically positive.
+            \item If leisure is a normal good (which is a reasonable assumption), then $\frac{\Delta R^m}{\Delta m}$ is positive. An increase in income leads to a desire for more leisure.
+            \item Therefore, the entire income effect term is positive. A higher wage makes the worker richer, so they choose to ``purchase'' more leisure (i.e., work less).
+        \end{itemize}
+\end{itemize}
+
+The substitution and income effects work in opposite directions.
+\begin{itemize}
+    \item At low wage rates, the substitution effect often dominates. An increase in the wage leads to an increase in labor supply.
+    \item At high wage rates, the income effect may dominate. The worker is already earning a high income, and a further wage increase may lead them to value leisure more, thus reducing their labor supply.
+\end{itemize}
+This can lead to a \textbf{backward-bending labor supply curve}, where the quantity of labor supplied first increases with the wage and then decreases.
+
+% Placeholder for figure showing the backward-bending labor supply curve.
+% \begin{figure}[h!]
+%     \centering
+%     % \includegraphics[width=0.7\textwidth]{labor_supply_curve.png}
+%     \caption{A backward-bending labor supply curve, resulting from the interaction of substitution and income effects.}
+%     \label{fig:labor_supply_curve}
+% \end{figure}
+
+\subsection{Overtime}
+An overtime wage creates a kink in the budget constraint. Suppose a worker is paid a wage $w$ for the first $L_0$ hours of work, and an overtime wage $w' > w$ for any hours beyond $L_0$. The budget line becomes steeper after the worker has supplied $L_0$ hours of labor.
+
+This non-linear wage structure can induce an employee to work more hours than a simple increase in the flat wage rate. The overtime offer effectively isolates the substitution effect over a certain range, encouraging more work without the large offsetting income effect that a high flat wage for all hours would create.

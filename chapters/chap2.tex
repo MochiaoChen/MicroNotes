@@ -1,0 +1,102 @@
+% ======================
+% FILE: chapters/chap2.tex
+% ======================
+\chapter{Budget Constraint}\label{chap:budget}
+
+\section{Consumption Choice Sets}
+
+Consumers choose to consume bundles of goods and services. A \textbf{consumption bundle} is a vector of quantities of each good, e.g., $(x_1, x_2, \dots, x_n)$, where $x_i$ is the quantity of good $i$. The \textbf{consumption choice set} is the collection of all consumption bundles available to the consumer.
+
+The choices a consumer can make are constrained by various factors, with the most prominent being the budget constraint. Other constraints can include time, resource limitations, and legal restrictions. For now, we will focus on the budgetary constraint.
+
+\section{The Budget Constraint}
+
+Let's consider a consumer with a disposable income of $m$ who can consume $n$ goods. The prices of these goods are given by the price vector $(p_1, p_2, \dots, p_n)$.
+
+\begin{definition}[Affordable Consumption Bundles]
+A consumption bundle $(x_1, \dots, x_n)$ is affordable if its total cost is no more than the consumer's income. That is:
+\begin{equation}
+    p_1x_1 + p_2x_2 + \cdots + p_n x_n \leq m
+\end{equation}
+This inequality is the consumer's \textbf{budget constraint}.
+\end{definition}
+
+\begin{definition}[Budget Set]
+The \textbf{budget set} is the set of all affordable consumption bundles. Assuming non-negative consumption, the budget set $B$ is:
+\begin{equation}
+    B(p_1, \dots, p_n, m) = \{ (x_1, \dots, x_n) \mid x_i \geq 0 \text{ for all } i, \text{ and } \sum_{i=1}^{n} p_i x_i \leq m \}
+\end{equation}
+The upper boundary of the budget set, where the consumer spends all their income, is called the \textbf{budget line}:
+\begin{equation}
+    p_1x_1 + p_2x_2 + \cdots + p_n x_n = m
+\end{equation}
+\end{definition}
+
+\subsection{The Two-Good Case}
+
+For simplicity, we often analyze the case with only two goods. The budget line is then given by $p_1x_1 + p_2x_2 = m$. We can rearrange this to express $x_2$ as a function of $x_1$:
+\begin{equation}
+    x_2 = -\frac{p_1}{p_2}x_1 + \frac{m}{p_2}
+\end{equation}
+This is a linear equation.
+\begin{itemize}
+    \item The vertical intercept is $m/p_2$, which is the maximum amount of good 2 the consumer can buy.
+    \item The horizontal intercept is $m/p_1$, which is the maximum amount of good 1 the consumer can buy.
+    \item The slope is $-p_1/p_2$. The slope measures the rate at which the market is willing to ``substitute'' good 2 for good 1. It is the \textbf{opportunity cost} of consuming good 1: to consume one more unit of good 1, the consumer must give up $p_1/p_2$ units of good 2.
+\end{itemize}
+
+\begin{remark}[Graphical Representation]
+The budget set for two goods is a right-angled triangle in the $(x_1, x_2)$ plane, with vertices at $(0,0)$, $(m/p_1, 0)$, and $(0, m/p_2)$. The hypotenuse of this triangle is the budget line. Bundles inside the triangle are affordable but do not exhaust income. Bundles on the budget line are just affordable. Bundles outside the triangle are unaffordable.
+\end{remark}
+
+\section{Changes in the Budget Line}
+
+The budget set depends on prices and income. When these parameters change, the set of affordable choices changes as well.
+
+\subsection{Income Changes}
+An increase in income $m$ to $m' > m$ leads to a new budget line:
+\[ x_2 = -\frac{p_1}{p_2}x_1 + \frac{m'}{p_2} \]
+The slope $(-p_1/p_2)$ remains unchanged, but the vertical intercept increases. This means the budget line makes a \textbf{parallel shift outwards}. An income increase expands the budget set, meaning no original choices are lost and new choices are added. Thus, a higher income cannot make a consumer worse off. Conversely, a decrease in income shifts the budget line inward, shrinking the choice set.
+
+\subsection{Price Changes}
+Suppose the price of good 1 decreases from $p_1$ to $p_1' < p_1$. The new budget line is:
+\[ x_2 = -\frac{p_1'}{p_2}x_1 + \frac{m}{p_2} \]
+The vertical intercept $(m/p_2)$ is unchanged. The horizontal intercept increases to $m/p_1'$. The slope becomes flatter (less negative). The budget line \textbf{pivots outward} around the vertical intercept. Reducing the price of one commodity also expands the budget set, and thus cannot make the consumer worse off.
+
+\section{Taxes, Subsidies, and Rationing}
+
+\subsection{Uniform Ad Valorem Sales Tax}
+An \textit{ad valorem} (from the value) sales tax is levied as a percentage of the price. If a uniform tax rate $t$ is applied to all goods, the new prices become $p_1(1+t)$ and $p_2(1+t)$. The budget constraint becomes:
+\[ p_1(1+t)x_1 + p_2(1+t)x_2 = m \]
+This can be rewritten as:
+\[ p_1x_1 + p_2x_2 = \frac{m}{1+t} \]
+A uniform sales tax is thus equivalent to a decrease in income from $m$ to $m/(1+t)$. This causes a parallel inward shift of the budget line.
+
+\begin{examplebox}{The Food Stamp Program}
+Food stamps are coupons that can be legally exchanged only for food. Let $F$ be food and $G$ be all other goods. Assume $p_F = p_G = \$1$ and income is $m=\$100$. The initial budget line is $F+G=100$.
+
+Suppose the consumer receives \$40 worth of food stamps.
+\begin{itemize}
+    \item The consumer can now consume up to \$140 of food if they spend all their income on it.
+    \item However, the food stamps cannot be used for other goods, so the maximum amount of other goods is still \$100.
+    \item The budget constraint becomes kinked. It is $F+G=100$ for $F > 40$, but for $F \leq 40$, the consumer can still spend their full \$100 on other goods. The new budget set is larger. The budget line is:
+    \[ G = \begin{cases} 100 & \text{if } 0 \leq F \leq 40 \\ 140 - F & \text{if } 40 < F \leq 140 \end{cases} \]
+\end{itemize}
+What if the food stamps can be traded on a black market, e.g., for \$0.50 each?
+\begin{itemize}
+    \item The \$40 in food stamps could be sold for $40 \times \$0.50 = \$20$.
+    \item This effectively increases the consumer's cash income to $\$100 + \$20 = \$120$.
+    \item The budget line would then be $F+G=120$, further expanding the budget set.
+\end{itemize}
+\end{examplebox}
+
+\section{Shapes of Budget Constraints}
+If prices are not constant, the budget constraint may not be a straight line.
+\begin{itemize}
+    \item \textbf{Quantity Discounts:} Suppose $p_1=\$2$ for the first 20 units and $p_1=\$1$ for any unit thereafter, with $p_2=\$1$ and $m=\$100$. The budget line will have a slope of $-2$ for $x_1 \leq 20$ and a slope of $-1$ for $x_1 > 20$. The budget line becomes flatter after $x_1=20$, creating a kink.
+    \item \textbf{Quantity Penalties (Taxes):} The opposite occurs, and the budget line becomes steeper after a certain quantity.
+    \item \textbf{One Price Negative:} If good 1 is a ``bad'' like garbage, you might be paid to accept it, i.e., $p_1 < 0$. If $p_1 = -\$2$, $p_2=\$1$ and $m=\$10$, the budget line is $-2x_1 + x_2 = 10$, or $x_2 = 2x_1 + 10$. The slope is positive, and the budget set is unbounded on the $x_1$ side.
+\end{itemize}
+
+\section{More General Choice Sets}
+Choices are often constrained by more than just a budget. For example, there might be a time constraint, or a minimum consumption requirement for survival. A bundle is available only if it meets \textit{every} constraint. The final choice set is the \textbf{intersection} of all the individual constraint sets.

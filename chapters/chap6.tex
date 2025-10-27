@@ -1,0 +1,91 @@
+% ======================
+% FILE: chapters/chap6.tex
+% ======================
+
+\chapter{Demand}\label{chap:demand}
+
+\section{Introduction}
+
+The demand functions derived in the previous chapter, $x_i^*(p_1, p_2, m)$, tell us the optimal quantities of each good as a function of prices and income. In this chapter, we explore how the quantity demanded changes as these variables change. This is known as \textbf{comparative statics}.
+
+\section{Own-Price Changes}
+
+We first analyze how the demand for a good, say good 1, changes as its own price, $p_1$, changes, while holding $p_2$ and income $m$ constant.
+
+\begin{definition}[Price Offer Curve and Demand Curve]
+~
+\begin{itemize}
+    \item The set of optimal bundles traced out as $p_1$ changes is called the \textbf{$p_1$-price offer curve} or simply the \textbf{price offer curve}.
+    \item A plot of the optimal quantity demanded of good 1, $x_1^*$, against its own price, $p_1$, is the \textbf{demand curve} for good 1.
+\end{itemize}
+\end{definition}
+
+\begin{definition}[Ordinary and Giffen Goods]
+~
+\begin{itemize}
+    \item A good is called an \textbf{ordinary good} if the quantity demanded for it always increases as its own price decreases. Ordinary goods have downward-sloping demand curves.
+    \item A good is called a \textbf{Giffen good} if, for some range of prices, the quantity demanded rises as its own-price increases. Giffen goods have a segment of their demand curve that is upward-sloping. They are a theoretical curiosity and are rarely observed in reality.
+\end{itemize}
+\end{definition}
+
+\subsection{The Inverse Demand Function}
+The standard demand curve plots quantity as a function of price, $x_1 = x_1^*(p_1)$. Sometimes it is useful to ask the inverse question: at what price would a given quantity be demanded? This gives the \textbf{inverse demand function}, which plots price as a function of quantity, $p_1 = p_1(x_1)$.
+
+\begin{examplebox}{Cobb-Douglas Inverse Demand}
+The ordinary demand function for good 1 is $x_1^* = \frac{a}{a+b}\frac{m}{p_1}$.
+To find the inverse demand function, we solve for $p_1$:
+\[ p_1(x_1^*) = \frac{a}{a+b}\frac{m}{x_1^*} \]
+\end{examplebox}
+
+\section{Income Changes}
+We now analyze how the demand for a good changes as income $m$ changes, holding prices $(p_1, p_2)$ constant.
+
+\begin{definition}[Income Offer Curve and Engel Curve]
+~
+\begin{itemize}
+    \item The set of optimal bundles traced out as income $m$ changes is called the \textbf{income offer curve} or \textbf{income expansion path}.
+    \item A plot of the quantity demanded of a good against income is called an \textbf{Engel curve}.
+\end{itemize}
+\end{definition}
+
+\begin{definition}[Normal and Inferior Goods]
+~
+\begin{itemize}
+    \item A good is a \textbf{normal good} if the quantity demanded rises with income ($\partial x_i^*/\partial m > 0$). A normal good has a positively sloped Engel curve.
+    \item A good is an \textbf{inferior good} if the quantity demanded falls as income increases ($\partial x_i^*/\partial m < 0$). An inferior good has a negatively sloped Engel curve.
+\end{itemize}
+\end{definition}
+
+\subsection{Homothetic Preferences}
+An important class of preferences are those that are \textbf{homothetic}. For these preferences, the MRS depends only on the ratio of the goods, not on the scale.
+\begin{proposition}
+If a consumer has homothetic preferences, then their income offer curve is a straight line through the origin, and their Engel curves are straight lines.
+\end{proposition}
+This implies that the consumer will always spend a fixed proportion of their income on each good. Cobb-Douglas, perfect substitutes, and perfect complements are all examples of homothetic preferences.
+
+\subsection{Non-homothetic Preferences: Quasi-linear Utility}
+Quasi-linear preferences of the form $U(x_1, x_2) = v(x_1) + x_2$ are a key example of non-homothetic preferences. For these preferences, an increase in income (once it is sufficiently high) does not change the demand for good 1 at all; all extra income is spent on good 2. This results in a vertical income offer curve and a vertical Engel curve for good 1 above a certain income level.
+
+\section{Cross-Price Effects}
+
+Finally, we consider how the demand for good 1 changes when the price of \textit{another} good, $p_2$, changes.
+
+\begin{definition}[Gross Substitutes and Complements]
+~
+\begin{itemize}
+    \item Good 1 is a \textbf{gross substitute} for good 2 if an increase in $p_2$ increases the demand for good 1 ($\partial x_1^*/\partial p_2 > 0$).
+    \item Good 1 is a \textbf{gross complement} for good 2 if an increase in $p_2$ reduces the demand for good 1 ($\partial x_1^*/\partial p_2 < 0$).
+\end{itemize}
+\end{definition}
+
+\begin{examplebox}{Cross-Price Effects Examples}
+~
+\begin{itemize}
+    \item \textbf{Perfect Complements:} $x_1^* = m/(p_1+p_2)$. Taking the derivative:
+    \[ \frac{\partial x_1^*}{\partial p_2} = -\frac{m}{(p_1+p_2)^2} < 0 \]
+    As expected, the goods are gross complements.
+    \item \textbf{Cobb-Douglas:} $x_1^* = \frac{a}{a+b}\frac{m}{p_1}$. Taking the derivative:
+    \[ \frac{\partial x_1^*}{\partial p_2} = 0 \]
+    In the Cobb-Douglas case, the demand for one good is independent of the other good's price. The goods are neither gross substitutes nor gross complements.
+\end{itemize}
+\end{examplebox}

@@ -1,0 +1,99 @@
+% ======================
+% FILE: chapters/chap5.tex
+% ======================
+
+\chapter{Choice}
+\label{chap:choice}
+
+\section{Introduction}
+
+In the previous chapters, we modeled the consumer's constraints (the budget set) and their preferences (indifference curves and utility functions). We now put these two pieces together to analyze the consumer's choice. The fundamental assumption is that the consumer will choose the most preferred bundle from their budget set.
+
+This is a problem of \textbf{constrained maximization}. Mathematically, the consumer's problem is to:
+\begin{align*}
+    \max_{x_1, x_2} \quad & U(x_1, x_2) \\
+    \text{subject to} \quad & p_1x_1 + p_2x_2 \leq m \\
+    & x_1 \geq 0, x_2 \geq 0
+\end{align*}
+In economics, this is known as the rational choice problem. The solution to this problem, the optimal consumption bundle $(x_1^*, x_2^*)$, is the consumer's \textbf{demanded bundle}.
+
+\begin{definition}[Marshallian Demand]
+The consumer's optimal choice $(x_1^*, x_2^*)$ at a given set of prices $(p_1, p_2)$ and income $m$ is called the consumer's demanded bundle. The functions that give the optimal amount of each good as a function of prices and income, $x_1^*(p_1, p_2, m)$ and $x_2^*(p_1, p_2, m)$, are called the \textbf{Marshallian demand functions}.
+\end{definition}
+
+\section{Finding the Optimal Choice}
+
+Graphically, the optimal bundle is the point in the budget set that lies on the highest possible indifference curve.
+
+\subsection{Interior Solutions with Well-Behaved Preferences}
+
+For well-behaved preferences (monotonic and strictly convex), the optimal choice will typically be an \textbf{interior solution}, where the consumer purchases positive amounts of both goods ($x_1^* > 0$ and $x_2^* > 0$). In this case, the optimal bundle $(x_1^*, x_2^*)$ is characterized by two conditions:
+
+\begin{enumerate}
+    \item \textbf{The budget is exhausted.} The optimal point must lie on the budget line, not inside it. Because preferences are monotonic (more is better), any bundle inside the budget set has a more-preferred bundle to its northeast that is also affordable.
+    \[ p_1x_1^* + p_2x_2^* = m \]
+    \item \textbf{Tangency condition.} At the optimal point, the indifference curve is tangent to the budget line. This means their slopes are equal.
+    \[ \text{Slope of Indifference Curve} = \text{Slope of Budget Line} \]
+    \[ MRS = -\frac{p_1}{p_2} \]
+    Since we know $MRS = -MU_1/MU_2$, the tangency condition can be rewritten as:
+    \[ \frac{MU_1}{MU_2} = \frac{p_1}{p_2} \]
+\end{enumerate}
+
+This second condition has a powerful economic intuition: at the optimal choice, the rate at which the consumer is \textit{willing} to trade one good for another (the MRS) is equal to the rate at which the market \textit{allows} them to trade (the price ratio).
+
+\begin{examplebox}{Computing Demand with Cobb-Douglas Preferences}
+Let the consumer's utility function be of the Cobb-Douglas form:
+\[ U(x_1, x_2) = x_1^a x_2^b \]
+First, we find the marginal utilities and the MRS:
+\[ MU_1 = \frac{\partial U}{\partial x_1} = ax_1^{a-1}x_2^b \]
+\[ MU_2 = \frac{\partial U}{\partial x_2} = bx_1^a x_2^{b-1} \]
+\[ MRS = -\frac{MU_1}{MU_2} = -\frac{ax_1^{a-1}x_2^b}{bx_1^a x_2^{b-1}} = -\frac{ax_2}{bx_1} \]
+Now we apply the two conditions for an interior optimum:
+\begin{enumerate}
+    \item \textbf{Tangency:} $MRS = -p_1/p_2$
+    \[ -\frac{ax_2^*}{bx_1^*} = -\frac{p_1}{p_2} \implies \frac{ax_2^*}{bx_1^*} = \frac{p_1}{p_2} \implies p_2x_2^* = \frac{b}{a} p_1x_1^* \]
+    \item \textbf{Budget Exhaustion:} $p_1x_1^* + p_2x_2^* = m$
+\end{enumerate}
+Substitute the result from the tangency condition into the budget constraint:
+\[ p_1x_1^* + \left(\frac{b}{a} p_1x_1^*\right) = m \]
+\[ p_1x_1^* \left(1 + \frac{b}{a}\right) = m \implies p_1x_1^* \left(\frac{a+b}{a}\right) = m \]
+Solving for $x_1^*$ gives the demand function for good 1:
+\[ x_1^*(p_1, p_2, m) = \frac{a}{a+b} \frac{m}{p_1} \]
+Substituting this back into the expression for $p_2x_2^*$ from the tangency condition gives the demand for good 2:
+\[ p_2x_2^* = \frac{b}{a} p_1 \left( \frac{a}{a+b} \frac{m}{p_1} \right) = \frac{b}{a+b} m \implies x_2^*(p_1, p_2, m) = \frac{b}{a+b} \frac{m}{p_2} \]
+These are the Marshallian demand functions for a consumer with Cobb-Douglas preferences. They show that the consumer spends a fixed fraction of income ($a/(a+b)$ on good 1 and $b/(a+b)$ on good 2).
+\end{examplebox}
+
+
+\section{Non-Tangency Solutions}
+
+The tangency condition only holds for interior solutions with smooth indifference curves. In other cases, the optimal choice may occur where the tangency condition is not met.
+
+\subsection{Corner Solutions}
+A \textbf{corner solution} occurs when the optimal quantity of one of the goods is zero. This often happens with perfect substitutes or non-convex preferences.
+
+\begin{examplebox}{Optimal Choice with Perfect Substitutes}
+Consider the utility function $U(x_1, x_2) = x_1 + x_2$. Here, the MRS is constant at $-1$. The indifference curves are straight lines with a slope of $-1$. The consumer will compare their personal trade-off rate (1-for-1) with the market's trade-off rate ($p_1/p_2$).
+\begin{itemize}
+    \item If $p_1 < p_2$, the slope of the budget line ($-p_1/p_2$) is flatter than the slope of the indifference curves ($-1$). The consumer gets more utility per dollar from good 1. The optimal choice is to spend all income on good 1. This is a corner solution at $(m/p_1, 0)$.
+    \item If $p_1 > p_2$, the budget line is steeper than the indifference curves. The consumer gets more utility per dollar from good 2 and will spend all income on it. The corner solution is at $(0, m/p_2)$.
+    \item If $p_1 = p_2$, the budget line and indifference curves have the same slope. Any affordable bundle on the budget line is an optimal choice.
+\end{itemize}
+So, the demand for good 1 is:
+\[ x_1^*(p_1, p_2, m) = \begin{cases} m/p_1 & \text{if } p_1 < p_2 \\ \text{any amount in } [0, m/p_1] & \text{if } p_1 = p_2 \\ 0 & \text{if } p_1 > p_2 \end{cases} \]
+\end{examplebox}
+
+\subsection{Kinky Solutions}
+If indifference curves have kinks, such as with perfect complements, the MRS is not well-defined at the optimal point, and the tangency condition cannot be used.
+
+\begin{examplebox}{Optimal Choice with Perfect Complements}
+Consider the utility function $U(x_1, x_2) = \min\{x_1, x_2\}$. The consumer always wants to consume the goods in a one-to-one ratio. The optimal choice will always be at the corner of an L-shaped indifference curve, where $x_1 = x_2$.
+\begin{enumerate}
+    \item \textbf{Consumption in fixed proportion:} $x_1^* = x_2^*$
+    \item \textbf{Budget Exhaustion:} $p_1x_1^* + p_2x_2^* = m$
+\end{enumerate}
+Substituting the first condition into the second gives:
+\[ p_1x_1^* + p_2x_1^* = m \implies (p_1+p_2)x_1^* = m \]
+Solving gives the demand functions:
+\[ x_1^*(p_1, p_2, m) = x_2^*(p_1, p_2, m) = \frac{m}{p_1+p_2} \]
+\end{examplebox}

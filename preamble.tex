@@ -1,0 +1,83 @@
+% ======================
+% Preamble file
+% ======================
+
+% --- PACKAGES ---
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage[most]{tcolorbox}
+
+% ======================
+% PREAMBLE (导言区)
+% ======================
+
+% 字体/编码（pdfLaTeX 兼容）
+\usepackage[utf8]{inputenc}  % 新 TeX 可省略；沿用模板以兼容老环境
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX} % 让 ---, `` '' 等老式输入正常工作
+\setmainfont{TeX Gyre Termes}      % 类 Times，字形全、稳
+\setsansfont{TeX Gyre Heros}       % 类 Helvetica
+\setmonofont{DejaVu Sans Mono}     % 等宽，包含 “ ” — 等符号
+\usepackage{fix-cm}
+% 数学
+\usepackage{amsmath, amssymb}
+
+% 版心与纸型（保持你给的几何参数）
+\usepackage[
+  bindingoffset=0.625in,
+  left=.5in, right=.5in,
+  top=.8125in, bottom=.9375in,
+  paperwidth=6.375in, paperheight=9.25in
+]{geometry}
+% 也可切换到 Letter：
+% \usepackage[margin=.75in, paperwidth=8.5in, paperheight=11in]{geometry}
+% 目录标题改名
+\renewcommand{\contentsname}{Table of Contents}
+
+% 索引
+\usepackage{makeidx}
+\makeindex
+
+% 图形与标题页需要的 TikZ
+\usepackage{tikz}
+
+% 超链接（最后加载较稳妥）
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={Microeconomics Notes},
+  pdfauthor={Mochiao Chen},
+  pdfpagemode=UseOutlines
+}
+
+% （可选）更好看的断词与字距
+\usepackage{microtype}
+
+
+% --- THEOREM ENVIRONMENTS ---
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[chapter]
+
+% --- CUSTOM BOXES ---
+\newtcolorbox{examplebox}[1]{
+    colback=gray!5!white,
+    colframe=gray!75!black,
+    fonttitle=\bfseries,
+    title=#1,
+    breakable
+}
+
+% --- HYPERREF (最后加载) ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Microeconomics Notes},
+    pdfpagemode=FullScreen,
+}
