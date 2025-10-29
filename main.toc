@@ -77,3 +77,31 @@
 \contentsline {subsection}{\numberline {9.5.1}The Labor-Leisure Choice}{38}{subsection.9.5.1}%
 \contentsline {subsection}{\numberline {9.5.2}Backward-Bending Labor Supply Curve}{39}{subsection.9.5.2}%
 \contentsline {subsection}{\numberline {9.5.3}Overtime}{39}{subsection.9.5.3}%
+\contentsline {chapter}{\numberline {10}Intertemporal Choice}{41}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduction}{41}{section.10.1}%
+\contentsline {section}{\numberline {10.2}The Budget Constraint for Intertemporal Choice}{41}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Present and Future Value}{41}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Constructing the Intertemporal Budget Constraint}{42}{subsection.10.2.2}%
+\contentsline {paragraph}{Case 1: The Lender (Saver)}{42}{section*.5}%
+\contentsline {paragraph}{Case 2: The Borrower}{42}{section*.6}%
+\contentsline {subsection}{\numberline {10.2.3}Inflation and the Real Interest Rate}{43}{subsection.10.2.3}%
+\contentsline {section}{\numberline {10.3}Optimal Choice and Comparative Statics}{44}{section.10.3}%
+\contentsline {paragraph}{Case 1: The Lender (Saver)}{44}{section*.7}%
+\contentsline {paragraph}{Case 2: The Borrower}{44}{section*.8}%
+\contentsline {subsection}{\numberline {10.3.1}The Slutsky Equation and Intertemporal Choice}{44}{subsection.10.3.1}%
+\contentsline {section}{\numberline {10.4}Valuing Streams of Payments}{45}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Applications: Valuing Assets}{45}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}Bonds}{46}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}Perpetuities (Consols)}{46}{subsection.10.5.2}%
+\contentsline {section}{\numberline {10.6}Conclusion: The Right Interest Rate}{47}{section.10.6}%
+\contentsline {chapter}{\numberline {11}Asset Markets}{49}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Introduction to Assets}{49}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Arbitrage}{49}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}The No-Arbitrage Condition and Rates of Return}{50}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Applications of the No-Arbitrage Condition}{50}{subsection.11.2.2}%
+\contentsline {section}{\numberline {11.3}Optimal Holding Time: When to Sell an Asset}{52}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Application: When to Cut a Forest}{53}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Continuous Time and Optimal Harvesting}{53}{subsection.11.3.2}%
+\contentsline {section}{\numberline {11.4}Asset Bubbles}{53}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Depletable Resources}{54}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Financial Intermediaries}{54}{section.11.6}%
