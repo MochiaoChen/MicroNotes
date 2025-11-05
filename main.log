@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.10.21)  29 OCT 2025 11:44
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.11.1)  5 NOV 2025 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,7 +926,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 83.
 ux)
 (./chapters/chap4.aux) (./chapters/chap5.aux) (./chapters/chap6.aux)
 (./chapters/chap7.aux) (./chapters/chap8.aux) (./chapters/chap9.aux)
-(./chapters/chap10.aux) (./chapters/chap11.aux))
+(./chapters/chap10.aux) (./chapters/chap11.aux) (./chapters/chap12.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1191,20 +1191,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 ) [4
 
-]
-Runaway argument?
-{Beneath the curve where want and wisdom meet,\\ Desire bends softly \ETC.
-! Paragraph ended before \MT@temp was complete.
-<to be read again> 
-                   \par 
-l.114 
-      
-? 
-! Extra }, or forgotten \endgroup.
-l.126 ...e freedom bends, yet harmony lies still.}
-                                                  
-? 
-[5
+] [5
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/sl' in size <10> not avai
@@ -1213,18 +1200,18 @@ lable
 t line 144.
  [6
 
-] (./main.toc [7] [8])
+]
+(./main.toc [7] [8] [9])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [9] [10
-
-]
+ [10]
 \openout2 = `chapters/chap1.aux'.
 
  (./chapters/chap1.tex
 Chapter 1.
 [1
+
 
 
 ]) [2]
@@ -1392,18 +1379,45 @@ Chapter 11.
 [49] [50]
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 78.
+reak' or set page breaks manually on input line 79.
 
-[51] [52] [53] [54]) [55] [56
+[51] [52] [53] [54]) [55]
+\openout2 = `chapters/chap12.aux'.
+
+ (./chapters/chap12.tex [56
+
 
 
 
 ]
-No file main.ind.
-(./main.aux (./chapters/chap1.aux) (./chapters/chap2.aux) (./chapters/chap3.aux
-) (./chapters/chap4.aux) (./chapters/chap5.aux) (./chapters/chap6.aux)
+Chapter 12.
+[57] [58]
+Overfull \hbox (34.35568pt too wide) in paragraph at lines 90--91
+[][]\TU/TeXGyreTermes(0)/b/n/10 Definition 12.3 \TU/TeXGyreTermes(0)/m/n/10 (Ex
+pected Utility)\TU/TeXGyreTermes(0)/b/n/10 . []\TU/TeXGyreTermes(0)/m/it/10 Sup
+pose a consumer faces a set of outcomes $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 c[]
+; c[]; [] ; c[]\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (13.84117pt too wide) in paragraph at lines 96--97
+[]\TU/TeXGyreTermes(0)/m/n/10 The function $\OML/cmm/m/it/10 U\OT1/cmr/m/n/10 (
+\OMS/cmsy/m/n/10 ^^A\OT1/cmr/m/n/10 )$ \TU/TeXGyreTermes(0)/m/n/10 is called th
+e von Neumann-Morgenstern utility function, or Bernoulli
+ []
+
+[59] [60] [61] [62] [63]) [64] (./main.ind [65
+
+
+
+
+] [66
+
+]) (./main.aux
+(./chapters/chap1.aux) (./chapters/chap2.aux) (./chapters/chap3.aux)
+(./chapters/chap4.aux) (./chapters/chap5.aux) (./chapters/chap6.aux)
 (./chapters/chap7.aux) (./chapters/chap8.aux) (./chapters/chap9.aux)
-(./chapters/chap10.aux) (./chapters/chap11.aux))
+(./chapters/chap10.aux) (./chapters/chap11.aux) (./chapters/chap12.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1412,16 +1426,22 @@ L3 programming layer <2024-01-22>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8521C2F74C3936DD4EB35B5797C02428;18878.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 25D8270738E2A835176656739E23CE0C;21763
+(rerunfilecheck)             After:  E9D15D2536A9022DD127ACD6F72E34D4;21839.
  ) 
 Here is how much of TeX's memory you used:
- 31689 strings out of 476443
- 685093 string characters out of 5793961
+ 31745 strings out of 476415
+ 686441 string characters out of 5792682
  1936627 words of memory out of 5000000
- 53004 multiletter control sequences out of 15000+600000
+ 53057 multiletter control sequences out of 15000+600000
  566307 words of font info for 109 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  106i,10n,110p,1001b,983s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (66 pages).
+Output written on main.pdf (76 pages).

@@ -105,3 +105,19 @@
 \contentsline {section}{\numberline {11.4}Asset Bubbles}{53}{section.11.4}%
 \contentsline {section}{\numberline {11.5}Depletable Resources}{54}{section.11.5}%
 \contentsline {section}{\numberline {11.6}Financial Intermediaries}{54}{section.11.6}%
+\contentsline {chapter}{\numberline {12}Uncertainty}{57}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Introduction}{57}{section.12.1}%
+\contentsline {section}{\numberline {12.2}State-Contingent Consumption}{57}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Contingent Consumption Plans}{58}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}The Budget Constraint with Insurance}{58}{subsection.12.2.2}%
+\contentsline {section}{\numberline {12.3}Preferences Under Uncertainty}{59}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Risk Attitudes}{60}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Indifference Curves for State-Contingent Plans}{60}{subsection.12.3.2}%
+\contentsline {section}{\numberline {12.4}Optimal Choice and Insurance}{61}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Fair Insurance}{61}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Unfair Insurance}{62}{subsection.12.4.2}%
+\contentsline {section}{\numberline {12.5}Risk Management Strategies}{62}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Diversification}{62}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}Risk Spreading and the Role of the Stock Market}{63}{subsection.12.5.2}%
+\contentsline {section}{\numberline {12.6}Measures of Risk Aversion}{63}{section.12.6}%
+\contentsline {chapter}{Index}{65}{equation.12.6.8}%
