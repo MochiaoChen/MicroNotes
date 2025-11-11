@@ -1,0 +1,198 @@
+% ===================================================================
+% Chapter 11: Asset Markets
+% ===================================================================
+
+\chapter{Asset Markets}\label{chap:asset_markets}
+
+\section{Introduction to Assets}
+
+We begin by defining what an asset is in the context of economics.
+
+\begin{definition}[Asset]
+An \textbf{\index{asset}asset} is a commodity that provides a flow of services or payments over time.
+\end{definition}
+
+\begin{itemize}
+    \item Physical assets, like a house or a computer, provide a flow of services (shelter, computing power).
+    \item A \textbf{\index{financial asset}financial asset}, often called a \index{security}security, provides a flow of money over time. Examples include stocks and bonds.
+\end{itemize}
+
+Typically, the future services or payments from an asset are uncertain. However, incorporating uncertainty into economic models is complex. For this introductory chapter, we will make a strong simplifying assumption.
+
+\begin{remark}[Perfect Certainty]
+Throughout this chapter, we will assume that the future is known with \textbf{\index{perfect certainty}perfect certainty}. This means all future prices, payments, and interest rates are known today.
+\end{remark}
+
+\section{Arbitrage}
+
+Under the assumption of perfect certainty, a powerful principle emerges that governs the pricing of assets: the principle of no arbitrage.
+
+\begin{definition}[Arbitrage]
+\textbf{\index{Arbitrage}Arbitrage} is the practice of buying and selling equivalent assets to profit from a difference in their price. It involves trading for profit in commodities that are not intended for immediate consumption.
+\end{definition}
+
+With no uncertainty, any and all opportunities for risk-free profit will be immediately exploited by traders. This activity, in turn, eliminates the profit opportunities that gave rise to it. The implication is that in a well-functioning market, there can be no opportunities for arbitrage. This is often called the \textbf{\index{no-arbitrage principle}no-arbitrage principle}.
+
+\subsection{The No-Arbitrage Condition and Rates of Return}
+
+Let's consider a simple asset. Let its price today be $p_0$ and its price tomorrow be $p_1$. The \textbf{\index{rate of return}rate of return}, $R$, from holding this asset for one period is the change in its price as a fraction of its initial price:
+\begin{equation}
+    R = \frac{p_1 - p_0}{p_0}
+\end{equation}
+Rearranging this equation gives us the relationship between today's price, tomorrow's price, and the rate of return:
+\begin{equation}
+    p_1 = p_0 + R p_0 = (1 + R)p_0
+\end{equation}
+
+Now, consider an alternative investment. You could sell the asset today for $p_0$ and deposit the money in a bank to earn a risk-free interest rate, $r$. Tomorrow, you would have $(1+r)p_0$.
+
+The principle of arbitrage helps us determine the equilibrium relationship between $R$ and $r$.
+\begin{itemize}
+    \item If $R > r$, the return from holding the asset is greater than the return from the bank. Everyone would want to buy the asset, driving its price $p_0$ up. This increase in $p_0$ would lower the rate of return $R = (p_1/p_0) - 1$ until the inequality no longer holds.
+    \item If $R < r$, the return from the bank is higher. Everyone would want to sell the asset and deposit the money in the bank. This would drive the price $p_0$ down, increasing the rate of return $R$ until the inequality is eliminated.
+\end{itemize}
+
+Therefore, in equilibrium, all assets must earn the same risk-free rate of return:
+\begin{equation}
+    R = r
+\end{equation}
+This is the fundamental \textbf{no-arbitrage condition}. It implies that for any asset:
+\begin{equation}
+    p_1 = (1 + r)p_0
+\end{equation}
+This equation states that the price of the asset tomorrow is simply the future value of its price today. Equivalently, we can express today's price in terms of tomorrow's price:
+\begin{equation*}
+    p_0 = \frac{p_1}{1+r}
+\end{equation*}
+This means that today's price must be the \textbf{present value} of tomorrow's price.
+
+\subsection{Applications of the No-Arbitrage Condition}
+
+\begin{examplebox}{Arbitrage in Bonds}
+
+Bonds are financial assets that promise a fixed stream of payments. A common question is: why do the market prices of existing bonds fall when the interest rate paid by banks rises?
+
+A bond's fixed payments mean that its rate of return, $R$, is inversely related to its market price, $p_0$. Suppose initially the market is in equilibrium, so the bond's return equals the bank interest rate, $R = r'$.
+
+Now, suppose the bank interest rate rises to $r'' > r'$. At the current market price of the bond, its return $R$ is now less than the new bank rate ($R < r''$). Arbitrageurs will sell the bond to move their money to the bank. This massive selling pressure on bonds causes their market prices to fall. The price of bonds will continue to fall until their rate of return, $R$, rises to meet the new, higher interest rate $r''$.
+
+\end{examplebox}
+
+\begin{examplebox}{Taxation of Asset Returns}
+The no-arbitrage principle implies that the \textit{\index{after-tax}after-tax} rates of return of all assets must be equal. Let $r_b$ be the before-tax rate of return on a taxable asset (like a corporate bond) and $r_e$ be the rate of return on a tax-exempt asset (like a municipal bond). Let the tax rate on interest income be $t$.
+
+The after-tax return on the taxable asset is $(1-t)r_b$. For an investor to be indifferent between the two assets, their after-tax returns must be equal:
+\begin{equation}
+    (1 - t) r_b = r_e
+\end{equation}
+\end{examplebox}
+
+\begin{examplebox}{Assets with Consumption Returns}
+Some assets, like a house, provide returns in two forms: a monetary return (appreciation) and a consumption return (the value of living in it, or the implicit rent). The total rate of return must equal the market interest rate in equilibrium.
+
+Let:
+\begin{itemize}
+    \item $P$ = Initial price (investment)
+    \item $A$ = Appreciation (capital gain over one year)
+    \item $T$ = Implicit rental value for one year
+\end{itemize}
+The total rate of return, $h$, is the sum of the financial and consumption returns, divided by the initial investment:
+\begin{equation}
+    h = \frac{A + T}{P}
+\end{equation}
+In equilibrium, this total return must equal the opportunity cost of the funds, i.e., the market interest rate:
+\begin{equation}
+    \frac{A + T}{P} = r
+\end{equation}
+\end{examplebox}
+
+\section{Optimal Holding Time: When to Sell an Asset}
+
+The no-arbitrage principle can also tell us the optimal time to sell an asset whose value changes over time.
+
+\begin{examplebox}{When to Sell an Asset}
+Suppose the value of an asset (e.g., a painting, a plot of land) at time $t$ is given by the function $V(t)$. The owner's alternative is to sell the asset and invest the proceeds in a bank at a constant interest rate $r$. When should they sell?
+
+The asset itself is like a savings account, but its rate of return changes over time. The instantaneous rate of return from holding the asset at time $t$ is the rate of growth of its value, which is $\frac{V'(t)}{V(t)}$.
+
+The optimal rule is to hold the asset as long as its rate of return is greater than the market interest rate and sell it at the exact moment its rate of return falls to the market interest rate. The optimal time to sell, $t^*$, is when:
+\begin{equation}
+    \frac{V'(t^*)}{V(t^*)} = r
+\end{equation}
+
+Let's consider a specific function: $V(t) = -1000 + 1000t - 10t^2$. The derivative is $V'(t) = 1000 - 20t$. Suppose the market interest rate is $r=0.10$ (or 10\%). We need to solve:
+\begin{equation*}
+    \frac{1000 - 20t}{-1000 + 1000t - 10t^2} = 0.1
+\end{equation*}
+Solving this equation yields $t=10$.
+
+At $t=10$, the value of the asset is $V(10) = \$8,000$. Note that the asset's value is maximized at $t=50$, where $V(50) = \$24,000$. Why sell so early?
+
+Because at $t=10$, the asset's value is growing at exactly 10\%. After this point, its growth rate will be less than 10\%. If you sell at $t=10$ for \$8,000 and invest this amount at 10\% for the next 40 years, at $t=50$ you will have:
+\begin{equation*}
+    \$8,000 \times (1 + 0.1)^{40} \approx \$362,074
+\end{equation*}
+This amount is vastly greater than the \$24,000 you would have by holding the asset until its peak value. The optimal strategy is to harvest the high returns from the asset early and then switch to the market investment once the asset's return diminishes.
+\end{examplebox}
+
+\subsection{Application: When to Cut a Forest}
+This same logic applies to renewable resources. Let $F(t)$ be the volume (and thus value, assuming a constant price) of lumber in a forest. The rate of growth of the forest is $\frac{F'(t)}{F(t)}$. The optimal time to harvest the forest, $T$, is when its biological rate of growth equals the financial rate of return (the interest rate).
+\begin{equation}
+    \frac{F'(T)}{F(T)} = r
+\end{equation}
+
+\subsection{Continuous Time and Optimal Harvesting}
+The analysis is more formally done in continuous time. The present value of harvesting a forest of value $F(T)$ at time $T$ is given by $V(T) = F(T)e^{-rT}$, where $r$ is the continuously compounded interest rate. To find the time $T$ that maximizes this present value, we set the derivative with respect to $T$ equal to zero:
+\begin{align}
+    \frac{dV(T)}{dT} = F'(T)e^{-rT} - rF(T)e^{-rT} &= 0 \\
+    F'(T) - rF(T) &= 0 \\
+    r &= \frac{F'(T)}{F(T)}
+\end{align}
+This confirms our earlier result: the optimal harvest time is when the resource's growth rate equals the interest rate.
+
+
+\section{Asset Bubbles}
+The no-arbitrage condition assumes that prices are based on the fundamental value of an asset (the present value of its future payments or services). Sometimes, however, prices seem to disconnect from these fundamentals.
+
+\begin{definition}[Asset Bubble]
+An \textbf{\index{asset bubble}asset bubble} occurs when the price of an asset is pushed to an unreasonably high level, driven by expectations of future price increases rather than its fundamental value.
+\end{definition}
+
+In a bubble, an initial price increase leads people to expect further increases. This expectation boosts demand, which pushes the price up even more rapidly, creating a self-fulfilling cycle for a period.
+
+\begin{itemize}
+    \item \textbf{Economic Fundamentals}: The key to identifying a potential bubble is to compare the market price to the asset's fundamental value. For a house, the fundamental value is the present value of the stream of rental services it provides.
+    \item \textbf{Key Indicators}:
+    \begin{enumerate}
+        \item \textbf{\index{Price-to-Rent Ratio}Price-to-Rent Ratio}: The ratio of a house's price to its annual rental rate. A very high ratio suggests prices are detached from the fundamental rental value. If the interest rate is $r$ and annual rent is $R_{annual}$, the fundamental price is $P_{fundamental} = R_{annual}/r$. The fundamental price-to-rent ratio is simply $1/r$. If the market price-to-rent ratio is significantly higher than $1/r$, it could signal a bubble.
+        \item \textbf{\index{Price-to-Income Ratio}Price-to-Income Ratio}: The ratio of median house prices to median income. This is a measure of affordability and can indicate when prices have become unsustainable for the general population.
+    \end{enumerate}
+\end{itemize}
+
+All bubbles eventually burst. When they do, prices fall rapidly, and those who bought at the peak are left with assets worth much less than they paid. The belief that "this time is different" is a common and hazardous feature of bubble psychology.
+
+\section{Depletable Resources}
+
+How should the price of a finite,\index{depletable resource}depletable resource (like oil) change over time? We can think of oil in the ground as an asset. The owner of the oil must decide whether to extract and sell it today or leave it in the ground for the future.
+
+By the no-arbitrage principle, the owner must be indifferent between these two options.
+\begin{itemize}
+    \item Option 1: Extract and sell one unit today at price $p_t$. Invest the proceeds at rate $r$. Next year, this will be worth $p_t(1+r)$.
+    \item Option 2: Leave the unit in the ground and sell it next year at price $p_{t+1}$.
+\end{itemize}
+For equilibrium, these must be equal: $p_{t+1} = p_t(1+r)$. This result is known as \textbf{\index{Hotelling's rule}Hotelling's rule}. It states that the price of a depletable resource must grow at the rate of interest.
+
+We can examine oil prices more closely. Suppose the price of the last barrel of oil in the ground is \(P_T\), and the time when the oil is exhausted is \(T\). By applying Hotelling's rule backward, we can express the price of oil at any earlier time \(t\) as:
+\[
+p_0 = \frac{p_T}{(1+r)^{T-0}} \quad \Rightarrow \quad p_t = \frac{p_T}{(1+r)^{T-t}}
+\]
+
+This helps explain why news that affects the \textit{future} supply of a resource can cause its \textit{current} price to jump immediately. If news (e.g., a war or natural disaster) suggests that oil will be scarcer in the future, the entire expected future price path must be higher. For the no-arbitrage condition to hold along this new, higher path, today's price must also jump up immediately.
+
+\section{Financial Intermediaries}
+
+In a modern economy, financial institutions exist to help people reallocate their consumption and wealth over time.
+\begin{itemize}
+    \item \textbf{\index{banks}Banks}: Banks act as intermediaries between savers and borrowers. For example, they can take the savings of an older individual who desires a steady stream of income and lend it as a lump sum to a younger individual who wants to buy a house. Both parties are better off.
+    \item \textbf{\index{stock market}Stock Market}: The stock market allows successful entrepreneurs to convert their ownership of a firm (a claim on a future stream of profits) into a lump-sum payment by selling shares. In turn, it allows investors with lump sums of money to purchase a share of that future profit stream. In this way, both sides of the market can reallocate their wealth across time to better suit their needs.
+\end{itemize}

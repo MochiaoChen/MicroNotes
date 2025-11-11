@@ -1,0 +1,272 @@
+\chapter{Uncertainty}
+\label{chap:uncertainty}
+
+\section{Introduction}
+
+In the preceding chapters, we analyzed consumer choice in a world of certainty. Consumers knew the prices of goods, their income, and the quality of the products they were purchasing. However, many, if not most, economic decisions are made under conditions of \index{Uncertainty}uncertainty. For example, when you invest in the stock market, you are uncertain about the future returns. When you buy a car, you are uncertain about its reliability and potential repair costs.
+
+This chapter extends our model of consumer choice to handle uncertainty. We will follow a familiar structure:
+\begin{itemize}
+    \item First, we will describe the budget constraint of a consumer facing uncertain outcomes. This involves introducing the concept of \textbf{state-contingent consumption}\index{Consumption!state-contingent}.
+    \item Second, we will model preferences over these uncertain outcomes using the \textbf{Expected Utility Theorem}\index{Expected Utility}.
+    \item Finally, we will combine the budget constraint and preferences to determine the consumer's optimal choice, with a particular focus on the market for insurance.
+\end{itemize}
+
+Uncertainty is a pervasive feature of economic life, affecting decisions about savings, career paths, and even simple purchases. Rational responses to uncertainty include actions like buying insurance or diversifying investments, which we will explore in detail.
+
+\section{State-Contingent Consumption}
+\label{sec:contingent_consumption}
+
+To analyze choice under uncertainty, we first need a way to describe the different possible outcomes an individual might face.
+
+\begin{definition}[States of Nature]
+A \textbf{state of nature}\index{State of nature} is a complete and mutually exclusive description of a possible outcome of an uncertain event. The set of all possible states of nature exhausts all possibilities.
+\end{definition}
+
+For example, if we are considering the risk of a car accident, there are two relevant states of nature: "accident occurs" and "no accident occurs". Let's denote the "accident" state as state $a$ and the "no accident" state as state $na$.
+
+Let $\pi_a$ be the probability that an accident occurs, and $\pi_{na}$ be the probability that no accident occurs. Since these are the only two possibilities, we must have $\pi_a + \pi_{na} = 1$. Suppose an accident results in a monetary loss of $\$L$.
+
+\subsection{Contingent Consumption Plans}
+
+A consumer's consumption may depend on which state of nature occurs. A consumption plan that specifies consumption levels for each possible state of nature is called a \textbf{state-contingent consumption plan}\index{Consumption!state-contingent plan}.
+
+\begin{definition}[State-Contingent Consumption Good]
+A \textbf{state-contingent consumption good}\index{Consumption!state-contingent good} is a good that is delivered only if a specific state of nature occurs. For example, "\$1 if an accident occurs" is a different commodity from "\$1 if no accident occurs".
+\end{definition}
+
+We can think of the consumer choosing a bundle of state-contingent consumption goods. Let $C_a$ be the consumption value in the accident state and $C_{na}$ be the consumption value in the no-accident state. A consumption plan is then a bundle $(C_a, C_{na})$.
+
+\subsection{The Budget Constraint with Insurance}
+\label{ssec:budget_insurance}
+
+Insurance is a common tool for managing risk. An insurance contract is a prime example of a state-contingent plan: the payout occurs only if the specified adverse event (like an accident) happens.
+
+Let's construct the consumer's budget constraint. Assume:
+\begin{itemize}
+    \item The consumer has initial wealth of $\$m$.
+    \item An accident causes a loss of $\$L$.
+    \item The consumer can buy insurance. The price of \$1 of insurance coverage is $\gamma$. Let's say the consumer buys $\$K$ of coverage. The total cost of this insurance is $\gamma K$.
+\end{itemize}
+
+Without any insurance, the consumer's state-contingent consumption bundle is their \textbf{endowment point}:
+\begin{align*}
+    C_a &= m - L \\
+    C_{na} &= m
+\end{align*}
+
+Now, suppose the consumer buys $\$K$ of insurance. The premium $\gamma K$ must be paid regardless of the state of nature. If an accident occurs, the consumer receives a payout of $\$K$ from the insurance company.
+The consumption in each state is now:
+\begin{align}
+    C_{na} &= m - \gamma K \label{eq:c_na_k} \\
+    C_a &= m - L - \gamma K + K = m - L + (1-\gamma)K \label{eq:c_a_k}
+\end{align}
+
+To derive the budget constraint in terms of $C_a$ and $C_{na}$, we can eliminate $K$ from these two equations. From \eqref{eq:c_a_k}, we can solve for $K$:
+\[
+K = \frac{C_a - m + L}{1 - \gamma}
+\]
+Substituting this expression for $K$ into \eqref{eq:c_na_k} gives:
+\[
+C_{na} = m - \gamma \left( \frac{C_a - m + L}{1 - \gamma} \right)
+\]
+Rearranging this equation to express $C_{na}$ as a function of $C_a$ yields the budget line:
+\begin{equation}
+    C_{na} = \frac{m(1-\gamma) + \gamma(m-L)}{1-\gamma} - \frac{\gamma}{1-\gamma} C_a = \frac{m - \gamma L}{1-\gamma} - \frac{\gamma}{1-\gamma} C_a
+    \label{eq:contingent_budget}
+\end{equation}
+This is a linear equation in the $(C_a, C_{na})$ space. The slope of the \index{Budget constraint!state-contingent}state-contingent budget constraint is:
+\[
+\text{Slope} = -\frac{\gamma}{1-\gamma}
+\]
+The budget line passes through the consumer's initial endowment point $(m-L, m)$, as purchasing zero insurance ($K=0$) is always an option.
+
+\section{Preferences Under Uncertainty}
+\label{sec:preferences_uncertainty}
+
+How do consumers evaluate different state-contingent consumption plans? The standard model for this is the \textbf{von Neumann-Morgenstern expected utility theory}\index{Expected utility!von Neumann-Morgenstern}.
+
+\begin{definition}[Expected Utility]
+Suppose a consumer faces a set of outcomes $\{c_1, c_2, \dots, c_n\}$ with corresponding probabilities $\{\pi_1, \pi_2, \dots, \pi_n\}$, where $\sum \pi_i = 1$. The consumer has a utility function over certain outcomes, $U(c)$. The \textbf{expected utility}\index{Expected utility} (EU) of this uncertain prospect is the probability-weighted average of the utilities of each outcome:
+\begin{equation}
+    EU = \sum_{i=1}^{n} \pi_i U(c_i)
+\end{equation}
+\end{definition}
+
+The function $U(\cdot)$ is called the von Neumann-Morgenstern utility function, or Bernoulli utility function. It measures the utility of wealth in a given state, while $EU$ measures the utility of the uncertain prospect as a whole.
+
+\subsection{Risk Attitudes}
+\label{ssec:risk_attitudes}
+
+We can classify individuals based on their preferences toward risk by comparing the utility of the expected value of a gamble with the expected utility of the gamble itself.
+
+Consider a simple lottery that pays \$90 with probability 1/2 and \$0 with probability 1/2.
+\begin{itemize}
+    \item The \textbf{expected monetary value}\index{Expected monetary value} (EMV) is $EM = \frac{1}{2}(\$90) + \frac{1}{2}(\$0) = \$45$.
+    \item The \textbf{expected utility}\index{Expected utility} is $EU = \frac{1}{2}U(\$90) + \frac{1}{2}U(\$0)$.
+\end{itemize}
+We can compare $U(\$45)$, the utility of getting the expected value for sure, with $EU$.
+
+\begin{definition}[Risk Attitudes]\index{Risk attitudes}
+An individual's attitude toward risk is characterized as follows:
+\begin{itemize}
+    \item \textbf{Risk Aversion}\index{Risk aversion}: If $U(EM) > EU$. The individual prefers the certain expected value to the gamble. This occurs when the utility function $U(w)$ is strictly concave ($U''(w) < 0$), which implies diminishing marginal utility of wealth.
+    \item \textbf{Risk Loving}\index{Risk loving}: If $U(EM) < EU$. The individual prefers the gamble to the certain expected value. This occurs when the utility function $U(w)$ is strictly convex ($U''(w) > 0$), implying increasing marginal utility of wealth.
+    \item \textbf{Risk Neutrality}\index{Risk neutrality}: If $U(EM) = EU$. The individual is indifferent between the gamble and the certain expected value. This occurs when the utility function $U(w)$ is linear ($U''(w) = 0$), implying constant marginal utility of wealth.
+\end{itemize}
+\end{definition}
+
+Most economic analysis assumes that individuals are risk-averse, which aligns with behaviors like buying insurance.
+
+\subsection{Indifference Curves for State-Contingent Plans}
+
+An indifference curve represents all bundles $(C_a, C_{na})$ that provide the same level of expected utility. For our two-state example, the expected utility is:
+\[
+EU(C_a, C_{na}) = \pi_a U(C_a) + \pi_{na} U(C_{na})
+\]
+To find the slope of an indifference curve, we take the total differential and set it to zero ($dEU=0$):
+\[
+dEU = \pi_a U'(C_a) dC_a + \pi_{na} U'(C_{na}) dC_{na} = 0
+\]
+Rearranging this gives the slope, which is the Marginal Rate of Substitution (MRS)\index{Marginal Rate of Substitution (MRS)!under uncertainty} between consumption in the two states:
+\begin{equation}
+    MRS = \frac{dC_{na}}{dC_a} = - \frac{\pi_a U'(C_a)}{\pi_{na} U'(C_{na})} = - \frac{\pi_a MU(C_a)}{\pi_{na} MU(C_{na})}
+\end{equation}
+The MRS depends on both the probabilities of the states and the marginal utility of consumption in each state. For a risk-averse individual, the indifference curves are convex to the origin.
+
+\section{Optimal Choice and Insurance}
+\label{sec:optimal_choice_insurance}
+
+A rational consumer will choose the state-contingent consumption plan that maximizes their expected utility, given their budget constraint. The optimal choice is found at the tangency point between an indifference curve and the state-contingent budget line.
+
+At the optimal bundle $(C_a^*, C_{na}^*)$, the slope of the indifference curve equals the slope of the budget line:
+\[
+MRS = \text{Slope of Budget Line}
+\]
+\begin{equation}
+    - \frac{\pi_a MU(C_a^*)}{\pi_{na} MU(C_{na}^*)} = - \frac{\gamma}{1-\gamma}
+\end{equation}
+This simplifies to the fundamental optimality condition for choice under uncertainty:
+\begin{equation}
+    \frac{\pi_a MU(C_a^*)}{\pi_{na} MU(C_{na}^*)} = \frac{\gamma}{1-\gamma}
+    \label{eq:optimality_condition}
+\end{equation}
+
+\subsection{Fair Insurance}
+\label{ssec:fair_insurance}
+
+In a perfectly competitive insurance market, entry is free, and firms are expected to make zero economic profit in the long run. The expected profit for an insurance company from selling a policy with coverage $\$K$ at price $\gamma K$ is:
+\[
+\text{Expected Profit} = \gamma K - (\pi_a \cdot K + \pi_{na} \cdot 0) = (\gamma - \pi_a)K
+\]
+For expected profit to be zero, the price of \$1 of coverage must equal the probability of the loss: $\gamma = \pi_a$. An insurance policy with this pricing is called \textbf{actuarially fair insurance}\index{Insurance!fair}.
+
+If insurance is fair ($\gamma = \pi_a$), then $1-\gamma = 1-\pi_a = \pi_{na}$. The optimality condition \eqref{eq:optimality_condition} becomes:
+\[
+\frac{\pi_a MU(C_a^*)}{\pi_{na} MU(C_{na}^*)} = \frac{\pi_a}{\pi_{na}}
+\]
+This simplifies to:
+\[
+MU(C_a^*) = MU(C_{na}^*)
+\]
+For a risk-averse individual, marginal utility is diminishing. Therefore, the only way for the marginal utilities to be equal is if the consumption levels are equal:
+\[
+C_a^* = C_{na}^*
+\]
+
+\begin{proposition}
+A risk-averse consumer facing fair insurance will always choose to \textbf{fully insure}\index{Insurance!full}, equalizing their consumption across all possible states of nature.
+\end{proposition}
+
+Full insurance means buying coverage equal to the potential loss, $K=L$. We can verify this by setting $C_a = C_{na}$:
+\begin{align*}
+    m - L + (1-\gamma)K &= m - \gamma K \\
+    -L + K - \gamma K &= -\gamma K \\
+    K &= L
+\end{align*}
+
+\subsection{Unfair Insurance}
+\label{ssec:unfair_insurance}
+
+In reality, insurance companies have administrative costs and aim to make a profit. This means the price of insurance is typically "unfair" in the sense that $\gamma > \pi_a$. In this case, the insurance company makes a positive expected profit.
+
+If $\gamma > \pi_a$, then it can be shown that $\frac{\gamma}{1-\gamma} > \frac{\pi_a}{\pi_{na}}$. The optimality condition \eqref{eq:optimality_condition} now implies:
+\[
+\frac{\pi_a MU(C_a^*)}{\pi_{na} MU(C_{na}^*)} > \frac{\pi_a}{\pi_{na}} \implies \frac{MU(C_a^*)}{MU(C_{na}^*)} > 1
+\]
+So, we must have $MU(C_a^*) > MU(C_{na}^*)$. For a risk-averse individual, this means consumption in the accident state is lower than in the no-accident state:
+\[
+C_a^* < C_{na}^*
+\]
+
+\begin{proposition}
+A risk-averse consumer facing unfair insurance ($\gamma > \pi_a$) will purchase some insurance but will not fully insure. They will choose a point where consumption is higher in the "good" state than in the "bad" state.
+\end{proposition}
+
+\section{Risk Management Strategies}
+\label{sec:risk_management}
+
+Besides insurance, individuals and firms use other strategies to manage risk, most notably diversification and risk spreading.
+
+\subsection{Diversification}
+\label{ssec:diversification}
+
+The principle of \textbf{diversification}\index{Diversification} states that one should not "put all their eggs in one basket." By spreading investment across multiple assets whose returns are not perfectly positively correlated, an investor can reduce the overall risk of their portfolio.
+
+\begin{examplebox}{Example: Diversification}
+Consider two firms, A and B. A share in either costs \$10. You have \$100 to invest. There are two states of nature, each with probability 1/2.
+\begin{itemize}
+    \item State 1: A's profit is \$100, B's profit is \$20.
+    \item State 2: A's profit is \$20, B's profit is \$100.
+\end{itemize}
+If you buy 10 shares of A, your earnings are \$1000 in State 1 and \$200 in State 2. The expected earning is \$600.
+If you buy 5 shares of A and 5 shares of B, your portfolio is diversified.
+\begin{itemize}
+    \item In State 1, your earning is $5 \times (\$100/10) + 5 \times (\$20/10) = \$500 + \$100 = \$600$.
+    \item In State 2, your earning is $5 \times (\$20/10) + 5 \times (\$100/10) = \$100 + \$500 = \$600$.
+\end{itemize}
+With diversification, you earn \$600 for sure. You have maintained the same expected earning while completely eliminating the risk. This powerful result occurs because the returns of the assets are perfectly negatively correlated. More generally, diversification reduces risk as long as asset returns are not perfectly positively correlated.
+\end{examplebox}
+
+\subsection{Risk Spreading and the Role of the Stock Market}
+\label{ssec:risk_spreading}
+
+\textbf{Risk spreading}\index{Risk spreading} involves sharing a risk among a large number of people, so that the potential impact on any single individual is small. Mutual insurance is a form of risk spreading. If 100 people each face a 1\% chance of a \$10,000 loss, the expected loss per person is \$100. By each contributing \$100 to a common fund, they can cover the loss of any member who is unlucky. Each person exchanges a small probability of a large loss for a certain small loss (the \$100 premium), which is a desirable trade for a risk-averse individual.
+
+The \textbf{stock market}\index{Stock market} is a crucial institution for both diversification and risk spreading. It allows:
+\begin{enumerate}
+    \item Entrepreneurs to spread the risk of their enterprise by selling shares to a multitude of investors.
+    \item Investors to diversify their wealth by holding shares in many different companies.
+    \item The transfer of risk from individuals who are more risk-averse to those who are more willing to bear it (risk-tolerant investors or speculators).
+\end{enumerate}
+
+\section{Measures of Risk Aversion}
+\label{sec:measures_risk_aversion}
+
+While the concavity of the utility function indicates risk aversion, it is useful to have more precise measures of *how* risk-averse an individual is.
+
+\begin{definition}[Certainty Equivalent and Risk Premium]
+The \textbf{certainty equivalent}\index{Certainty equivalent} (CE) of a gamble is the amount of certain wealth that provides the same utility as the expected utility of the gamble. It is defined by the equation:
+\[
+U(CE) = E[U(g)]
+\]
+The \textbf{risk premium}\index{Risk premium} (P) is the difference between the expected monetary value of the gamble and its certainty equivalent. It represents the maximum amount an individual would pay to avoid the gamble.
+\[
+P = E[g] - CE
+\]
+For a risk-averse individual, $P > 0$.
+\end{definition}
+
+\begin{definition}[Absolute Risk Aversion]
+The \textbf{Arrow-Pratt measure of absolute risk aversion}\index{Risk aversion!absolute (Arrow-Pratt)} is defined as:
+\begin{equation}
+    R_a(w) = - \frac{U''(w)}{U'(w)}
+\end{equation}
+$R_a(w)$ is a measure of the curvature of the utility function at wealth level $w$. A higher value indicates greater risk aversion.
+\begin{itemize}
+    \item For a risk-averse person, $U'' < 0$, so $R_a(w) > 0$.
+    \item For a risk-loving person, $U'' > 0$, so $R_a(w) < 0$.
+    \item For a risk-neutral person, $U'' = 0$, so $R_a(w) = 0$.
+\end{itemize}
+This measure is useful because it is invariant to positive linear transformations of the utility function.
+\end{definition}

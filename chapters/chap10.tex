@@ -1,0 +1,200 @@
+% ======================================
+% Chapter 10: Intertemporal Choice
+% ======================================
+
+\chapter{Intertemporal Choice}
+\label{chap:intertemporal_choice}
+
+\section{Introduction}
+
+In previous chapters, we analyzed consumer choices among different goods at a single point in time. However, many important economic decisions, such as saving for retirement, taking out a loan for education, or investing in a new project, involve trade-offs over time. \textbf{Intertemporal choice}\index{Intertemporal choice} is the study of how individuals allocate their consumption and resources across different time periods.
+
+In this chapter, we will adapt our existing framework of consumer theory to this new problem. We will treat consumption at different times as different goods and analyze the consumer's decision-making process. The central questions we seek to answer are:
+\begin{itemize}
+    \item How does a consumer choose between consumption today and consumption in the future?
+    - How do interest rates affect the decision to save or borrow?
+    - How can we place a value on streams of payments that occur over time?
+\end{itemize}
+
+\section{The Budget Constraint for Intertemporal Choice}
+
+To analyze the choice problem, we first need to understand the consumer's budget constraint. We will start with a simple two-period model. Let's denote consumption in period 1 as $c_1$ and consumption in period 2 as $c_2$. Similarly, the consumer receives income $m_1$ in period 1 and $m_2$ in period 2. This income bundle, $(m_1, m_2)$, is called the consumer's \textbf{endowment}\index{Endowment}.
+
+For now, let's assume the price of consumption is normalized to 1 in both periods, so $p_1 = p_2 = 1$. The key variable that connects the two periods is the interest rate.
+
+\subsection{Present and Future Value}
+
+Before constructing the budget constraint, we must understand the concepts of present and future value, which are essential tools for comparing money across time. Let $r$ be the interest rate per period.
+
+\begin{definition}[Future Value]
+The \textbf{Future Value (FV)}\index{Future Value (FV)} of an amount of money is its worth at a specified future date. If you save an amount $\$m$ today at an interest rate $r$, its value one period from now will be:
+\begin{equation}
+    FV = m(1+r)
+\end{equation}
+\end{definition}
+
+\begin{definition}[Present Value]
+The \textbf{Present Value (PV)}\index{Present Value (PV)} of a future amount of money is its equivalent value today. To find the present value of an amount $\$m$ to be received one period from now, we ask: how much money would you need to save today to have $\$m$ in the next period? The answer is:
+\begin{equation}
+    PV = \frac{m}{1+r}
+\end{equation}
+This is because if you save $m/(1+r)$ today, it will grow to $(m/(1+r))(1+r) = m$ in the next period.
+\end{definition}
+
+Paying \$1 today for a promise of \$1 tomorrow is a bad deal, as you could save the \$1 and have $\$(1+r)$ tomorrow. The most you should be willing to pay today for \$1 tomorrow is its present value, $\$1/(1+r)$.
+
+\subsection{Constructing the Intertemporal Budget Constraint}
+
+A consumer can choose to consume their endowment $(m_1, m_2)$ in each period. This is known as the ``Polonius Point,''\index{Polonius Point} from Shakespeare's \textit{Hamlet} (``Neither a borrower, nor a lender be.''). However, consumers can typically transfer resources between periods by saving or borrowing at the interest rate $r$.
+
+\paragraph{Case 1: The Lender (Saver)\index{Lender}\index{Saver}}
+If a consumer's first-period consumption $c_1$ is less than their income $m_1$, they are a saver. The amount saved is $s_1 = m_1 - c_1$. This saving earns interest and can be used for consumption in the second period. The consumption in period 2 will be their income in that period plus the principal and interest from their savings:
+\begin{equation}
+    c_2 = m_2 + (m_1 - c_1)(1+r)
+\end{equation}
+
+\paragraph{Case 2: The Borrower\index{Borrower}}
+If a consumer's first-period consumption $c_1$ is greater than their income $m_1$, they are a borrower. The amount borrowed is $c_1 - m_1$. This loan must be repaid with interest in the second period. Their consumption in period 2 will be their income in that period minus the loan repayment:
+\begin{equation}
+    c_2 = m_2 - (c_1 - m_1)(1+r)
+\end{equation}
+Notice that rearranging this equation yields $c_2 = m_2 + (m_1 - c_1)(1+r)$, which is identical to the saver's equation.
+
+Thus, a single equation describes the trade-off between consumption in the two periods for both savers and borrowers. We can rearrange this equation in two standard forms:
+
+\begin{enumerate}
+    \item \textbf{Future Value Form:} By moving all consumption terms to the left and income terms to the right, we get:
+    \begin{equation}
+        (1+r)c_1 + c_2 = (1+r)m_1 + m_2
+    \end{equation}
+    This equation states that the future value of the consumption stream must equal the future value of the income stream.
+
+    \item \textbf{Present Value Form:} By dividing the future value form by $(1+r)$, we get:
+    \begin{equation}
+        c_1 + \frac{c_2}{1+r} = m_1 + \frac{m_2}{1+r}
+    \end{equation}
+    This equation states that the present value of the consumption stream must equal the present value of the income stream.
+\end{enumerate}
+
+This is the consumer's intertemporal budget constraint.\index{Intertemporal budget constraint} It shows all affordable combinations of $(c_1, c_2)$. Graphically, it is a straight line that passes through the endowment point $(m_1, m_2)$ with a slope of $-(1+r)$. The slope represents the opportunity cost\index{Opportunity cost}: to consume one more unit today, the consumer must give up $(1+r)$ units of consumption tomorrow.
+
+\subsection{Inflation and the Real Interest Rate}
+
+So far, we assumed the price of consumption was 1 in both periods. Let's introduce inflation. Let $p_1 = 1$, but allow the price level in period 2, $p_2$, to be different. The rate of inflation\index{Inflation}, $\pi$, is defined by the relation:
+\begin{equation}
+    p_2 = p_1(1+\pi) = 1+\pi
+\end{equation}
+For example, $\pi = 0.2$ means 20\% inflation.
+
+The budget constraint must now be written in terms of monetary values. The present value of expenditure must equal the present value of income:
+\begin{equation}
+    p_1 c_1 + \frac{p_2 c_2}{1+r} = p_1 m_1 + \frac{p_2 m_2}{1+r}
+\end{equation}
+Substituting $p_1=1$ and $p_2 = 1+\pi$, we get:
+\begin{equation}
+    c_1 + \frac{1+\pi}{1+r} c_2 = m_1 + \frac{1+\pi}{1+r} m_2
+\end{equation}
+The slope of this budget constraint is now $-\frac{1+r}{1+\pi}$. The slope represents the trade-off in terms of \textit{real goods}, not just dollars.
+
+We can define a new variable, the \textbf{real interest rate}\index{Real interest rate} $\rho$, to simplify this expression.
+\begin{definition}[Real Interest Rate]
+The real interest rate $\rho$ is defined such that:
+\begin{equation}
+    1+\rho = \frac{1+r}{1+\pi}
+\end{equation}
+Rearranging gives the \textbf{Fisher Equation}\index{Fisher Equation}:
+\begin{equation}
+    \rho = \frac{r-\pi}{1+\pi}
+\end{equation}
+When inflation $\pi$ is small, this is often approximated as $\rho \approx r - \pi$. The real interest rate measures the return on saving in terms of how many additional goods you can buy in the future.
+\end{definition}
+
+Using the real interest rate, the budget constraint takes on a familiar and intuitive form:
+\begin{equation}
+    c_1 + \frac{c_2}{1+\rho} = m_1 + \frac{m_2}{1+\rho}
+\end{equation}
+The slope of the budget line is simply $-(1+\rho)$.
+
+\section{Optimal Choice and Comparative Statics}
+
+The consumer's problem is to choose the bundle $(c_1, c_2)$ on the budget line that gives the highest utility. Assuming well-behaved preferences, the optimal choice occurs where an indifference curve is tangent to the budget line. At this point, the marginal rate of substitution (MRS)\index{Marginal rate of substitution (MRS)} between consumption today and consumption tomorrow equals the slope of the budget line:
+\begin{equation}
+    MRS = -(1+\rho)
+\end{equation}
+
+How does the optimal choice change when the real interest rate $\rho$ changes? A change in $\rho$ pivots the budget line around the endowment point $(m_1, m_2)$.
+
+\paragraph{Case 1: The Lender (Saver)}
+Suppose the consumer is initially a lender ($c_1^* < m_1$). If the real interest rate $\rho$ \textit{decreases}, the budget line becomes flatter. The lender is now worse off, as the reward for saving has fallen. They will unambiguously reach a lower indifference curve.
+
+\paragraph{Case 2: The Borrower}
+Suppose the consumer is initially a borrower ($c_1^* > m_1$). If the real interest rate $\rho$ \textit{decreases}, the budget line becomes flatter. The borrower is now better off, as the cost of borrowing has fallen. They will unambiguously reach a higher indifference curve.
+
+\subsection{The Slutsky Equation and Intertemporal Choice}
+We can analyze the effect of an interest rate increase on current consumption, $c_1$, using the Slutsky equation.\index{Slutsky equation} An increase in the interest rate is like an increase in the price of current consumption (since its opportunity cost rises). The total effect is:
+\[
+\frac{\Delta c_1}{\Delta r} = \underbrace{\frac{\Delta c_1^s}{\Delta r}}_{\text{Substitution Effect}} + \underbrace{(m_1 - c_1) \frac{\Delta c_1^m}{\Delta m}}_{\text{Income Effect}}
+\]
+\begin{itemize}
+    \item \textbf{Substitution Effect:}\index{Substitution Effect} An increase in $r$ makes future consumption cheaper relative to current consumption. Therefore, the substitution effect is always negative: $\frac{\Delta c_1^s}{\Delta r} < 0$.
+    \item \textbf{Income Effect:}\index{Income Effect} The sign depends on whether the consumer is a borrower or a lender.
+    \begin{itemize}
+        \item For a \textbf{lender}, $m_1 - c_1 > 0$. An increase in $r$ is like an increase in their income. Assuming consumption is a normal good, this effect is positive. The total effect is ambiguous as the two effects work in opposite directions.
+        \item For a \textbf{borrower}, $m_1 - c_1 < 0$. An increase in $r$ is like a decrease in their income. This effect is negative. The total effect is unambiguously negative, as both effects push in the same direction. A borrower will always reduce current consumption when the interest rate rises.
+    \end{itemize}
+\end{itemize}
+
+\section{Valuing Streams of Payments}
+
+The concept of present value can be extended to value any stream of payments over multiple periods. The present value of an income stream $(m_1, m_2, \dots, m_T)$ is:
+\begin{equation}
+    PV = m_1 + \frac{m_2}{1+r} + \frac{m_3}{(1+r)^2} + \dots + \frac{m_T}{(1+r)^{T-1}}
+\end{equation}
+If interest rates are not constant, with $r_t$ being the rate between period $t$ and $t+1$, the formula becomes:
+\begin{equation}
+    PV = m_1 + \frac{m_2}{1+r_1} + \frac{m_3}{(1+r_1)(1+r_2)} + \dots
+\end{equation}
+\begin{proposition}
+If a consumer can freely borrow and lend at a constant interest rate, they will always prefer an income stream with a higher present value to one with a lower present value.
+\end{proposition}
+\begin{proof}
+A higher present value of income shifts the intertemporal budget constraint outward in a parallel fashion, allowing the consumer to afford more consumption in all periods and thus reach a higher indifference curve.
+\end{proof}
+
+This principle is the foundation for investment analysis. To decide whether to undertake a project, one calculates its \textbf{Net Present Value (NPV)}\index{Net Present Value (NPV)}---the present value of its future returns minus the initial cost. Projects with a positive NPV should be undertaken.
+
+\section{Applications: Valuing Assets}
+Financial assets like stocks and bonds are essentially claims to a future stream of payments. Their price in a competitive market should therefore be equal to the present value of that payment stream.
+
+\subsection{Bonds}
+A \textbf{bond}\index{Bond} is a security that promises to pay a fixed amount, the \textbf{coupon}\index{Coupon} ($x$), each period for a set number of periods, until its \textbf{maturity date}\index{Maturity date} ($T$). At maturity, the bond also pays back its \textbf{face value}\index{Face value} ($F$). The payment stream is $(x, x, \dots, x, F)$, where the final payment is typically coupon plus face value, but for simplicity we follow the common textbook formula where the T-th payment is F. The present value (and thus the price) of such a bond is:
+\begin{equation}
+    PV_{\text{bond}} = \frac{x}{1+r} + \frac{x}{(1+r)^2} + \dots + \frac{x}{(1+r)^{T-1}} + \frac{F}{(1+r)^T}
+\end{equation}
+
+\subsection{Perpetuities (Consols)}
+A \textbf{perpetuity}\index{Perpetuity} or \textbf{consol}\index{Consol} is a special type of bond that promises to pay a coupon $x$ forever. Its payment stream is $(x, x, x, \dots)$.
+\begin{proposition}
+The present value of a perpetuity paying $x$ per period is given by:
+\begin{equation}
+    PV_{\text{perpetuity}} = \frac{x}{r}
+\end{equation}
+\end{proposition}
+\begin{proof}
+The present value is the sum of an infinite geometric series:
+\[ PV = \frac{x}{1+r} + \frac{x}{(1+r)^2} + \frac{x}{(1+r)^3} + \dots \]
+Let $v = 1/(1+r)$. Then $PV = x(v + v^2 + v^3 + \dots)$. The sum of this series is $x \left( \frac{v}{1-v} \right)$. Substituting back $v=1/(1+r)$:
+\[ PV = x \left( \frac{\frac{1}{1+r}}{1-\frac{1}{1+r}} \right) = x \left( \frac{\frac{1}{1+r}}{\frac{r}{1+r}} \right) = \frac{x}{r} \]
+\end{proof}
+This simple formula is one of the most useful in finance.
+
+\begin{examplebox}{Valuing an Installment Loan}
+Suppose you borrow \$1000 and agree to pay it back in 12 monthly installments of \$100. What interest rate are you paying?
+
+The stream of payments from the lender's perspective is $(-1000, 100, 100, \dots, 100)$. The value of this stream must be zero at the true interest rate. We need to find the monthly interest rate $r_m$ that solves:
+\[ 1000 = \frac{100}{1+r_m} + \frac{100}{(1+r_m)^2} + \dots + \frac{100}{(1+r_m)^{12}} \]
+This equation must be solved numerically. The solution is approximately $r_m = 2.92\%$. The annual percentage rate (APR) is often quoted as $12 \times 2.92\% = 35.04\%$.
+\end{examplebox}
+
+\section{Conclusion: The Right Interest Rate}
+In the real world, there is no single interest rate. Rates vary by duration (short-term vs. long-term), risk (government bonds vs. corporate debt), and tax treatment. When using present value for analysis, it is crucial to select an interest rate that accurately reflects the opportunity cost of the funds for the specific time horizon and risk profile of the payments being valued. The core principle remains: present value is the correct and indispensable tool for converting streams of future payments into today's dollars.
