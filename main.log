@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.11.1)  5 NOV 2025 10:28
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.11.1)  12 NOV 2025 09:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,7 +926,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 83.
 ux)
 (./chapters/chap4.aux) (./chapters/chap5.aux) (./chapters/chap6.aux)
 (./chapters/chap7.aux) (./chapters/chap8.aux) (./chapters/chap9.aux)
-(./chapters/chap10.aux) (./chapters/chap11.aux) (./chapters/chap12.aux))
+(./chapters/chap10.aux) (./chapters/chap11.aux) (./chapters/chap12.aux)
+(./chapters/chap14.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1406,18 +1407,41 @@ Overfull \hbox (13.84117pt too wide) in paragraph at lines 96--97
 e von Neumann-Morgenstern utility function, or Bernoulli
  []
 
-[59] [60] [61] [62] [63]) [64] (./main.ind [65
+[59] [60] [61] [62] [63]) [64]
+\openout2 = `chapters/chap14.aux'.
+
+ (./chapters/chap14.tex
+Chapter 13.
+[65
 
 
 
 
-] [66
+]
+Overfull \hbox (5.93759pt too wide) in paragraph at lines 37--38
+\TU/TeXGyreTermes(0)/m/n/10 When a good is divisible and can be purchased in an
+y continuous quantity, the reservation-
+ []
+
+[66] [67]
+Overfull \hbox (13.3978pt too wide) detected at line 134
+[]
+ []
+
+[68] [69] [70]) [71] [72
+
+
+
+] (./main.ind [73
+
+] [74
 
 ]) (./main.aux
 (./chapters/chap1.aux) (./chapters/chap2.aux) (./chapters/chap3.aux)
 (./chapters/chap4.aux) (./chapters/chap5.aux) (./chapters/chap6.aux)
 (./chapters/chap7.aux) (./chapters/chap8.aux) (./chapters/chap9.aux)
-(./chapters/chap10.aux) (./chapters/chap11.aux) (./chapters/chap12.aux))
+(./chapters/chap10.aux) (./chapters/chap11.aux) (./chapters/chap12.aux)
+(./chapters/chap14.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1426,16 +1450,22 @@ L3 programming layer <2024-01-22>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E9D15D2536A9022DD127ACD6F72E34D4;21839.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: E7C091C6D05D54D75C92BE0133330AEE;24206
+(rerunfilecheck)             After:  D54E250E0C2B3E6B5BF71AAFEC2EA689;24279.
  ) 
 Here is how much of TeX's memory you used:
- 31745 strings out of 476415
- 686441 string characters out of 5792682
- 1936627 words of memory out of 5000000
- 53057 multiletter control sequences out of 15000+600000
- 566307 words of font info for 109 fonts, out of 8000000 for 9000
+ 31824 strings out of 476415
+ 688316 string characters out of 5792682
+ 1938627 words of memory out of 5000000
+ 53118 multiletter control sequences out of 15000+600000
+ 569439 words of font info for 125 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  106i,10n,110p,1001b,983s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (76 pages).
+Output written on main.pdf (84 pages).

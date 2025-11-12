@@ -16,21 +16,28 @@
   \indexspace
 
   \item Certainty equivalent, \hyperpage{63}
+  \item Compensating variation (CV), \hyperpage{65}, \hyperpage{68}
   \item Consol, \hyperpage{46}
+  \item Consumer's surplus, \hyperpage{65}
   \item Consumption
     \subitem state-contingent, \hyperpage{57}
     \subitem state-contingent good, \hyperpage{58}
     \subitem state-contingent plan, \hyperpage{58}
   \item Coupon, \hyperpage{46}
+  \item CV, EV, and CS relationship, \hyperpage{68}
 
   \indexspace
 
+  \item Demand
+    \subitem inverse, \hyperpage{67}
+    \subitem Marshallian, \hyperpage{70}
   \item depletable resource, \hyperpage{54}
   \item Diversification, \hyperpage{62}
 
   \indexspace
 
   \item Endowment, \hyperpage{41}
+  \item Equivalent variation (EV), \hyperpage{65}, \hyperpage{68}
   \item Expected monetary value, \hyperpage{60}
   \item Expected Utility, \hyperpage{57}
   \item Expected utility, \hyperpage{59, 60}
@@ -50,6 +57,9 @@
   \indexspace
 
   \item Income Effect, \hyperpage{45}
+  \item Income effect
+    \subitem zero, \hyperpage{67}
+  \item Inferior good, \hyperpage{69}
   \item Inflation, \hyperpage{43}
   \item Insurance
     \subitem fair, \hyperpage{61}
@@ -72,6 +82,7 @@
 
   \item Net Present Value (NPV), \hyperpage{45}
   \item no-arbitrage principle, \hyperpage{49}
+  \item Normal good, \hyperpage{69}
 
   \indexspace
 
@@ -88,11 +99,17 @@
   \item Present Value (PV), \hyperpage{42}
   \item Price-to-Income Ratio, \hyperpage{54}
   \item Price-to-Rent Ratio, \hyperpage{54}
+  \item Producer's surplus, \hyperpage{70}
+
+  \indexspace
+
+  \item Quasilinear utility, \hyperpage{66}
 
   \indexspace
 
   \item rate of return, \hyperpage{50}
   \item Real interest rate, \hyperpage{43}
+  \item Reservation price, \hyperpage{65}
   \item Risk attitudes, \hyperpage{60}
   \item Risk aversion, \hyperpage{60}
     \subitem absolute (Arrow-Pratt), \hyperpage{64}
@@ -114,5 +131,10 @@
   \indexspace
 
   \item Uncertainty, \hyperpage{57}
+
+  \indexspace
+
+  \item Welfare
+    \subitem consumer, \hyperpage{65}
 
 \end{theindex}

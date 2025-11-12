@@ -120,4 +120,16 @@
 \contentsline {subsection}{\numberline {12.5.1}Diversification}{62}{subsection.12.5.1}%
 \contentsline {subsection}{\numberline {12.5.2}Risk Spreading and the Role of the Stock Market}{63}{subsection.12.5.2}%
 \contentsline {section}{\numberline {12.6}Measures of Risk Aversion}{63}{section.12.6}%
-\contentsline {chapter}{Index}{65}{equation.12.6.8}%
+\contentsline {chapter}{\numberline {13}Consumer's Surplus}{65}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Introduction to Consumer Welfare}{65}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Reservation Prices and Consumer's Surplus}{65}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}From Discrete to Continuous Goods}{66}{subsection.13.2.1}%
+\contentsline {section}{\numberline {13.3}Consumer's Surplus and Quasilinear Utility}{66}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Change in Consumer's Surplus}{67}{subsection.13.3.1}%
+\contentsline {section}{\numberline {13.4}Compensating and Equivalent Variation}{68}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Relationship between CS, CV, and EV}{68}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}The Quasilinear Case}{68}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}The General Case}{69}{subsection.13.5.2}%
+\contentsline {section}{\numberline {13.6}Producer's Surplus}{70}{section.13.6}%
+\contentsline {section}{\numberline {13.7}Summary}{71}{section.13.7}%
+\contentsline {chapter}{Index}{73}{section.13.7}%
