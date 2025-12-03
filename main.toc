@@ -132,4 +132,52 @@
 \contentsline {subsection}{\numberline {13.5.2}The General Case}{69}{subsection.13.5.2}%
 \contentsline {section}{\numberline {13.6}Producer's Surplus}{70}{section.13.6}%
 \contentsline {section}{\numberline {13.7}Summary}{71}{section.13.7}%
-\contentsline {chapter}{Index}{73}{section.13.7}%
+\contentsline {chapter}{\numberline {14}Monopoly}{73}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Pure Monopoly}{73}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Profit Maximization}{73}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Marginal Revenue}{74}{subsection.14.2.1}%
+\contentsline {section}{\numberline {14.3}Monopolistic Pricing and Elasticity}{75}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Markup Pricing}{75}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Lerner Index}{76}{subsection.14.3.2}%
+\contentsline {section}{\numberline {14.4}Taxes on Monopoly}{76}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}Profits Tax}{76}{subsection.14.4.1}%
+\contentsline {subsection}{\numberline {14.4.2}Quantity Tax}{76}{subsection.14.4.2}%
+\contentsline {section}{\numberline {14.5}The Inefficiency of Monopoly}{77}{section.14.5}%
+\contentsline {section}{\numberline {14.6}Natural Monopoly}{77}{section.14.6}%
+\contentsline {subsection}{\numberline {14.6.1}The Regulation Dilemma}{77}{subsection.14.6.1}%
+\contentsline {section}{\numberline {14.7}Causes of Monopolies}{78}{section.14.7}%
+\contentsline {section}{\numberline {14.8}Summary}{78}{section.14.8}%
+\contentsline {chapter}{\numberline {15}Monopoly Behavior}{79}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Types of Price Discrimination}{79}{section.15.1}%
+\contentsline {section}{\numberline {15.2}First-degree Price Discrimination}{80}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}The Mechanism}{80}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}Efficiency and Surplus}{80}{subsection.15.2.2}%
+\contentsline {section}{\numberline {15.3}Second-degree Price Discrimination}{80}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}Non-linear Pricing}{80}{subsection.15.3.1}%
+\contentsline {section}{\numberline {15.4}Third-degree Price Discrimination}{81}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}The Maximization Problem}{81}{subsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.4.2}Elasticity and Pricing}{82}{subsection.15.4.2}%
+\contentsline {section}{\numberline {15.5}Two-Part Tariffs}{82}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}Optimal Design of Two-Part Tariffs}{82}{subsection.15.5.1}%
+\contentsline {section}{\numberline {15.6}Monopolistic Competition}{83}{section.15.6}%
+\contentsline {subsection}{\numberline {15.6.1}Equilibrium Conditions}{83}{subsection.15.6.1}%
+\contentsline {subsection}{\numberline {15.6.2}Geometric Interpretation and Inefficiency}{83}{subsection.15.6.2}%
+\contentsline {section}{\numberline {15.7}A Location Model of Product Differentiation}{84}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}The Setup}{84}{subsection.15.7.1}%
+\contentsline {subsection}{\numberline {15.7.2}Duopoly ($n=2$)}{84}{subsection.15.7.2}%
+\contentsline {subsection}{\numberline {15.7.3}More than Two Firms}{85}{subsection.15.7.3}%
+\contentsline {chapter}{Oligopoly}{87}{chapter*.9}%
+\contentsline {section}{\numberline {15.8}Introduction to Industrial Organization}{87}{section.15.8}%
+\contentsline {section}{\numberline {15.9}Quantity Competition: The Cournot Model}{87}{section.15.9}%
+\contentsline {subsection}{\numberline {15.9.1}The Setup}{87}{subsection.15.9.1}%
+\contentsline {subsection}{\numberline {15.9.2}Reaction Functions}{88}{subsection.15.9.2}%
+\contentsline {subsection}{\numberline {15.9.3}Cournot-Nash Equilibrium}{88}{subsection.15.9.3}%
+\contentsline {section}{\numberline {15.10}Iso-Profit Curves}{89}{section.15.10}%
+\contentsline {section}{\numberline {15.11}Collusion and Cartels}{90}{section.15.11}%
+\contentsline {subsection}{\numberline {15.11.1}The Incentive to Collude}{90}{subsection.15.11.1}%
+\contentsline {subsection}{\numberline {15.11.2}The Instability of Cartels}{90}{subsection.15.11.2}%
+\contentsline {section}{\numberline {15.12}Stackelberg Games: Sequential Competition}{91}{section.15.12}%
+\contentsline {subsection}{\numberline {15.12.1}Backward Induction}{91}{subsection.15.12.1}%
+\contentsline {section}{\numberline {15.13}Price Competition: The Bertrand Model}{93}{section.15.13}%
+\contentsline {subsection}{\numberline {15.13.1}Assumptions and Equilibrium}{93}{subsection.15.13.1}%
+\contentsline {chapter}{Index}{95}{proposition.15.5}%
