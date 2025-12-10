@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.11.1)  10 DEC 2025 10:27
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.11.1)  10 DEC 2025 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,9 +934,9 @@ ux)
 (./chapters/chap4.aux) (./chapters/chap5.aux) (./chapters/chap6.aux)
 (./chapters/chap7.aux) (./chapters/chap8.aux) (./chapters/chap9.aux)
 (./chapters/chap10.aux) (./chapters/chap11.aux) (./chapters/chap12.aux)
-(./chapters/chap14.aux) (./chapters/chap15.aux) (./chapters/chap16.aux)
-(./chapters/chap17.aux) (./chapters/chap18.aux) (./chapters/chap19.aux)
-(./chapters/chap20.aux) (./chapters/chap21.aux))
+(./chapters/chap13.aux) (./chapters/chap14.aux) (./chapters/chap15.aux)
+(./chapters/chap16.aux) (./chapters/chap17.aux) (./chapters/chap18.aux)
+(./chapters/chap19.aux) (./chapters/chap20.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1418,9 +1418,9 @@ e von Neumann-Morgenstern utility function, or Bernoulli
  []
 
 [59] [60] [61] [62] [63]) [64]
-\openout2 = `chapters/chap14.aux'.
+\openout2 = `chapters/chap13.aux'.
 
- (./chapters/chap14.tex
+ (./chapters/chap13.tex
 Chapter 13.
 [65
 
@@ -1439,9 +1439,9 @@ Overfull \hbox (13.3978pt too wide) detected at line 134
  []
 
 [68] [69] [70]) [71]
-\openout2 = `chapters/chap15.aux'.
+\openout2 = `chapters/chap14.aux'.
 
- (./chapters/chap15.tex [72
+ (./chapters/chap14.tex [72
 
 
 
@@ -1449,9 +1449,9 @@ Overfull \hbox (13.3978pt too wide) detected at line 134
 ]
 Chapter 14.
 [73] [74] [75] [76] [77]) [78]
-\openout2 = `chapters/chap16.aux'.
+\openout2 = `chapters/chap15.aux'.
 
- (./chapters/chap16.tex
+ (./chapters/chap15.tex
 Chapter 15.
 [79
 
@@ -1480,51 +1480,47 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 206.
 
-[84] [85] [86
+[84]) [85]
+\openout2 = `chapters/chap16.aux'.
 
-])
-\openout2 = `chapters/chap17.aux'.
-
- (./chapters/chap17.tex [87
-
-
-
-
-] [88] [89] [90] [91] [92]
-Overfull \hbox (7.38423pt too wide) in paragraph at lines 218--219
-[][]\TU/TeXGyreTermes(0)/b/n/10 Proposition 15.5 \TU/TeXGyreTermes(0)/m/n/10 (B
-ertrand Equilibrium)\TU/TeXGyreTermes(0)/b/n/10 . []\TU/TeXGyreTermes(0)/m/it/1
-0 In the unique Nash equilibrium of the Bertrand
- []
-
-) [93]
-\openout2 = `chapters/chap18.aux'.
-
- (./chapters/chap18.tex [94
+ (./chapters/chap16.tex [86
 
 
 
 
 ]
-Overfull \hbox (6.99261pt too wide) in paragraph at lines 24--24
-[]\TU/TeXGyreTermes(0)/b/n/14.4 Simultaneous-Move Games and Nash Equilibrium 
+Chapter 16.
+[87] [88]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [89]
+[90] [91] [92]
+Overfull \hbox (7.38423pt too wide) in paragraph at lines 218--219
+[][]\TU/TeXGyreTermes(0)/b/n/10 Proposition 16.2 \TU/TeXGyreTermes(0)/m/n/10 (B
+ertrand Equilibrium)\TU/TeXGyreTermes(0)/b/n/10 . []\TU/TeXGyreTermes(0)/m/it/1
+0 In the unique Nash equilibrium of the Bertrand
  []
 
+) [93]
+\openout2 = `chapters/chap17.aux'.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ (./chapters/chap17.tex [94
 
-[95] [96]
-Underfull \vbox (badness 4792) has occurred while \output is active []
 
- [97]
-[98] [99] [100]
+
+
+]
+Chapter 17.
+[95] [96] [97] [98] [99] [100]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [101])
 [102]
-\openout2 = `chapters/chap19.aux'.
+\openout2 = `chapters/chap18.aux'.
 
- (./chapters/chap19.tex [103
+ (./chapters/chap18.tex
+Chapter 18.
+[103
 
 
 
@@ -1535,17 +1531,21 @@ Overfull \hbox (2.3209pt too wide) in paragraph at lines 68--69
 tions forms a ”lens” shape bounded
  []
 
-[104] [105] [106] [107
+[104] [105] [106]
+Chapter 19.
+[107
 
 ] [108]
-Overfull \hbox (10.12701pt too wide) in paragraph at lines 190--190
+Overfull \hbox (2.92702pt too wide) in paragraph at lines 190--190
 []\TU/TeXGyreTermes(0)/b/n/14.4 The Fundamental Theorems of Welfare Economics 
  []
 
 [109]) [110]
-\openout2 = `chapters/chap20.aux'.
+\openout2 = `chapters/chap19.aux'.
 
- (./chapters/chap20.tex [111
+ (./chapters/chap19.tex
+Chapter 20.
+[111
 
 
 
@@ -1557,18 +1557,16 @@ l rate of substitution between money
  []
 
 [112] [113] [114] [115] [116]) [117]
-\openout2 = `chapters/chap21.aux'.
+\openout2 = `chapters/chap20.aux'.
 
- (./chapters/chap21.tex [118
-
-
+ (./chapters/chap20.tex [118
 
 
-] [119]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [120]
-[121] [122]) [123] [124
+
+]
+Chapter 21.
+[119] [120] [121] [122]) [123] [124
 
 
 
@@ -1579,9 +1577,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (./chapters/chap4.aux) (./chapters/chap5.aux) (./chapters/chap6.aux)
 (./chapters/chap7.aux) (./chapters/chap8.aux) (./chapters/chap9.aux)
 (./chapters/chap10.aux) (./chapters/chap11.aux) (./chapters/chap12.aux)
-(./chapters/chap14.aux) (./chapters/chap15.aux) (./chapters/chap16.aux)
-(./chapters/chap17.aux) (./chapters/chap18.aux) (./chapters/chap19.aux)
-(./chapters/chap20.aux) (./chapters/chap21.aux))
+(./chapters/chap13.aux) (./chapters/chap14.aux) (./chapters/chap15.aux)
+(./chapters/chap16.aux) (./chapters/chap17.aux) (./chapters/chap18.aux)
+(./chapters/chap19.aux) (./chapters/chap20.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1591,13 +1589,13 @@ L3 programming layer <2024-01-22>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9592C83F6AE5CDC4DAB050D1A8A2EC6E;45230.
+(rerunfilecheck)             Checksum: 5EABD500044F051E814E2E6B77784E31;45092.
  ) 
 Here is how much of TeX's memory you used:
- 32272 strings out of 476415
- 698874 string characters out of 5792682
+ 32273 strings out of 476415
+ 698866 string characters out of 5792682
  1938627 words of memory out of 5000000
- 53511 multiletter control sequences out of 15000+600000
+ 53512 multiletter control sequences out of 15000+600000
  570984 words of font info for 131 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  106i,10n,110p,1001b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
