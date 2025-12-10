@@ -1,9 +1,11 @@
 \begin{theindex}
 
+  \item Adverse Selection, \hyperpage{119}
   \item after-tax, \hyperpage{51}
   \item Arbitrage, \hyperpage{49}
   \item asset, \hyperpage{49}
   \item asset bubble, \hyperpage{53}
+  \item Asymmetric Information, \hyperpage{119}
 
   \indexspace
 
@@ -17,12 +19,14 @@
 
   \item Certainty equivalent, \hyperpage{63}
   \item Compensating variation (CV), \hyperpage{65}, \hyperpage{68}
+  \item Competitive Markets, \hyperpage{107}
   \item Consol, \hyperpage{46}
   \item Consumer's surplus, \hyperpage{65}
   \item Consumption
     \subitem state-contingent, \hyperpage{57}
     \subitem state-contingent good, \hyperpage{58}
     \subitem state-contingent plan, \hyperpage{58}
+  \item Contract Curve, \hyperpage{105}
   \item Coupon, \hyperpage{46}
   \item CV, EV, and CS relationship, \hyperpage{68}
 
@@ -38,12 +42,15 @@
   \indexspace
 
   \item Economies of Scale, \hyperpage{77}
+  \item Edgeworth Box, \hyperpage{103}
   \item Elasticity
     \subitem Inverse elasticity rule, \hyperpage{82}
   \item Elasticity of Demand, \hyperpage{75}
   \item Endowment, \hyperpage{41}
+  \item Endowment Allocation, \hyperpage{104}
   \item Equivalent variation (EV), \hyperpage{65}, \hyperpage{68}
   \item Excess capacity, \hyperpage{84}
+  \item Exchange Economy, \hyperpage{103}
   \item Expected monetary value, \hyperpage{60}
   \item Expected Utility, \hyperpage{57}
   \item Expected utility, \hyperpage{59, 60}
@@ -52,9 +59,15 @@
   \indexspace
 
   \item Face value, \hyperpage{46}
+  \item Feasible Allocation, \hyperpage{104}
   \item financial asset, \hyperpage{49}
+  \item First Welfare Theorem, \hyperpage{109}
   \item Fisher Equation, \hyperpage{44}
   \item Future Value (FV), \hyperpage{42}
+
+  \indexspace
+
+  \item General Equilibrium, \hyperpage{103}
 
   \indexspace
 
@@ -93,6 +106,7 @@
   \item Minimum Efficient Scale, \hyperpage{78}
   \item Monopolistic competition, \hyperpage{83}
   \item Monopoly, \hyperpage{73}
+  \item Moral Hazard, \hyperpage{123}
 
   \indexspace
 
@@ -107,9 +121,10 @@
 
   \indexspace
 
-  \item Pareto Efficiency, \hyperpage{77}
+  \item Pareto Efficiency, \hyperpage{77}, \hyperpage{105}
   \item Pareto efficiency, \hyperpage{80}
   \item Pareto efficient, \hyperpage{1}
+  \item Pareto Improvement, \hyperpage{104}
   \item Pareto improvement, \hyperpage{1}
   \item Pareto inefficient, \hyperpage{1}
   \item perfect certainty, \hyperpage{49}
@@ -146,7 +161,9 @@
   \indexspace
 
   \item Saver, \hyperpage{42}
+  \item Second Welfare Theorem, \hyperpage{109}
   \item security, \hyperpage{49}
+  \item Signaling, \hyperpage{121}
   \item Slutsky equation, \hyperpage{44}
   \item State of nature, \hyperpage{58}
   \item Stock market, \hyperpage{63}
@@ -155,6 +172,7 @@
 
   \indexspace
 
+  \item The Core, \hyperpage{106}
   \item Two-part tariff, \hyperpage{82}
 
   \indexspace
@@ -163,6 +181,8 @@
 
   \indexspace
 
+  \item Walras' Law, \hyperpage{108}
+  \item Walrasian Equilibrium, \hyperpage{108}
   \item Welfare
     \subitem consumer, \hyperpage{65}
 

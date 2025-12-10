@@ -180,4 +180,71 @@
 \contentsline {subsection}{\numberline {15.12.1}Backward Induction}{91}{subsection.15.12.1}%
 \contentsline {section}{\numberline {15.13}Price Competition: The Bertrand Model}{93}{section.15.13}%
 \contentsline {subsection}{\numberline {15.13.1}Assumptions and Equilibrium}{93}{subsection.15.13.1}%
-\contentsline {chapter}{Index}{95}{proposition.15.5}%
+\contentsline {chapter}{Game Theory}{95}{chapter*.10}%
+\contentsline {section}{\numberline {15.14}Introduction}{95}{section.15.14}%
+\contentsline {section}{\numberline {15.15}Simultaneous-Move Games and Nash Equilibrium}{95}{section.15.15}%
+\contentsline {subsection}{\numberline {15.15.1}Payoff Matrix}{95}{subsection.15.15.1}%
+\contentsline {subsection}{\numberline {15.15.2}Determining the Outcome}{96}{subsection.15.15.2}%
+\contentsline {section}{\numberline {15.16}The Prisoner's Dilemma}{96}{section.15.16}%
+\contentsline {section}{\numberline {15.17}Sequential Games}{97}{section.15.17}%
+\contentsline {subsection}{\numberline {15.17.1}Extensive Form (Game Tree)}{97}{subsection.15.17.1}%
+\contentsline {subsection}{\numberline {15.17.2}Backward Induction}{98}{subsection.15.17.2}%
+\contentsline {section}{\numberline {15.18}Mixed Strategies}{98}{section.15.18}%
+\contentsline {subsection}{\numberline {15.18.1}Pure vs. Mixed Strategies}{98}{subsection.15.18.1}%
+\contentsline {subsection}{\numberline {15.18.2}Calculating Mixed Strategy Equilibrium}{99}{subsection.15.18.2}%
+\contentsline {subsubsection}{Player A's Best Response}{99}{section*.11}%
+\contentsline {subsubsection}{Player B's Best Response}{100}{section*.12}%
+\contentsline {subsubsection}{Finding the Nash Equilibrium}{100}{section*.13}%
+\contentsline {subsection}{\numberline {15.18.3}Case with Multiple Equilibria (Hawk-Dove Game)}{100}{subsection.15.18.3}%
+\contentsline {section}{\numberline {15.19}Conclusion: Nash Existence Theorem}{102}{section.15.19}%
+\contentsline {chapter}{Exchange}{103}{chapter*.14}%
+\contentsline {section}{\numberline {15.20}The Edgeworth Box}{103}{section.15.20}%
+\contentsline {subsection}{\numberline {15.20.1}Constructing the Box}{103}{subsection.15.20.1}%
+\contentsline {subsection}{\numberline {15.20.2}Feasible Allocations}{104}{subsection.15.20.2}%
+\contentsline {section}{\numberline {15.21}Preferences and Trade}{104}{section.15.21}%
+\contentsline {subsection}{\numberline {15.21.1}Pareto Improvement}{104}{subsection.15.21.1}%
+\contentsline {section}{\numberline {15.22}Pareto Efficiency}{105}{section.15.22}%
+\contentsline {subsection}{\numberline {15.22.1}The Tangency Condition}{105}{subsection.15.22.1}%
+\contentsline {section}{\numberline {15.23}The Contract Curve and The Core}{105}{section.15.23}%
+\contentsline {subsection}{\numberline {15.23.1}The Contract Curve}{105}{subsection.15.23.1}%
+\contentsline {subsection}{\numberline {15.23.2}The Core}{106}{subsection.15.23.2}%
+\contentsline {chapter}{Market Equilibrium and Welfare}{107}{chapter*.15}%
+\contentsline {section}{\numberline {15.24}Trade in Competitive Markets}{107}{section.15.24}%
+\contentsline {subsection}{\numberline {15.24.1}The Budget Constraint}{107}{subsection.15.24.1}%
+\contentsline {subsection}{\numberline {15.24.2}Optimal Choice}{107}{subsection.15.24.2}%
+\contentsline {section}{\numberline {15.25}General Equilibrium}{108}{section.15.25}%
+\contentsline {section}{\numberline {15.26}Walras' Law}{108}{section.15.26}%
+\contentsline {subsection}{\numberline {15.26.1}Derivation}{108}{subsection.15.26.1}%
+\contentsline {subsection}{\numberline {15.26.2}Implications}{109}{subsection.15.26.2}%
+\contentsline {section}{\numberline {15.27}The Fundamental Theorems of Welfare Economics}{109}{section.15.27}%
+\contentsline {subsection}{\numberline {15.27.1}The First Fundamental Theorem}{109}{subsection.15.27.1}%
+\contentsline {subsection}{\numberline {15.27.2}The Second Fundamental Theorem}{109}{subsection.15.27.2}%
+\contentsline {chapter}{Externalities}{111}{chapter*.16}%
+\contentsline {section}{\numberline {15.28}Introduction}{111}{section.15.28}%
+\contentsline {section}{\numberline {15.29}Inefficiency and The Consumption Model}{112}{section.15.29}%
+\contentsline {subsection}{\numberline {15.29.1}Preferences and Endowments}{112}{subsection.15.29.1}%
+\contentsline {subsection}{\numberline {15.29.2}The Conflict}{112}{subsection.15.29.2}%
+\contentsline {section}{\numberline {15.30}The Coase Theorem and Property Rights}{112}{section.15.30}%
+\contentsline {subsection}{\numberline {15.30.1}Assigning Property Rights}{113}{subsection.15.30.1}%
+\contentsline {subsection}{\numberline {15.30.2}Quasilinear Preferences and The Coase Theorem}{113}{subsection.15.30.2}%
+\contentsline {section}{\numberline {15.31}Production Externalities: The Steel Mill and The Fishery}{113}{section.15.31}%
+\contentsline {subsection}{\numberline {15.31.1}The Setup}{114}{subsection.15.31.1}%
+\contentsline {subsection}{\numberline {15.31.2}Private Optimization (Inefficient Outcome)}{114}{subsection.15.31.2}%
+\contentsline {subsection}{\numberline {15.31.3}Merger (Internalization)}{115}{subsection.15.31.3}%
+\contentsline {subsection}{\numberline {15.31.4}The Coase Solution: Market for Pollution}{116}{subsection.15.31.4}%
+\contentsline {section}{\numberline {15.32}The Tragedy of the Commons}{116}{section.15.32}%
+\contentsline {subsection}{\numberline {15.32.1}The Model}{116}{subsection.15.32.1}%
+\contentsline {subsection}{\numberline {15.32.2}Efficient Allocation vs. Private Equilibrium}{116}{subsection.15.32.2}%
+\contentsline {subsection}{\numberline {15.32.3}Result}{117}{subsection.15.32.3}%
+\contentsline {chapter}{Asymmetric Information}{119}{chapter*.17}%
+\contentsline {section}{\numberline {15.33}Adverse Selection}{119}{section.15.33}%
+\contentsline {subsection}{\numberline {15.33.1}The Market for Lemons}{119}{subsection.15.33.1}%
+\contentsline {subsection}{\numberline {15.33.2}Adverse Selection with Quality Choice}{120}{subsection.15.33.2}%
+\contentsline {section}{\numberline {15.34}Signaling}{121}{section.15.34}%
+\contentsline {subsection}{\numberline {15.34.1}Mechanisms}{122}{subsection.15.34.1}%
+\contentsline {subsection}{\numberline {15.34.2}The Educational Signaling Model}{122}{subsection.15.34.2}%
+\contentsline {subsubsection}{Cost of Signaling}{122}{section*.18}%
+\contentsline {subsubsection}{Separating Equilibrium}{122}{section*.19}%
+\contentsline {section}{\numberline {15.35}Moral Hazard}{123}{section.15.35}%
+\contentsline {subsection}{\numberline {15.35.1}Market Implications}{123}{subsection.15.35.1}%
+\contentsline {chapter}{Index}{125}{subsection.15.35.1}%
