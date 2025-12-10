@@ -1,65 +1,68 @@
+# Intermediate Microeconomics Notes
 
----
+![Language](https://img.shields.io/badge/language-English-blue.svg) ![LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-green.svg) ![UIBE](https://img.shields.io/badge/School-UIBE-red.svg)
 
-## 🧠 Description
+## Introduction
 
-Each chapter includes:
-- Core definitions and theoretical frameworks  
-- Mathematical derivations and proofs  
-- Graphical and intuitive interpretations  
-- Key formulas and model summaries  
+This repository contains my personal lecture notes for the **Intermediate Microeconomics** course at the **University of International Business and Economics (UIBE)**.
 
-The notes follow the logical structure of **Varian’s _Intermediate Microeconomics: A Modern Approach_**, while incorporating bilingual insights from UIBE’s course materials.
+These notes are written entirely in **English** and typeset using **$\LaTeX$**. They are specifically curated for the curriculum of the **Hongru Financial Talents Experimental Class** within the School of Finance.
 
----
+## Course Information
 
-## 📖 Topics Covered
+- **University**: University of International Business and Economics (UIBE)
+- **School**: China School of Finance
+- **Program**: Hongru Financial Talents Experimental Class
+- **Instructor**: Prof. Zhang Haiyang
+- **Textbook**: *Intermediate Microeconomics: A Modern Approach* by Hal R. Varian
 
-- **Consumer Theory** — Preferences, utility, and budget constraints  
-- **Demand and the Slutsky Equation** — Substitution and income effects  
-- **Choice under Uncertainty** — Expected utility and risk aversion  
-- **Production and Cost** — Technology, isoquants, and cost minimization  
-- **Market Structure** — Perfect competition, monopoly, and game theory  
-- **General Equilibrium and Welfare** — Pareto efficiency and welfare theorems  
-- **Information Economics** — Asymmetric information and signaling  
+## Repository Structure
 
----
+The project is organized as follows:
 
-## 🧩 Features
+- **`main.tex`**: The root $\LaTeX$ file that compiles the entire document.
+- **`chapters/`**: Contains separate `.tex` files for each chapter or topic (e.g., Consumer Theory, Production, Market Structure).
+- **`figures/`**: Contains images and TikZ diagrams used in the notes.
+- **`ref.bib`**: (If applicable) Bibliography file.
 
-- Clean **LaTeX typesetting** for mathematical clarity  
-- **Consistent template styling** (by Richard R. Masters)  
-- **Bilingual-friendly structure** for concept reinforcement  
-- Modular chapter design for easy compilation or extraction  
+## Features
 
----
+- **Comprehensive Coverage**: Notes are based on Prof. Zhang's lectures and Varian's textbook.
+- **High-Quality Typesetting**: Features clear mathematical definitions, theorems, and proofs formatted in $\LaTeX$.
+- **Modular Design**: Chapters are managed in separate files within the `chapters/` directory for easier editing and maintenance.
 
-## 🎯 Purpose
+## How to Compile
 
-This project aims to create a **concise yet rigorous** summary of intermediate microeconomic theory — connecting **mathematical derivation**, **economic reasoning**, and **graphical intuition**.
+To build the PDF from the source code, you will need a TeX distribution (such as TeX Live or MiKTeX).
 
-It is intended for:
-- Students in economics or related quantitative disciplines  
-- Learners seeking structured, high-quality reference notes  
-- Anyone studying modern microeconomics at an intermediate level  
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/MochiaoChen/MicroNotes.git](https://github.com/MochiaoChen/MicroNotes.git)
 
----
+2.  Navigate to the project directory:
 
-## 👤 Author
+    ```bash
+    cd MicroNotes
+    ```
 
-**Mochiao Chen**  
-University of International Business and Economics (UIBE), Beijing  
+3.  Compile the `main.tex` file. It is recommended to use `xelatex` or `pdflatex`:
 
----
+    ```bash
+        xelatex main.tex && makeindex main && xelatex main.tex && xelatex main.tex
+    ```
 
-## 🙏 Acknowledgment
+## Disclaimer
 
-Special thanks to **Richard R. Masters** for the LaTeX template that forms the foundation of this project’s design.  
-Additional appreciation to **Professor Haiyang Zhang** for his clear and rigorous instruction.
+These are unofficial student notes created for educational purposes. While I strive for accuracy, there may be errors or typos. These notes should be used as a supplement to, not a substitute for, official course materials.
 
----
+## Contributing
 
-## 📜 License
+Contributions are welcome\! If you spot an error in the equations or text, feel free to:
 
-Released under the **MIT License**.  
-You are free to use, modify, and share with proper attribution.
+1.  Open an **Issue** to report the problem.
+2.  Submit a **Pull Request** to fix it directly.
+
+-----
+
+**Author**: Mochiao Chen
+**Last Updated**: 2025.12
