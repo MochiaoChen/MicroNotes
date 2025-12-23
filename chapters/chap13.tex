@@ -1,0 +1,239 @@
+\chapter{Consumer's Surplus}
+\label{chap:ConsumerSurplus}
+
+\section{Introduction to Consumer Welfare}
+\index{Welfare!consumer}
+After analyzing consumer choice, we now turn to a fundamental question of welfare economics: how can we measure the change in a consumer's well-being resulting from economic changes, such as a shift in price? The key question is: How much has a consumer gained in welfare from purchasing a certain quantity of a good?
+
+To answer this, we need a monetary measure of the utility gains from trade. This chapter will explore three primary tools for this purpose:
+\begin{itemize}
+    \item \textbf{Consumer's Surplus (CS)}\index{Consumer's surplus}
+    \item \textbf{Compensating Variation (CV)}\index{Compensating variation (CV)}
+    \item \textbf{Equivalent Variation (EV)}\index{Equivalent variation (EV)}
+\end{itemize}
+These three measures provide different ways to quantify the value a consumer places on a transaction. While they are conceptually distinct, we will discover a special but important case—quasilinear preferences—where all three coincide.
+
+\section{Reservation Prices and Consumer's Surplus}
+Let's begin by considering a consumer's decision to purchase a discrete good, such as kilograms of rice.
+
+\begin{definition}[Reservation Price]
+The \textbf{reservation price}\index{Reservation price}, denoted by $r_n$, is the maximum amount of money a consumer is willing to pay for the $n$-th unit of a good. It is the price at which the consumer is just indifferent between purchasing the $n$-th unit and not purchasing it.
+\end{definition}
+
+For example, $r_1$ is the maximum price the consumer would pay for the first kilogram of rice. Having acquired the first, $r_2$ is the maximum price she would pay for the second kilogram, and so on. The reservation price $r_n$ can be interpreted as the monetary equivalent of the marginal utility of the $n$-th unit. A sequence of reservation prices, $r_1, r_2, \dots, r_n$, plotted against the quantity $n$, forms the consumer's \textbf{reservation-price curve}.
+
+The total utility gain, in dollar terms, from consuming $n$ units for free would be the sum of these reservation prices: $r_1 + r_2 + \dots + r_n$.
+
+If the consumer must pay a price $p$ for each unit, her \textbf{net utility gain} from the first unit is $(r_1 - p)$, from the second is $(r_2 - p)$, and so on. A rational consumer will continue to purchase units as long as the reservation price is greater than or equal to the market price, i.e., $r_n \ge p$.
+
+The total net utility gain from purchasing $n$ units at price $p$ is the sum of the net gains for each unit. This sum is called the \textbf{Consumer's Surplus}.
+\begin{equation*}
+    \text{CS} = (r_1 - p) + (r_2 - p) + \dots + (r_n - p) \quad \text{for all } n \text{ where } r_n \ge p.
+\end{equation*}
+
+This can be visualized as the area of the rectangles above the price line and under the reservation-price curve.
+
+\subsection{From Discrete to Continuous Goods}
+When a good is divisible and can be purchased in any continuous quantity, the reservation-price curve becomes a smooth inverse demand curve. The consumer's surplus is then the area under the inverse demand curve and above the price line.
+
+\begin{figure}[h!]
+    \centering
+    % A simple TikZ figure can be used here if tikz is in the preamble
+    % \begin{tikzpicture} ... \end{tikzpicture}
+    \caption{Consumer's Surplus for a Continuous Good}
+    \label{fig:CS_continuous}
+    \textit{Note: The area of the shaded region under the inverse demand curve $p(x)$ and above the market price $p'$ represents the consumer's surplus.}
+\end{figure}
+
+The consumer's surplus (CS) from consuming $x'$ units at price $p'$ is given by the integral:
+\begin{equation}
+    \text{CS} = \int_{0}^{x'} p(x) \,dx - p'x'
+\end{equation}
+where $p(x)$ is the inverse demand function.
+
+\begin{remark}
+The reservation-price curve is not exactly the same as the ordinary (Marshallian) demand curve. The reservation price is calculated assuming sequential purchases without income effects from previous purchases being fully accounted for. The ordinary demand curve shows the quantity demanded at each price, holding income constant. However, for many applications, the ordinary demand curve is used as a close approximation.
+\end{remark}
+
+\section{Consumer's Surplus and Quasilinear Utility}
+\index{Quasilinear utility}
+The approximation mentioned above becomes an exact measure in the special case of quasilinear preferences.
+
+Consider a utility function that is quasilinear in good 2:
+\begin{equation*}
+    U(x_1, x_2) = v(x_1) + x_2
+\end{equation*}
+Here, $v(x_1)$ is some function, with $v'(x_1) > 0$ and $v''(x_1) < 0$. Let good 2 be the numeraire, so its price is $p_2 = 1$. The budget constraint is $p_1 x_1 + x_2 = m$.
+
+We can substitute $x_2 = m - p_1 x_1$ from the budget constraint into the utility function. The consumer's problem is to choose $x_1$ to maximize:
+\begin{equation*}
+    \max_{x_1} \quad v(x_1) + m - p_1 x_1
+\end{equation*}
+The first-order condition for an interior maximum is:
+\begin{equation*}
+    v'(x_1) - p_1 = 0 \implies p_1 = v'(x_1)
+\end{equation*}
+This equation, $p_1 = v'(x_1)$, is the consumer's \textbf{inverse demand function}\index{Demand!inverse} for good 1. Crucially, it depends only on $x_1$ and not on income $m$. This is the defining feature of quasilinear utility: there are \textbf{no income effects}\index{Income effect!zero} for good 1 (for an interior solution).
+
+Now, let's calculate the consumer's surplus. The total utility from consuming $x_1'$ units of good 1 is $v(x_1') + x_2 = v(x_1') + m - p_1'x_1'$. The utility from consuming zero units of good 1 is $v(0) + m$. The \textit{change} in utility from consuming $x_1'$ is:
+\begin{equation*}
+    \Delta U = \left( v(x_1') + m - p_1'x_1' \right) - (v(0) + m) = v(x_1') - v(0) - p_1'x_1'
+\end{equation*}
+Let's compare this to the standard CS integral formula. Since $p_1(x_1) = v'(x_1)$:
+\begin{equation*}
+    \text{CS} = \int_{0}^{x_1'} v'(x_1) \,dx_1 - p_1'x_1' = \left[v(x_1)\right]_{0}^{x_1'} - p_1'x_1' = v(x_1') - v(0) - p_1'x_1'
+\end{equation*}
+
+\begin{proposition}
+For a consumer with quasilinear utility $U(x_1, x_2) = v(x_1) + x_2$, the consumer's surplus is an \textbf{exact} monetary measure of the utility gain from consuming good 1. When preferences are not quasilinear, consumer's surplus is an approximation.
+\end{proposition}
+
+\subsection{Change in Consumer's Surplus}
+The change in consumer's surplus ($\Delta\text{CS}$) measures how consumer welfare changes when the price of a good changes. If the price of good 1 rises from $p_1'$ to $p_1''$, the quantity demanded falls from $x_1'$ to $x_1''$. The loss in consumer surplus is the area of the trapezoid to the left of the demand curve between the two prices.
+\begin{equation}
+    \Delta\text{CS} = \int_{p_1'}^{p_1''} x_1(p_1) \,dp_1
+\end{equation}
+where $x_1(p_1)$ is the ordinary demand curve. For a price increase, $\Delta\text{CS}$ is negative, representing a welfare loss.
+
+\section{Compensating and Equivalent Variation}
+When income effects are present (i.e., utility is not quasilinear), consumer's surplus is only an approximation of the welfare change. Two more precise measures are Compensating Variation (CV) and Equivalent Variation (EV). Let's consider a price increase from $p' = (p_1', p_2)$ to $p'' = (p_1'', p_2)$.
+
+\begin{definition}[Compensating Variation]\index{Compensating variation (CV)}
+The \textbf{Compensating Variation (CV)} is the amount of additional income the consumer would need at the \textbf{new prices} ($p''$) to be just as well off as they were at the \textbf{original prices} ($p'$). It "compensates" the consumer for the price change.
+\end{definition}
+Let $u' = V(p', m)$ be the original utility level and $u'' = V(p'', m)$ be the new, lower utility level. The CV is defined by:
+\begin{equation}
+    V(p'', m + \text{CV}) = u'
+\end{equation}
+Using the expenditure function $e(p, u)$, this is equivalent to:
+\begin{equation}
+    \text{CV} = e(p'', u') - e(p'', u'') = e(p'', u') - m
+\end{equation}
+
+\begin{definition}[Equivalent Variation]\index{Equivalent variation (EV)}
+The \textbf{Equivalent Variation (EV)} is the amount of income that would have to be taken away from the consumer at the \textbf{original prices} ($p'$) to leave them just as badly off as they would be at the \textbf{new prices} ($p''$). The welfare impact of this income loss is "equivalent" to the price change.
+\end{definition}
+The EV is defined by:
+\begin{equation}
+    V(p', m - \text{EV}) = u''
+\end{equation}
+Using the expenditure function, this is equivalent to:
+\begin{equation}
+    \text{EV} = e(p', u') - e(p', u'') = m - e(p', u'')
+\end{equation}
+
+\section{Relationship between CS, CV, and EV}
+\index{CV, EV, and CS relationship}
+
+\subsection{The Quasilinear Case}
+As we derived for consumer surplus, with quasilinear utility $U=v(x_1) + x_2$, the indirect utility function is $V(p_1, m) = v(x_1(p_1)) + m - p_1 x_1(p_1)$.
+Let's find CV for a price rise from $p_1'$ to $p_1''$:
+\begin{align*}
+    v(x_1(p_1'')) + m + \text{CV} - p_1''x_1(p_1'') &= v(x_1(p_1')) + m - p_1'x_1(p_1') \\
+    \text{CV} &= [v(x_1(p_1')) - v(x_1(p_1''))] - [p_1'x_1(p_1') - p_1''x_1(p_1'')]
+\end{align*}
+This is precisely the expression for the change in consumer surplus, $\Delta\text{CS}$. A similar calculation shows $\text{EV} = \Delta\text{CS}$.
+
+\begin{proposition}
+When consumer preferences are quasilinear, the change in consumer's surplus, compensating variation, and equivalent variation are all identical.
+\begin{equation*}
+    \text{CV} = \text{EV} = \Delta\text{CS}
+\end{equation*}
+\end{proposition}
+This is because the absence of an income effect means that the Hicksian and Marshallian demand curves for good 1 are the same.
+
+\subsection{The General Case}
+When income effects are not zero, the three measures typically differ. For a price increase of good 1:
+\begin{itemize}
+    \item If good 1 is a \textbf{normal good}\index{Normal good}: $\text{CV} > |\Delta\text{CS}| > \text{EV}$.\footnote{Note: For a price increase, all three are negative welfare changes. This inequality refers to their absolute magnitudes.}
+    \item If good 1 is an \textbf{inferior good}\index{Inferior good}: $\text{EV} > |\Delta\text{CS}| > \text{CV}$.
+\end{itemize}
+
+\begin{examplebox}{Example 1: Quasilinear Utility}
+A consumer has utility $U(x_1, x_2) = \ln x_1 + x_2$. Initially, $p_1=2, p_2=1, m=10$. The price of good 1 falls to $p_1' = 1$. Calculate CV and EV.
+
+\textbf{Solution:}
+This is a quasilinear utility function. We expect CV = EV.
+The inverse demand for good 1 is $p_1 = \frac{\partial U / \partial x_1}{\partial U / \partial x_2} = \frac{1/x_1}{1} = 1/x_1$. So, the demand function is $x_1(p_1) = 1/p_1$.
+
+\textit{Initial situation ($p_1=2$):}
+$x_1^* = 1/2$. $x_2^* = m - p_1 x_1^* = 10 - 2(1/2) = 9$.
+Initial utility: $u' = \ln(1/2) + 9 = 9 - \ln 2 \approx 8.307$.
+
+\textit{New situation ($p_1'=1$):}
+$x_1' = 1/1 = 1$. $x_2' = m - p_1' x_1' = 10 - 1(1) = 9$.
+New utility: $u'' = \ln(1) + 9 = 9$.
+
+\textbf{Compensating Variation (CV):} How much money can we take away at the new prices ($p_1'=1$) to restore the old utility level ($u'$)?
+Let the new income be $m_{CV}$. The consumer must get utility $u'$:
+$\ln(x_1) + x_2 = u' \implies \ln(1/p_1') + (m_{CV} - p_1' x_1') = u'$
+$\ln(1) + (m_{CV} - 1 \cdot 1) = 9 - \ln 2$
+$0 + m_{CV} - 1 = 9 - \ln 2 \implies m_{CV} = 10 - \ln 2$.
+The CV is the change in income: $\text{CV} = m - m_{CV} = 10 - (10 - \ln 2) = \ln 2 \approx 0.693$.
+(Note: Since price fell, CV is the max amount the consumer would pay for the change, so we report it as a positive value representing the income reduction that offsets the utility gain.)
+
+\textbf{Equivalent Variation (EV):} How much money must be given at the old prices ($p_1=2$) to achieve the new utility level ($u''$)?
+Let the new income be $m_{EV}$. The consumer must get utility $u''$:
+$\ln(x_1) + x_2 = u'' \implies \ln(1/p_1) + (m_{EV} - p_1 x_1) = u''$
+$\ln(1/2) + (m_{EV} - 2 \cdot 1/2) = 9$
+$-\ln 2 + m_{EV} - 1 = 9 \implies m_{EV} = 10 + \ln 2$.
+The EV is the change in income: $\text{EV} = m_{EV} - m = (10 + \ln 2) - 10 = \ln 2 \approx 0.693$.
+As expected, $\text{CV} = \text{EV}$.
+\end{examplebox}
+
+\begin{examplebox}{Example 2: Cobb-Douglas Utility}
+A consumer has utility $U(x_1, x_2) = x_1 x_2$. Initially, $p_1=2, p_2=1, m=10$. The price of good 1 falls to $p_1' = 1$. Calculate CV and EV.
+
+\textbf{Solution:}
+The Marshallian demands\index{Demand!Marshallian} for Cobb-Douglas are $x_1(p_1, m) = \frac{m}{2p_1}$ and $x_2(p_2, m) = \frac{m}{2p_2}$. The indirect utility function is $V(p_1, p_2, m) = \frac{m^2}{4p_1 p_2}$.
+
+\textit{Initial situation ($p_1=2, p_2=1, m=10$):}
+$x_1^* = 10/(2 \cdot 2) = 2.5$. $x_2^* = 10/(2 \cdot 1) = 5$.
+Initial utility: $u' = (2.5)(5) = 12.5$.
+
+\textit{New situation ($p_1'=1, p_2=1, m=10$):}
+$x_1' = 10/(2 \cdot 1) = 5$. $x_2' = 10/(2 \cdot 1) = 5$.
+New utility: $u'' = (5)(5) = 25$.
+
+The expenditure function is $e(p_1, p_2, u) = 2\sqrt{p_1 p_2 u}$.
+\textbf{Compensating Variation (CV):}
+The CV is the income reduction at new prices that brings utility back to $u'$.
+$CV = m - e(p_1', p_2, u') = 10 - 2\sqrt{1 \cdot 1 \cdot 12.5} = 10 - 2\sqrt{12.5} \approx 10 - 7.07 = 2.93$.
+
+\textbf{Equivalent Variation (EV):}
+The EV is the income increase at old prices that brings utility up to $u''$.
+$EV = e(p_1, p_2, u'') - m = 2\sqrt{2 \cdot 1 \cdot 25} - 10 = 2\sqrt{50} - 10 \approx 14.14 - 10 = 4.14$.
+
+Here, good 1 is a normal good and the price fell, so we have $\text{EV} > \text{CV}$.
+\end{examplebox}
+
+\section{Producer's Surplus}
+\index{Producer's surplus}
+Just as we measure consumer welfare, we can measure the welfare of a firm, or producer.
+\textbf{Producer's Surplus (PS)} is the difference between the total revenue a firm receives and its total variable costs.
+\begin{equation}
+    \text{PS} = \text{Revenue} - \text{Variable Cost} = R - \text{VC}
+\end{equation}
+Since a firm's supply curve is its marginal cost (MC) curve (above average variable cost), the total variable cost of producing $y'$ units is the integral of the marginal cost up to $y'$:
+\begin{equation*}
+    \text{VC}(y') = \int_{0}^{y'} \text{MC}(y) \,dy
+\end{equation*}
+Producer's surplus is therefore the area above the supply (MC) curve and below the market price line. It represents the gain to the producer from selling at the market price, over and above the minimum price they would have needed to cover their variable production costs.
+
+\begin{remark}
+Producer's Surplus is closely related to profit ($\pi$). Since $\pi = R - \text{VC} - \text{FC}$ (where FC is fixed costs), we have:
+\begin{equation*}
+    \text{PS} = \pi + \text{FC}
+\end{equation*}
+The change in producer's surplus from a price change is equal to the change in the firm's profit.
+
+\end{remark}
+
+\section{Summary}
+This chapter introduced key concepts for measuring welfare changes in monetary terms.
+\begin{itemize}
+    \item \textbf{Consumer Surplus (CS)}: The area under the demand curve and above the price. It is an exact welfare measure only for quasilinear preferences.
+    \item \textbf{Compensating Variation (CV)}: The income adjustment at \textit{new prices} to restore the \textit{original utility level}.
+    \item \textbf{Equivalent Variation (EV)}: The income adjustment at \textit{original prices} to reach the \textit{new utility level}.
+\end{itemize}
+For quasilinear utility, $\Delta\text{CS} = \text{CV} = \text{EV}$. For normal goods, a price increase leads to $\text{CV} > |\Delta\text{CS}| > \text{EV}$, and vice versa for a price decrease.

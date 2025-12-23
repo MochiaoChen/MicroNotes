@@ -1,0 +1,235 @@
+\chapter{Monopoly Behavior}
+
+In the previous chapters, we analyzed the behavior of a monopolist charging a single, uniform price to all consumers. However, in reality, firms often sell identical goods at different prices to different buyers (e.g., student discounts, bulk-buying discounts). This practice is known as price discrimination. 
+
+In this chapter, we explore how and why a monopolist discriminates on price, the implications for efficiency, and related market structures such as monopolistic competition and product differentiation.
+
+\section{Types of Price Discrimination}
+
+Price discrimination occurs when a monopolist charges different prices to different consumers or for different units of output, not based on cost differences. We generally categorize these practices into three degrees.
+
+\begin{definition}[First-degree Price Discrimination]
+\index{Price discrimination!First-degree}
+Also known as \textit{perfect price discrimination}. The monopolist sells different units of output for different prices and these prices may differ from person to person. Ideally, each unit is sold to the individual who values it most, at the maximum price they are willing to pay.
+\end{definition}
+
+\begin{definition}[Second-degree Price Discrimination]
+\index{Price discrimination!Second-degree}
+The monopolist sells different units of output for different prices, but every individual who buys the same amount of the good pays the same price. Thus, prices depend on the \textit{quantity} purchased (e.g., bulk-buying discounts).
+\end{definition}
+
+\begin{definition}[Third-degree Price Discrimination]
+\index{Price discrimination!Third-degree}
+The monopolist sells output to different people for different prices, but every unit of output sold to a given person sells for the same price. This is the most common form (e.g., senior citizen discounts, student discounts).
+\end{definition}
+
+\section{First-degree Price Discrimination}
+
+Under first-degree price discrimination, the monopolist knows the reservation price of every consumer.
+
+\subsection{The Mechanism}
+Let $p(y)$ be the inverse demand curve. A perfectly discriminating monopolist charges the consumer exactly their willingness to pay for each unit.
+\begin{itemize}
+    \item The first unit is sold at $p(1)$.
+    \item The $y'$-th unit is sold at $p(y')$.
+    \item The monopolist continues to sell as long as the price (willingness to pay) exceeds the marginal cost ($MC$).
+\end{itemize}
+
+\subsection{Efficiency and Surplus}
+Since the monopolist sells every unit where $p(y) \ge MC(y)$, the equilibrium quantity produced is the same as in a competitive market ($p = MC$). 
+
+\begin{proposition}[Pareto Efficiency of First-degree Discrimination]
+\index{Pareto efficiency}
+First-degree price discrimination results in a Pareto-efficient outcome. All mutually beneficial trades are exhausted.
+\end{proposition}
+
+However, the distribution of surplus is extreme:
+\begin{itemize}
+    \item \textbf{Consumer Surplus (CS):} Zero. The monopolist extracts all surplus by charging the reservation price.
+    \item \textbf{Producer Surplus (PS):} Maximized. The producer captures the entire area under the demand curve and above the MC curve.
+\end{itemize}
+
+\section{Second-degree Price Discrimination}
+\index{Price discrimination!Second-degree}
+
+In many cases, the monopolist cannot identify individual consumers' willingness to pay but knows that there are different "types" of consumers (e.g., high-demand and low-demand). The firm constructs a price schedule (pricing menu) that incentivizes consumers to self-select the package meant for them.
+
+\subsection{Non-linear Pricing}
+Commonly known as quantity discounts or block pricing.
+\begin{itemize}
+    \item \textbf{High Willingness to Pay:} Consumers willing to buy larger quantities receive a lower marginal price for the additional units.
+    \item \textbf{Extraction:} By reducing the price for later units, the monopolist can induce consumers to buy more than they would under a uniform high price, thereby extracting areas of surplus (represented as triangles under the demand curve) that would otherwise be lost (Deadweight Loss) or retained by the consumer.
+\end{itemize}
+
+The fundamental problem for the monopolist is to design price-quantity packages $(x, p)$ such that:
+1. The consumer prefers buying the package to buying nothing (Participation Constraint).
+2. The high-demand consumer prefers the high-quantity package over the low-quantity package (Incentive Compatibility Constraint).
+
+\section{Third-degree Price Discrimination}
+\index{Price discrimination!Third-degree}
+
+This is the most standard form of discrimination where the market is segmented into groups (Market 1 and Market 2) with different demand curves.
+
+\subsection{The Maximization Problem}
+Let $y_1$ and $y_2$ be the quantities supplied to Market 1 and Market 2, respectively.
+\begin{itemize}
+    \item Inverse demand in Market 1: $p_1(y_1)$
+    \item Inverse demand in Market 2: $p_2(y_2)$
+    \item Cost function: $c(y_1 + y_2)$
+\end{itemize}
+
+The monopolist maximizes total profit:
+\begin{equation}
+    \Pi(y_1, y_2) = p_1(y_1)y_1 + p_2(y_2)y_2 - c(y_1 + y_2)
+\end{equation}
+
+The first-order conditions (FOC) with respect to $y_1$ and $y_2$ are:
+\begin{align}
+    \frac{\partial \Pi}{\partial y_1} &= \frac{\partial (p_1(y_1)y_1)}{\partial y_1} - \frac{\partial c(y_1+y_2)}{\partial (y_1+y_2)} \times \frac{\partial(y_1+y_2)}{\partial y_1} = 0 \\
+    \frac{\partial \Pi}{\partial y_2} &= \frac{\partial (p_2(y_2)y_2)}{\partial y_2} - \frac{\partial c(y_1+y_2)}{\partial (y_1+y_2)} \times \frac{\partial(y_1+y_2)}{\partial y_2} = 0
+\end{align}
+
+Since $\frac{\partial(y_1+y_2)}{\partial y_1} = 1$ and $\frac{\partial(y_1+y_2)}{\partial y_2} = 1$, these simplify to the standard marginal revenue equals marginal cost condition:
+\begin{equation}
+    MR_1(y_1) = MC(y_1 + y_2) \quad \text{and} \quad MR_2(y_2) = MC(y_1 + y_2)
+\end{equation}
+
+\begin{remark}
+This implies that marginal revenue must be equal across both markets:
+\[ MR_1(y_1) = MR_2(y_2) \]
+If $MR_1 > MR_2$, the firm could increase revenue by shifting one unit of output from Market 2 to Market 1.
+\end{remark}
+
+\subsection{Elasticity and Pricing}
+\index{Elasticity!Inverse elasticity rule}
+Using the standard relationship between marginal revenue and elasticity, $MR(y) = p(y)[1 + \frac{1}{\varepsilon}]$, we can write the equilibrium condition as:
+\begin{equation}
+    p_1(y_1)\left[ 1 + \frac{1}{\varepsilon_1} \right] = MC = p_2(y_2)\left[ 1 + \frac{1}{\varepsilon_2} \right]
+\end{equation}
+
+Rearranging to compare prices:
+\begin{equation}
+    \frac{p_1}{p_2} = \frac{1 + \frac{1}{\varepsilon_2}}{1 + \frac{1}{\varepsilon_1}}
+\end{equation}
+
+\begin{proposition}[Inverse Elasticity Rule]
+The monopolist sets a higher price in the market where demand is \textbf{less} own-price elastic (more inelastic).
+\[ |\varepsilon_1| < |\varepsilon_2| \implies p_1 > p_2 \]
+\end{proposition}
+
+\section{Two-Part Tariffs}
+\index{Two-part tariff}
+
+A two-part tariff is a pricing scheme consisting of:
+1. A lump-sum fee (entrance fee), $p_1$ or $T$.
+2. A price per unit, $p_2$ or $p$.
+
+The cost to the buyer of purchasing $x$ units is:
+\[ \text{Cost} = T + p x \]
+
+\subsection{Optimal Design of Two-Part Tariffs}
+The monopolist faces the question: Should they charge a high unit price and low fee, or vice versa?
+
+\begin{enumerate}
+    \item \textbf{The Entrance Fee ($T$):} The consumer will only pay the entrance fee if their Consumer Surplus (CS) from participating in the market is at least $T$. Therefore, the maximum $T$ the monopolist can set is equal to the total CS generated at the per-unit price $p$.
+    \item \textbf{The Per-Unit Price ($p$):}
+    \begin{itemize}
+        \item If $p > MC$, the monopolist restricts quantity, creating Deadweight Loss (DWL).
+        \item If the monopolist lowers $p$ to $MC$, the total surplus (Consumer Surplus + Profit) is maximized.
+    \end{itemize}
+\end{enumerate}
+
+Since the monopolist can extract the \textit{entire} consumer surplus via the entrance fee $T$, their goal is simply to maximize the total surplus available to be extracted.
+
+\begin{examplebox}{Profit Maximization Strategy}
+To maximize profit with a two-part tariff:
+\begin{enumerate}
+    \item Set the per-unit price equal to marginal cost: $\mathbf{p = MC}$.
+    \item Set the lump-sum fee equal to the total consumer surplus generated at that price: $\mathbf{T = CS}$.
+\end{enumerate}
+\end{examplebox}
+
+This outcome is \textbf{Pareto efficient} because price equals marginal cost, and the monopolist captures all gains from trade.
+
+\section{Monopolistic Competition}
+\index{Monopolistic competition}
+
+Monopolistic competition characterizes an industry where:
+\begin{itemize}
+    \item There are many firms.
+    \item Firms produce \textbf{differentiated} products (similar but not identical).
+    \item There is free entry and exit.
+\end{itemize}
+
+Because products are differentiated (e.g., by brand name), each firm faces a downward-sloping demand curve (it is not a price taker). However, the demand curve is highly elastic due to the presence of close substitutes.
+
+\subsection{Equilibrium Conditions}
+\begin{itemize}
+    \item \textbf{Short Run:} The firm acts like a monopolist, setting $MR = MC$. It may earn positive profits.
+    \item \textbf{Long Run:} If profits are positive, new firms enter with similar products. This shifts the incumbent's demand curve inward and makes it more elastic. Entry stops when profits are zero.
+\end{itemize}
+
+The long-run equilibrium must satisfy three conditions:
+\begin{enumerate}
+    \item \textbf{Profit Maximization:} $MR = MC$.
+    \item \textbf{On the Demand Curve:} The price-output combination is feasible.
+    \item \textbf{Zero Profit:} Price equals Average Cost ($P = AC$).
+\end{enumerate}
+
+\subsection{Geometric Interpretation and Inefficiency}
+Geometrically, the condition that $P = AC$ (zero profit) and the demand curve is downward sloping implies that the demand curve is \textbf{tangent} to the Average Cost curve.
+
+\begin{remark}[Excess Capacity]
+\index{Excess capacity}
+Since the demand curve is tangent to the AC curve on its downward-sloping portion:
+\begin{itemize}
+    \item The firm produces at an output level $y^*$ where $AC$ is still falling.
+    \item This output is less than the output $y^e$ that minimizes $AC$.
+    \item The difference $y^e - y^*$ is called \textbf{excess capacity}.
+\end{itemize}
+Additionally, since $P > MC$ (from the monopoly markup), the equilibrium is Pareto inefficient.
+\end{remark}
+
+\section{A Location Model of Product Differentiation}
+\index{Location model}
+\index{Hotelling model}
+
+Product differentiation allows firms to gain some market power. Differentiation can be physical (attributes) or spatial (location). We use the "Linear City" model (Hotelling's model) to analyze spatial competition.
+
+\subsection{The Setup}
+\begin{itemize}
+    \item Consumers are uniformly distributed on a line segment $[0, 1]$.
+    \item Consumers prefer the nearest seller to minimize travel costs.
+    \item There are $n \ge 1$ sellers choosing locations.
+\end{itemize}
+
+\subsection{Duopoly ($n=2$)}
+Where will two firms, A and B, locate?
+\begin{itemize}
+    \item Suppose A is at 0 and B is at 1. Each captures half the market ($1/2$).
+    \item If A moves closer to the center (say, to $x'$), A captures all consumers to its left plus half of the consumers between A and B. A's market share increases.
+    \item B has the same incentive to move toward A.
+\end{itemize}
+
+\begin{proposition}[Principle of Minimum Differentiation]
+In equilibrium, both firms will locate exactly at the center of the line:
+\[ x_A = x_B = 1/2 \]
+Each firm gets $50\%$ of the market.
+\end{proposition}
+
+\textbf{Efficiency:}
+Is this efficient? No. To minimize total travel costs for society, firms should locate at the quartiles: $x_A = 1/4$ and $x_B = 3/4$. The Nash equilibrium results in excessive sameness.
+
+\subsection{More than Two Firms}
+\begin{itemize}
+    \item \textbf{$n=3$:} Suppose firms A, B, and C exist.
+    \begin{itemize}
+        \item If all three are at $1/2$, each gets $1/3$ market share. However, an outer firm (say A) can move slightly away from the center and capture almost $1/2$ the market.
+        \item If two are at the center and one is outside, the one outside gets a larger share.
+        \item If all three are at different points, the "middle" firm gets squeezed and has an incentive to jump to the outside.
+    \end{itemize}
+    \textit{Result:} There is \textbf{no stable pure-strategy equilibrium} for $n=3$.
+    
+    \item \textbf{$n \ge 4$:} Equilibrium configurations tend to exist where firms are paired or spread out in specific patterns.
+\end{itemize}
+

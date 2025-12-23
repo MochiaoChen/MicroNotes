@@ -1,0 +1,213 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{A Mathematical Intuition of Common Demand Functions}
+\author{Mochiao Chen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    This document provides a mathematical intuition behind common demand functions derived from different types of utility functions.
+\end{abstract}
+
+\section{Cobb-Douglas Utility Function}
+
+The Cobb-Douglas utility function is given by:
+\begin{equation}
+U(x_1, x_2) = x_1^a x_2^b
+\end{equation}
+where $a > 0$ and $b > 0$.
+
+The Lagrangian for the utility maximization problem is:
+\begin{equation}
+\mathcal{L} = x_1^a x_2^b + \lambda(m - p_1x_1 - p_2x_2)
+\end{equation}
+
+The first-order conditions are:
+\begin{align}
+\frac{\partial\mathcal{L}}{\partial x_1} &= ax_1^{a-1}x_2^b - \lambda p_1 = 0 \\
+\frac{\partial\mathcal{L}}{\partial x_2} &= bx_1^a x_2^{b-1} - \lambda p_2 = 0 \\
+\frac{\partial\mathcal{L}}{\partial \lambda} &= m - p_1x_1 - p_2x_2 = 0
+\end{align}
+From the first two equations, we can write:
+\begin{align}
+\lambda &= \frac{ax_1^{a-1}x_2^b}{p_1} \\
+\lambda &= \frac{bx_1^a x_2^{b-1}}{p_2}
+\end{align}
+
+Setting these two expressions for $\lambda$ equal to each other gives:
+\begin{equation}
+\frac{ax_1^{a-1}x_2^b}{p_1} = \frac{bx_1^a x_2^{b-1}}{p_2}
+\end{equation}
+\begin{equation}
+\frac{ax_2}{p_1} = \frac{bx_1}{p_2} \implies p_2x_2 = \frac{b}{a}p_1x_1
+\end{equation}
+
+Substitute this into the budget constraint:
+\begin{align}
+p_1x_1 + \frac{b}{a}p_1x_1 &= m \\
+x_1(p_1 + \frac{b}{a}p_1) &= m \\
+x_1(\frac{ap_1 + bp_1}{a}) &= m \\
+x_1^*(p_1, p_2, m) &= \frac{a}{a+b} \frac{m}{p_1}
+\end{align}
+
+To find the demand for $x_2$, substitute $x_1^*$ back into the relationship between $x_1$ and $x_2$:
+\begin{align}
+p_2x_2 &= \frac{b}{a}p_1\left(\frac{a}{a+b}\frac{m}{p_1}\right) \\
+p_2x_2 &= \frac{b}{a+b}m \\
+x_2^*(p_1, p_2, m) &= \frac{b}{a+b} \frac{m}{p_2}
+\end{align}
+
+\section{Perfect Substitutes Utility Function}
+
+The perfect substitutes utility function is given by:
+\begin{equation}
+U(x_1, x_2) = ax_1 + bx_2
+\end{equation}
+where $a > 0$ and $b > 0$. The consumer will spend all of their income on the good that provides the most utility per dollar.
+
+The marginal utilities are:
+\begin{align}
+MU_1 &= a \\
+MU_2 &= b
+\end{align}
+
+The marginal rate of substitution (MRS) is:
+\begin{equation}
+MRS = \frac{MU_1}{MU_2} = \frac{a}{b}
+\end{equation}
+
+We compare the MRS to the price ratio $\dfrac{p_1}{p_2}$:
+\begin{itemize}
+    \item If $\dfrac{a}{b} > \dfrac{p_1}{p_2}$, then $\dfrac{MU_1}{p_1} > \dfrac{MU_2}{p_2}$. The consumer will only purchase good 1.
+    \begin{equation}
+    x_1^* = \frac{m}{p_1}, \quad x_2^* = 0
+    \end{equation}
+    \item If $\dfrac{a}{b} < \dfrac{p_1}{p_2}$, then $\dfrac{MU_1}{p_1} < \dfrac{MU_2}{p_2}$. The consumer will only purchase good 2.
+    \begin{equation}
+    x_1^* = 0, \quad x_2^* = \frac{m}{p_2}
+    \end{equation}
+    \item If $\dfrac{a}{b} = \dfrac{p_1}{p_2}$, the consumer is indifferent between any combination of $x_1$ and $x_2$ along the budget line. Any bundle satisfying $p_1x_1 + p_2x_2 = m$ is optimal.
+\end{itemize}
+
+\section{Perfect Complements Utility Function}
+The perfect complements utility function is given by:
+\begin{equation}
+U(x_1, x_2) = \min(ax_1, bx_2)
+\end{equation}
+where $a > 0$ and $b > 0$. The consumer will always consume the goods in a fixed ratio.
+
+To maximize utility, the consumer will choose $x_1$ and $x_2$ such that:
+\begin{equation}
+ax_1 = bx_2 \implies x_2 = \frac{a}{b}x_1
+\end{equation}
+
+Substitute this into the budget constraint:
+\begin{align}
+p_1x_1 + p_2\left(\frac{a}{b}x_1\right) &= m \\
+x_1\left(p_1 + \frac{a}{b}p_2\right) &= m \\
+x_1\left(\frac{bp_1 + ap_2}{b}\right) &= m \\
+x_1^*(p_1, p_2, m) &= \frac{bm}{bp_1 + ap_2}
+\end{align}
+
+To find the demand for $x_2$, substitute $x_1^*$ back into the relationship between $x_1$ and $x_2$:
+\begin{align}
+x_2^* = \frac{a}{b}x_1^* &= \frac{a}{b}\left(\frac{bm}{bp_1 + ap_2}\right) \\
+x_2^*(p_1, p_2, m) &= \frac{am}{bp_1 + ap_2}
+\end{align}
+
+\section{Quasi-linear Utility Function}
+
+A quasi-linear utility function is linear in one good, say $x_2$:
+\begin{equation}
+U(x_1, x_2) = v(x_1) + x_2
+\end{equation}
+where $v(x_1)$ is a strictly concave function.
+
+The Lagrangian is:
+\begin{equation}
+\mathcal{L} = v(x_1) + x_2 + \lambda(m - p_1x_1 - p_2x_2)
+\end{equation}
+
+The first-order conditions are:
+\begin{align}
+\frac{\partial\mathcal{L}}{\partial x_1} &= v'(x_1) - \lambda p_1 = 0 \\
+\frac{\partial\mathcal{L}}{\partial x_2} &= 1 - \lambda p_2 = 0 \\
+\frac{\partial\mathcal{L}}{\partial \lambda} &= m - p_1x_1 - p_2x_2 = 0
+\end{align}
+
+From the second equation, we get $\lambda = \frac{1}{p_2}$. Substituting this into the first equation:
+\begin{equation}
+v'(x_1) - \frac{p_1}{p_2} = 0 \implies v'(x_1) = \frac{p_1}{p_2}
+\end{equation}
+This gives us the demand for $x_1$, which only depends on the prices:
+\begin{equation}
+x_1^*(p_1, p_2) = (v')^{-1}\left(\frac{p_1}{p_2}\right)
+\end{equation}
+
+The demand for $x_2$ is then found from the budget constraint:
+\begin{equation}
+p_1x_1^* + p_2x_2 = m \implies x_2^*(p_1, p_2, m) = \frac{m - p_1x_1^*}{p_2}
+\end{equation}
+This is valid for an interior solution, which requires $m > p_1x_1^*$.
+
+\section{Constant Elasticity of Substitution (CES) Utility Function}
+
+The CES utility function is defined as:
+\begin{equation}
+U(x_1, x_2) = (a x_1^\rho + b x_2^\rho)^{\frac{1}{\rho}}
+\end{equation}
+where $a, b > 0$ and $\rho \le 1, \rho \neq 0$. The elasticity of substitution is $\sigma = \frac{1}{1-\rho}$.
+
+The Lagrangian is:
+\begin{equation}
+\mathcal{L} = (a x_1^\rho + b x_2^\rho)^{\frac{1}{\rho}} + \lambda(m - p_1x_1 - p_2x_2)
+\end{equation}
+
+The first-order conditions are:
+\begin{align}
+\frac{\partial\mathcal{L}}{\partial x_1} &= \frac{1}{\rho}(a x_1^\rho + b x_2^\rho)^{\frac{1}{\rho}-1} (a\rho x_1^{\rho-1}) - \lambda p_1 = 0 \\
+\frac{\partial\mathcal{L}}{\partial x_2} &= \frac{1}{\rho}(a x_1^\rho + b x_2^\rho)^{\frac{1}{\rho}-1} (b\rho x_2^{\rho-1}) - \lambda p_2 = 0 \\
+\frac{\partial\mathcal{L}}{\partial \lambda} &= m - p_1x_1 - p_2x_2 = 0
+\end{align}
+From the first two equations, we can find the MRS:
+\begin{equation}
+\frac{a x_1^{\rho-1}}{b x_2^{\rho-1}} = \frac{p_1}{p_2} \implies \left(\frac{x_1}{x_2}\right)^{\rho-1} = \frac{b p_1}{a p_2}
+\end{equation}
+\begin{equation}
+\frac{x_1}{x_2} = \left(\frac{b p_1}{a p_2}\right)^{\frac{1}{\rho-1}} = \left(\frac{a p_2}{b p_1}\right)^{\frac{1}{1-\rho}}
+\end{equation}
+Let $\sigma = \frac{1}{1-\rho}$, then:
+\begin{equation}
+x_1 = x_2 \left(\frac{a p_2}{b p_1}\right)^\sigma
+\end{equation}
+
+Substitute this into the budget constraint:
+\begin{align}
+p_1 \left(x_2 \left(\frac{a p_2}{b p_1}\right)^\sigma\right) + p_2x_2 &= m \\
+x_2 \left(p_1 \left(\frac{a p_2}{b p_1}\right)^\sigma + p_2\right) &= m \\
+x_2^* &= \frac{m}{p_1 \left(\frac{a p_2}{b p_1}\right)^\sigma + p_2} = \frac{m p_1^\sigma b^\sigma}{p_1 a^\sigma p_2^\sigma + p_2 p_1^\sigma b^\sigma} = \frac{m p_1^\sigma b^\sigma}{p_1^\sigma p_2 (a^\sigma p_2^{\sigma-1} + b^\sigma p_1^{\sigma-1})}
+\end{align}
+After further simplification:
+\begin{equation}
+x_1^*(p_1, p_2, m) = \frac{m a^\sigma}{a^\sigma p_1^{1-\sigma} + b^\sigma p_2^{1-\sigma}} \cdot \frac{1}{p_1^\sigma} = \frac{m a^\sigma p_1^{-\sigma}}{a^\sigma p_1^{1-\sigma} + b^\sigma p_2^{1-\sigma}}
+\end{equation}
+A more common form is:
+\begin{equation}
+x_1^*(p_1, p_2, m) = \frac{m p_1^{\frac{1}{\rho-1}} a^{\frac{1}{1-\rho}}}{p_1^{\frac{\rho}{\rho-1}} a^{\frac{1}{1-\rho}} + p_2^{\frac{\rho}{\rho-1}} b^{\frac{1}{1-\rho}}}
+\end{equation}
+Let $r = \dfrac{\rho}{\rho-1}$. Then:
+\begin{equation}
+x_1^*(p_1, p_2, m) = \frac{m p_1^{r-1} a^{\sigma}}{p_1^r a^{\sigma} + p_2^r b^{\sigma}}
+\end{equation}
+By symmetry:
+\begin{equation}
+x_2^*(p_1, p_2, m) = \frac{m p_2^{r-1} b^{\sigma}}{p_1^r a^{\sigma} + p_2^r b^{\sigma}}
+\end{equation}
+
+\end{document}

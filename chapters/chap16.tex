@@ -1,0 +1,223 @@
+\chapter{Oligopoly}
+\label{ch:oligopoly}
+
+\section{Introduction to Industrial Organization}
+
+So far, we have studied two extreme forms of market structure:
+\begin{itemize}
+    \item \textbf{Perfect Competition:} Many firms, identical products, no market power.
+    \item \textbf{Monopoly:} A single firm, complete market power.
+\end{itemize}
+
+In this chapter, we turn our attention to \textbf{Oligopoly}, an important case of industrial organization that lies between these two extremes.
+
+\begin{definition}[Market Structures]
+    We distinguish industries based on the number of firms:
+    \begin{itemize}
+        \item A \textbf{monopoly} is an industry consisting of a single firm.
+        \item A \textbf{duopoly} is an industry consisting of two firms.
+        \item An \textbf{oligopoly} is an industry consisting of a few firms competing with each other.
+    \end{itemize}
+\end{definition}
+
+The study of oligopoly is particularly interesting because it introduces \textit{strategic interaction}. Unlike a monopolist (who plays against the market demand) or a perfect competitor (who ignores other firms), an oligopolist must consider how its rivals will react to its decisions.
+
+We will explore different models based on the strategic variable (quantity vs. price) and the order of play (simultaneous vs. sequential).
+
+\section{Quantity Competition: The Cournot Model}
+
+The Cournot model describes a static game where firms compete by choosing \textbf{output levels} (quantities) simultaneously.
+
+\subsection{The Setup}
+Consider a duopoly. Let $y_1$ and $y_2$ be the output levels of firm 1 and firm 2, respectively.
+\begin{itemize}
+    \item Firm 1 takes firm 2's output choice, $y_2$, as given (fixed).
+    \item Firm 1's profit function is:
+    \begin{equation}
+        \Pi_1(y_1; y_2) = p(y_1 + y_2)y_1 - c_1(y_1)
+    \end{equation}
+    where $p(y_1 + y_2)$ is the market inverse demand function dependent on total output $y_T = y_1 + y_2$.
+\end{itemize}
+
+\subsection{Reaction Functions}
+Firm 1 seeks to maximize profit given its belief about $y_2$. The first-order condition (FOC) for profit maximization is:
+\begin{equation}
+    \frac{\partial \Pi_1}{\partial y_1} = p(y_1 + y_2) + y_1 \frac{\partial p(y_1 + y_2)}{\partial y_1} - c_1'(y_1) = 0
+\end{equation}
+This equates marginal revenue to marginal cost. The solution to this maximization problem is firm 1's \textbf{reaction function} (or best response function):
+\begin{equation}
+    y_1 = R_1(y_2)
+\end{equation}
+Similarly, firm 2 maximizes $\Pi_2(y_2; y_1) = p(y_1 + y_2)y_2 - c_2(y_2)$. Its FOC yields firm 2's reaction function:
+\begin{equation}
+    y_2 = R_2(y_1)
+\end{equation}
+
+\subsection{Cournot-Nash Equilibrium}
+A Cournot-Nash equilibrium is a set of output levels $(y_1^*, y_2^*)$ such that each firm is maximizing profit given the output of the other. Mathematically, the equilibrium must satisfy both reaction functions simultaneously:
+\begin{equation}
+    y_1^* = R_1(y_2^*) \quad \text{and} \quad y_2^* = R_2(y_1^*)
+\end{equation}
+Graphically, this is the intersection of the two reaction curves in the $(y_1, y_2)$ plane.
+
+\begin{examplebox}{Example: Cournot Competition}
+\textbf{Setup:}
+Assume the market inverse demand function is linear:
+\[ p(y_T) = 60 - y_T \]
+The total cost functions for the two firms are:
+\[ c_1(y_1) = y_1^2 \quad \text{and} \quad c_2(y_2) = 15y_2 + y_2^2 \]
+
+\textbf{Step 1: Firm 1's Optimization}
+Given $y_2$, firm 1's profit is:
+\[ \Pi_1 = (60 - y_1 - y_2)y_1 - y_1^2 = 60y_1 - y_1^2 - y_1y_2 - y_1^2 = 60y_1 - y_1y_2 - 2y_1^2 \]
+First-order condition ($\frac{\partial \Pi_1}{\partial y_1} = 0$):
+\[ 60 - y_2 - 4y_1 = 0 \implies 4y_1 = 60 - y_2 \]
+Firm 1's reaction function:
+\[ y_1 = R_1(y_2) = 15 - \frac{1}{4}y_2 \]
+
+\textbf{Step 2: Firm 2's Optimization}
+Given $y_1$, firm 2's profit is:
+\[ \Pi_2 = (60 - y_1 - y_2)y_2 - (15y_2 + y_2^2) = 60y_2 - y_1y_2 - y_2^2 - 15y_2 - y_2^2 \]
+Simplifying: $\Pi_2 = 45y_2 - y_1y_2 - 2y_2^2$.
+First-order condition ($\frac{\partial \Pi_2}{\partial y_2} = 0$):
+\[ 45 - y_1 - 4y_2 = 0 \implies 4y_2 = 45 - y_1 \]
+Firm 2's reaction function:
+\[ y_2 = R_2(y_1) = \frac{45 - y_1}{4} \]
+
+\textbf{Step 3: Finding Equilibrium}
+Substitute $R_2$ into $R_1$:
+\[ y_1 = 15 - \frac{1}{4} \left( \frac{45 - y_1}{4} \right) \]
+\[ y_1 = 15 - \frac{45}{16} + \frac{y_1}{16} \]
+\[ \frac{15}{16}y_1 = 15 - 2.8125 = 12.1875 \]
+Solving for quantities:
+\[ y_1^* = 13 \]
+Substitute $y_1^*$ back into $R_2$:
+\[ y_2^* = \frac{45 - 13}{4} = \frac{32}{4} = 8 \]
+
+\textbf{Result:} The Cournot-Nash equilibrium is $(y_1^*, y_2^*) = (13, 8)$.
+\end{examplebox}
+
+\section{Iso-Profit Curves}
+
+To understand the incentives in oligopoly, we can analyze \textbf{iso-profit curves}. An iso-profit curve for firm 1 describes all pairs of $(y_1, y_2)$ that yield the same level of profit for firm 1.
+
+Consider a general linear demand $p(y_1+y_2) = a - b(y_1+y_2)$ and zero costs for simplicity. Firm 2's profit is:
+\[ \Pi_2 = (a - b y_1 - b y_2)y_2 = ay_2 - by_1 y_2 - by_2^2 \]
+Rearranging for $y_1$ to plot the curve:
+\[ y_1 = \frac{a}{b} - y_2 - \frac{\bar{\Pi}_2}{by_2} \]
+
+\begin{remark}[Shape of Iso-Profit Curves]
+For firm 1, profit increases as $y_2$ decreases (competitor produces less). Thus, lower iso-profit curves (closer to the $y_1$ axis) represent higher profits for firm 1. The shape is an inverted "U".
+\end{remark}
+
+\textbf{Key geometric properties:}
+\begin{itemize}
+    \item The peak ("top") of any iso-profit curve for firm 1 lies exactly on firm 1's reaction curve.
+    \item Why? Because for any fixed $y_2$, firm 1 chooses $y_1$ to maximize profit, which corresponds to the highest attainable point on the vertical section (the tangency of the horizontal line $y_2=c$ and the iso-profit curve).
+    \item The Cournot equilibrium is the intersection of the two reaction curves.
+\end{itemize}
+
+\section{Collusion and Cartels}
+
+Are the Cournot-Nash equilibrium profits the largest that firms can earn in total? The answer is generally \textbf{no}.
+
+\subsection{The Incentive to Collude}
+Firms can mutually increase profits by coordinating to lower total output, moving closer to the monopoly outcome. This cooperation is called \textbf{collusion}, and firms that collude form a \textbf{cartel}.
+
+The goal of a cartel is to choose $(y_1, y_2)$ to maximize joint profit:
+\[ \Pi^m(y_1, y_2) = p(y_1+y_2)(y_1+y_2) - c_1(y_1) - c_2(y_2) \]
+
+Graphically, the joint profit maximizing point $(y_1^m, y_2^m)$ is where the iso-profit curves of the two firms are tangent to each other. At the Cournot equilibrium, the iso-profit curves intersect, implying there is a "lens" shaped region between them where both firms can achieve higher profits (Pareto improvement).
+
+\subsection{The Instability of Cartels}
+While cartels maximize joint profits, they are fundamentally unstable due to the \textbf{incentive to cheat}.
+
+Suppose firms agree to produce the cartel output $(y_1^m, y_2^m)$.
+\begin{itemize}
+    \item If firm 1 produces $y_1^m$, firm 2's best response is $R_2(y_1^m)$.
+    \item Since $y_2^m$ restricts output to keep prices high, generally $R_2(y_1^m) > y_2^m$.
+    \item Firm 2 can increase its \textit{individual} profit by unilaterally increasing output (cheating).
+\end{itemize}
+
+Mathematically, the first-order conditions for the cartel (joint maximization) require:
+\[ \frac{\partial \Pi^m}{\partial y_1} = p(y_T) + y_T \frac{\partial p}{\partial Y} - MC_1(y_1) = 0 \]
+However, if firm 1 maximizes only its own profit $\Pi_1$, the condition is:
+\[ \frac{\partial \Pi_1}{\partial y_1} = p(y_T) + y_1 \frac{\partial p}{\partial Y} - MC_1(y_1) = 0 \]
+Comparing these, since $\frac{\partial p}{\partial Y} < 0$ and $y_T > y_1$, the marginal revenue perceived by the individual firm is higher than the marginal revenue perceived by the cartel. Therefore:
+\[ \frac{\partial \Pi_1}{\partial y_1} \bigg|_{(y_1^m, y_2^m)} > 0 \]
+The individual firm always has a marginal incentive to increase output at the cartel solution. This leads to broken agreements (e.g., OPEC).
+
+\section{Stackelberg Games: Sequential Competition}
+
+In the Cournot model, firms move simultaneously. What if one firm chooses its output first (the \textbf{Leader}) and the other responds (the \textbf{Follower})? This is a \textbf{Stackelberg game}.
+
+\subsection{Backward Induction}
+To solve this, we use backward induction:
+\begin{enumerate}
+    \item \textbf{Follower's Problem:} Firm 2 observes firm 1's choice $y_1$ and chooses $y_2$ to maximize its own profit. This is simply firm 2's reaction function:
+    \[ y_2 = R_2(y_1) \]
+    \item \textbf{Leader's Problem:} Firm 1 anticipates this reaction. It chooses $y_1$ to maximize $\Pi_1(y_1, R_2(y_1))$.
+\end{enumerate}
+
+The leader's profit function becomes:
+\[ \Pi_1^S(y_1) = p(y_1 + R_2(y_1))y_1 - c_1(y_1) \]
+
+\begin{examplebox}{Example: Stackelberg Competition}
+Using the same functions as the Cournot example:
+\[ p = 60 - y_T, \quad c_1 = y_1^2, \quad c_2 = 15y_2 + y_2^2 \]
+
+\textbf{1. Follower's Response (Firm 2)}
+From the previous section, we know firm 2's reaction function is:
+\[ y_2 = \frac{45 - y_1}{4} \]
+
+\textbf{2. Leader's Optimization (Firm 1)}
+Firm 1 substitutes $y_2$ into its profit function:
+\begin{align*}
+    \Pi_1 &= (60 - y_1 - y_2)y_1 - y_1^2 \\
+          &= \left( 60 - y_1 - \frac{45 - y_1}{4} \right)y_1 - y_1^2
+\end{align*}
+Simplify the term in the brackets:
+\[ 60 - \frac{45}{4} - y_1 + \frac{y_1}{4} = \frac{240-45}{4} - \frac{3}{4}y_1 = \frac{195}{4} - \frac{3}{4}y_1 \]
+Now substitute back into profit:
+\[ \Pi_1 = \left( \frac{195}{4} - \frac{3}{4}y_1 \right)y_1 - y_1^2 = \frac{195}{4}y_1 - \frac{3}{4}y_1^2 - \frac{4}{4}y_1^2 = \frac{195}{4}y_1 - \frac{7}{4}y_1^2 \]
+First-order condition ($\frac{d \Pi_1}{d y_1} = 0$):
+\[ \frac{195}{4} - \frac{14}{4}y_1 = 0 \implies 14y_1 = 195 \]
+\[ y_1^S = \frac{195}{14} \approx 13.9 \]
+(Note: The slides approximate this as $13.9$).
+
+\textbf{3. Follower's Output}
+\[ y_2^S = \frac{45 - 13.9}{4} = \frac{31.1}{4} \approx 7.8 \]
+\end{examplebox}
+
+\begin{proposition}[Stackelberg vs. Cournot]
+Comparing the results:
+\begin{itemize}
+    \item Cournot: $y_1^* = 13$, $y_2^* = 8$.
+    \item Stackelberg: $y_1^S \approx 13.9$, $y_2^S \approx 7.8$.
+\end{itemize}
+The leader produces \textbf{more} than its Cournot output, and the follower produces \textbf{less}. The leader earns higher profits than in the Cournot equilibrium because it can manipulate the follower's reaction.
+\end{proposition}
+
+\section{Price Competition: The Bertrand Model}
+
+What if firms compete using \textbf{price} strategies instead of quantity strategies? This is known as the Bertrand model.
+
+\subsection{Assumptions and Equilibrium}
+\begin{itemize}
+    \item Firms produce identical (homogeneous) products.
+    \item Firms set prices simultaneously.
+    \item Consumers buy from the firm with the lower price.
+    \item Constant marginal cost $c$.
+\end{itemize}
+
+If Firm 1 sets $p_1 > p_2 > c$, Firm 1 sells nothing.
+If Firm 1 sets $p_1 = p_2 > c$, they split the market.
+However, if $p > c$, any firm has an incentive to slightly undercut the rival (e.g., set price $p_2 - \epsilon$) to capture the entire market. This "price war" drives the price down to the marginal cost.
+
+\begin{proposition}[Bertrand Equilibrium]
+In the unique Nash equilibrium of the Bertrand game with homogeneous goods and constant marginal costs, all firms set their price equal to marginal cost:
+\[ p_1 = p_2 = c \]
+Economic profits are zero.
+\end{proposition}
+
+This result is striking because it suggests that with just two firms, price competition can result in the perfect competition outcome, provided goods are homogeneous and capacity is unlimited.

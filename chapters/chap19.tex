@@ -1,0 +1,232 @@
+\chapter{Externalities}
+
+\section{Introduction}
+
+In standard economic models, we typically assume that economic agents interact solely through markets and prices. However, in reality, the actions of one agent often directly affect the well-being of others outside of the market mechanism.
+
+\begin{definition}[Externality]
+An \textbf{externality} is a cost or a benefit imposed upon someone by actions taken by others. Crucially, the cost or benefit is generated \textit{externally} to that person; they are a third party who is not a participant in the activity that produces the effect.
+\end{definition}
+
+Externalities are classified based on their impact:
+\begin{itemize}
+    \item \textbf{Positive Externality:} An externally imposed benefit.
+    \item \textbf{Negative Externality:} An externally imposed cost.
+\end{itemize}
+
+\begin{examplebox}{Examples of Externalities}
+\textbf{Negative Externalities:}
+\begin{itemize}
+    \item \textbf{Air pollution:} A factory produces goods but pollutes the air, affecting the health of nearby residents.
+    \item \textbf{Traffic congestion:} An additional car on the road slows down all other drivers.
+    \item \textbf{Second-hand cigarette smoke:} A smoker enjoys their cigarette, but the smoke bothers or harms people nearby.
+\end{itemize}
+
+\textbf{Positive Externalities:}
+\begin{itemize}
+    \item \textbf{Property maintenance:} A well-maintained property increases the market value of neighboring properties.
+    \item \textbf{Scientific advance:} Research and development can generate knowledge that benefits society beyond the specific firm that conducted the research.
+    \item \textbf{Vaccination:} Getting vaccinated reduces the transmission of disease to others.
+\end{itemize}
+\end{examplebox}
+
+\section{Inefficiency and The Consumption Model}
+
+To understand why externalities lead to inefficiency, consider a simple model with two agents, A and B, and two commodities: Money ($m$) and Smoke ($s$).
+
+\subsection{Preferences and Endowments}
+\begin{itemize}
+    \item \textbf{Agent A:} Likes both money and smoke. (Smoke might represent the pleasure of smoking or the output of a production process).
+    \item \textbf{Agent B:} Likes money but dislikes smoke (Smoke is a ``bad'').
+    \item \textbf{Endowments:} Agents are endowed with money $y_A$ and $y_B$. Smoke intensity is measured on a scale from $0$ to $1$.
+\end{itemize}
+
+\subsection{The Conflict}
+If there is no mechanism to trade or negotiate regarding smoke:
+\begin{enumerate}
+    \item Agent A, preferring more smoke, will choose the maximum smoke level ($s=1$).
+    \item Agent B, preferring less smoke, would prefer zero smoke ($s=0$).
+\end{enumerate}
+
+Typically, Agent A determines the smoke level (e.g., by lighting a cigarette). This creates an inefficient outcome. In an Edgeworth box-style analysis (adapted for a public good/bad), we can see that:
+\begin{itemize}
+    \item Agent A's most preferred choice ($s=1$) is inefficient because Agent B would be willing to pay A to reduce the smoke.
+    \item Agent B's most preferred choice ($s=0$) is inefficient because Agent A would be willing to pay B to allow some smoke.
+\end{itemize}
+
+Efficient allocations are found where the marginal rate of substitution between money and smoke is equalized (tangency of indifference curves), or where the marginal benefit of smoke to A equals the marginal cost of smoke to B. Without a market for smoke, the economy fails to reach these efficient points.
+
+\section{The Coase Theorem and Property Rights}
+
+Ronald Coase provided a profound insight into the problem of externalities. He argued that most externality problems arise due to an \textbf{inadequate specification of property rights}. Because property rights over resources (like clean air) are undefined, markets cannot form to trade these rights.
+
+\begin{definition}[Internalizing the Externality]
+Causing a producer of an externality to bear the full external cost or to enjoy the full external benefit is called \textbf{internalizing the externality}.
+\end{definition}
+
+\subsection{Assigning Property Rights}
+Let us revisit the Smoke vs. Money example. Suppose we create a property right for the air in the room and assign it to one of the agents.
+
+\textbf{Case 1: Agent B owns the air.}
+\begin{itemize}
+    \item Agent B has the right to clean air ($s=0$).
+    \item Agent B can sell ``rights to smoke'' to Agent A at a price $p(s_A)$.
+    \item \textbf{Result:} Trade will occur. Agent A buys rights, and a positive amount of smoking ($s > 0$) occurs. Both agents are better off than at the no-smoke starting point. The equilibrium is Pareto efficient.
+\end{itemize}
+
+\textbf{Case 2: Agent A owns the air.}
+\begin{itemize}
+    \item Agent A has the right to smoke ($s=1$).
+    \item Agent B can pay Agent A to \textit{reduce} smoke intensity.
+    \item \textbf{Result:} Trade will occur. Agent B pays A to smoke less. The equilibrium is Pareto efficient.
+\end{itemize}
+
+\subsection{Quasilinear Preferences and The Coase Theorem}
+A crucial question is whether the \textit{amount} of smoke generated depends on who owns the property rights.
+\begin{itemize}
+    \item Generally, the allocation of property rights affects the distribution of wealth (the owner gets richer). If preferences represent normal goods, wealth effects might change the demand for smoke.
+    \item However, if preferences are \textbf{quasilinear} in money (i.e., $U(m, s) = m + f(s)$), there are no income effects on the demand for $s$.
+\end{itemize}
+
+\begin{proposition}[Coase Theorem]
+If property rights are well-defined and trade is allowed (with zero transaction costs), the allocation of resources will be efficient. Furthermore, if preferences are quasilinear, the equilibrium level of the externality (e.g., amount of smoke) will be the same regardless of who is assigned the property right.
+\end{proposition}
+
+\section{Production Externalities: The Steel Mill and The Fishery}
+
+We now formalize this using a production model involving two firms.
+\begin{itemize}
+    \item \textbf{Steel Mill ($S$):} Produces steel ($s$) and pollution ($x$).
+    \item \textbf{Fishery ($F$):} Produces fish ($f$). Pollution ($x$) increases the cost of fishing.
+\end{itemize}
+
+\subsection{The Setup}
+\begin{itemize}
+    \item \textbf{Steel Firm Cost:} $c_S(s, x)$.
+        \begin{itemize}
+            \item Marginal cost of steel: $\frac{\partial c_S}{\partial s} > 0$.
+            \item Pollution reduces production costs: $\frac{\partial c_S}{\partial x} \leq 0$. Conversely, reducing pollution raises costs.
+        \end{itemize}
+    \item \textbf{Fishery Cost:} $c_F(f, x)$.
+        \begin{itemize}
+            \item Pollution increases fishing costs: $\frac{\partial c_F}{\partial x} \geq 0$. This implies a \textbf{negative externality}.
+        \end{itemize}
+    \item Both firms are price takers with market prices $p_S$ and $p_F$.
+\end{itemize}
+
+\subsection{Private Optimization (Inefficient Outcome)}
+If the Steel firm ignores the externality, it maximizes:
+\[
+\max_{s, x} \Pi_S = p_S s - c_S(s, x)
+\]
+The first-order conditions (FOCs) are:
+\begin{align}
+    p_S &= \frac{\partial c_S(s, x)}{\partial s} \quad \text{(Price = Marginal Production Cost)} \\
+    0 &= -\frac{\partial c_S(s, x)}{\partial x} \quad \text{(Marginal Cost of Pollution Reduction = 0)}
+\end{align}
+The firm produces pollution until the marginal benefit of reducing cost is zero, ignoring the damage to the fishery.
+
+\begin{examplebox}{Numerical Example: Independent Firms}
+Suppose:
+\begin{itemize}
+    \item $p_S = 12$, $p_F = 10$.
+    \item Steel Cost: $c_S(s, x) = s^2 + (x - 4)^2$.
+    \item Fishery Cost: $c_F(f, x) = f^2 + xf$.
+\end{itemize}
+
+\textbf{Steel Firm's Choice:}
+Max $\Pi_S = 12s - [s^2 + (x-4)^2]$.
+FOCs:
+\[ 12 - 2s = 0 \implies s^* = 6 \]
+\[ -2(x - 4) = 0 \implies x^* = 4 \]
+Max Profit: $\Pi_S = 12(6) - 36 - 0 = \$36$.
+
+\textbf{Fishery's Choice (given $x=4$):}
+Max $\Pi_F = 10f - [f^2 + 4f] = 6f - f^2$.
+FOC: $6 - 2f = 0 \implies f^* = 3$.
+Max Profit: $\Pi_F = 10(3) - [9 + 12] = 30 - 21 = \$9$.
+
+\textbf{Total Industry Profit:} $\$36 + \$9 = \$45$.
+\end{examplebox}
+
+\subsection{Merger (Internalization)}
+Suppose the two firms merge. The new firm internalizes the externality by maximizing joint profit:
+\[
+\max_{s, f, x} \Pi^m = p_S s - c_S(s, x) + p_F f - c_F(f, x)
+\]
+FOCs:
+\begin{align}
+    p_S &= \frac{\partial c_S}{\partial s} \\
+    p_F &= \frac{\partial c_F}{\partial f} \\
+    -\frac{\partial c_S}{\partial x} &= \frac{\partial c_F}{\partial x}
+\end{align}
+The third condition states: \textit{The marginal cost to the steel division of reducing pollution must equal the marginal benefit to the fishery division of less pollution.}
+
+\begin{examplebox}{Numerical Example: Merger}
+Using the same functions:
+\[ \Pi^m = 12s - s^2 - (x-4)^2 + 10f - f^2 - xf \]
+FOCs:
+\begin{enumerate}
+    \item Steel: $12 - 2s = 0 \implies s^m = 6$.
+    \item Fish: $10 - 2f - x = 0$.
+    \item Pollution: $-2(x-4) - f = 0 \implies f = -2(x-4)$.
+\end{enumerate}
+Substituting (3) into (2):
+\[ 10 - 2[-2(x-4)] - x = 0 \]
+\[ 10 + 4(x-4) - x = 0 \implies 10 + 4x - 16 - x = 0 \implies 3x = 6 \implies x^m = 2 \]
+Then $f^m = -2(2-4) = 4$.
+
+\textbf{Total Profit:}
+$\Pi^m = (12 \times 6 - 36 - 4) + (10 \times 4 - 16 - 8) = 32 + 16 = \$48$.
+
+\textbf{Conclusion:} Merger increases total profit ($48 > 45$) and reduces pollution ($2 < 4$). The outcome is efficient.
+\end{examplebox}
+
+\subsection{The Coase Solution: Market for Pollution}
+What if they don't merge, but property rights are assigned? Suppose the Fishery owns the right to clean water. It sells ``rights to pollute'' to the Steel mill at price $p_x$.
+
+\begin{itemize}
+    \item \textbf{Fishery (Supplier of rights):} Maximizes $\Pi_F = p_f f - c_F(f, x) + p_x x$.
+    \item \textbf{Steel Mill (Buyer of rights):} Maximizes $\Pi_S = p_S s - c_S(s, x) - p_x x$.
+\end{itemize}
+
+\textbf{Equilibrium:}
+Efficiency requires the marginal damage to the fishery to equal the marginal savings to the steel firm, mediated by price $p_x$:
+\[
+\text{Marginal Benefit (Steel)} = -\frac{\partial c_S}{\partial x} = p_x = \frac{\partial c_F}{\partial x} = \text{Marginal Cost (Fishery)}
+\]
+
+Using the numerical example, the market clearing price $p_x$ will induce the Steel firm to choose $x=2$ and the Fishery to choose $f=4$. The resource allocation ($s, f, x$) is identical to the merger case. This confirms the Coase Theorem: assigning property rights creates a market that internalizes the externality.
+
+\section{The Tragedy of the Commons}
+
+This model explains the over-exploitation of resources owned in common (e.g., public grazing land, high-seas fisheries).
+
+\subsection{The Model}
+Consider a village grazing cows on a common pasture.
+\begin{itemize}
+    \item $c$: Number of cows.
+    \item $f(c)$: Total milk production, where $f'(c) > 0$ and $f''(c) < 0$ (diminishing returns).
+    \item $p_c$: Cost of grazing a cow.
+    \item Price of milk = \$1.
+\end{itemize}
+
+\subsection{Efficient Allocation vs. Private Equilibrium}
+\textbf{Social Optimum (Maximize Village Wealth):}
+The village wants to maximize total profit:
+\[ \max_{c} \Pi = f(c) - p_c c \]
+FOC:
+\[ f'(c^*) = p_c \]
+The \textbf{Marginal Product} of the cow must equal the cost.
+
+\textbf{Private Equilibrium (Tragedy):}
+Since the land is common, villagers will enter (add cows) as long as it is profitable for them individually. An individual cares about the \textbf{Average Product}, not the marginal impact on others. Entry stops when profit per cow is zero:
+\[ \frac{f(c)}{c} - p_c = 0 \implies \frac{f(c)}{c} = p_c \]
+The \textbf{Average Product} of the cow equals the cost.
+
+\subsection{Result}
+Due to diminishing returns ($f'' < 0$), the Marginal Product is always less than the Average Product:
+\[ f'(c) < \frac{f(c)}{c} \]
+Since the private equilibrium equates Cost to Average Product, and the social optimum equates Cost to Marginal Product, the private equilibrium results in a larger number of cows:
+\[ \hat{c} > c^* \]
+The commons are over-grazed. The specific "tragedy" is that when a villager adds a cow, they get the average output, but they lower the average output for everyone else. They ignore this external cost inflicted on their neighbors.

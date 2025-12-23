@@ -1,0 +1,191 @@
+\chapter{Asymmetric Information}
+\label{chap:asymmetric_information}
+
+In ideal competitive markets, we assume all agents have perfect information about the goods being traded. However, in the real world, information is often unevenly distributed.
+
+\begin{definition}[Asymmetric Information]
+\index{Asymmetric Information}
+\textbf{Asymmetric information} occurs when one party in a transaction is in possession of more information than the other.
+\end{definition}
+
+This chapter explores how asymmetric information affects the functioning of a market, leading to phenomena such as adverse selection, signaling, and moral hazard.
+
+% =========================================================================
+% Section 1: Adverse Selection
+% =========================================================================
+\section{Adverse Selection}
+\index{Adverse Selection}
+
+Adverse selection creates a problem where "bad" products or customers are more likely to be selected in a market transaction due to hidden information. This phenomenon is famously illustrated by the market for used cars.
+
+\subsection{The Market for Lemons}
+Consider a market for used cars (often called "lemons" if they are bad quality).
+
+\begin{examplebox}{The Used-Car Market Model}
+\textbf{Assumptions:}
+\begin{itemize}
+    \item Car quality is uniformly distributed between \$1,000 and \$2,000.
+    \item Sellers know the true quality (value) of their cars.
+    \item Buyers are unaware of the true value of any specific car.
+    \item \textbf{Valuation:} If a seller values a car at $X$, a buyer values it at $X + \$300$.
+\end{itemize}
+
+\textbf{Analysis of Trade:}
+If there were perfect information, every car would be traded because the buyer values the car \$300 more than the seller. Gains from trade would be realized for all cars.
+
+However, under asymmetric information, buyers only know the distribution.
+\begin{enumerate}
+    \item \textbf{Initial Expectation:} The average value of cars on the market (from \$1,000 to \$2,000) is \$1,500.
+    \item \textbf{Buyer's Willingness to Pay:} The expected value to a buyer is:
+    \[
+    E[\text{Value}_{buyer}] = \$1,500 + \$300 = \$1,800
+    \]
+    \item \textbf{Market Unraveling:} If the market price is \$1,800, sellers who value their cars \textit{above} \$1,800 (high-quality cars) will exit the market.
+    \item \textbf{Second Iteration:} Now, only cars with seller values between \$1,000 and \$1,800 remain. The new average seller value is \$1,400.
+    \item \textbf{New Price:} The buyer's new expected value is:
+    \[
+    \$1,400 + \$300 = \$1,700
+    \]
+    Sellers with cars valued between \$1,700 and \$1,800 now exit.
+\end{enumerate}
+
+\textbf{Equilibrium:}
+The market continues to shrink until an equilibrium is reached where the price buyers are willing to pay matches the marginal seller's valuation. Let $v_H$ be the value of the highest-quality car remaining in the market. The distribution is $[1000, v_H]$.
+\[
+\text{Price} = \underbrace{\left( \frac{1000 + v_H}{2} \right)}_{\text{Avg Seller Value}} + 300
+\]
+For the marginal seller ($v_H$) to stay, Price must equal $v_H$:
+\[
+\frac{1000 + v_H}{2} + 300 = v_H \implies 800 + 0.5 v_H = v_H \implies v_H = 1,600
+\]
+\textbf{Result:} In equilibrium, only cars valued by sellers between \$1,000 and \$1,600 are traded. Cars valued between \$1,600 and \$2,000 are driven out of the market, resulting in a deadweight loss.
+\end{examplebox}
+
+\subsection{Adverse Selection with Quality Choice}
+Adverse selection can be severe enough to destroy a market entirely, especially when producers choose the quality level.
+
+\begin{examplebox}{The Shoe Market}
+Consider a market with two types of shoes: \textbf{High-quality} and \textbf{Low-quality}.
+\begin{itemize}
+    \item \textbf{Buyer Valuation:} High: \$14, Low: \$8. (Buyers cannot distinguish quality before purchase).
+    \item \textbf{Marginal Cost:} High: \$11, Low: \$10.
+\end{itemize}
+
+\textbf{Scenario Analysis:}
+\begin{enumerate}
+    \item \textbf{High-Quality Only Equilibrium?}
+    Suppose all sellers make high-quality shoes. Buyers pay \$14. Profit is $\$14 - \$11 = \$3$.
+    However, a seller could deviate and make low-quality shoes (cost \$10). Buyers effectively pay \$14 (since they expect high quality), yielding a profit of $\$14 - \$10 = \$4$.
+    Since deviation is profitable ($4 > 3$), this equilibrium cannot hold.
+
+    \item \textbf{Low-Quality Only Equilibrium?}
+    Suppose all sellers make low-quality shoes. Buyers realize this and pay \$8.
+    Cost is \$10. Sellers incur a loss ($\$8 - \$10 = -\$2$). No trade occurs.
+
+    \item \textbf{Pooling Equilibrium?}
+    Suppose a fraction $q$ of sellers make high-quality shoes ($0 < q < 1$).
+    Buyer's Expected Value (EV):
+    \[
+    EV = 14q + 8(1-q) = 8 + 6q
+    \]
+    For high-quality sellers to participate, Price ($EV$) must cover Cost (\$11):
+    \[
+    8 + 6q \ge 11 \implies 6q \ge 3 \implies q \ge 1/2
+    \]
+    At least 50\% of sellers must be high-quality. However, even if $q \ge 1/2$, a high-quality seller still gains \$1 extra profit by switching to low quality (Cost drops from \$11 to \$10).
+\end{enumerate}
+
+\textbf{Conclusion:} The proportion of high-quality sellers $q$ will decrease towards zero. Once $q$ is low, buyers pay only \$8, which covers no one's cost. \textbf{The market collapses completely.}
+\end{examplebox}
+
+\begin{remark}[Gresham's Law]
+The phenomenon where "bad money drives out good" is applicable here. Low-quality goods drive high-quality goods out of the market, potentially leading to a total cessation of trade.
+\end{remark}
+
+% =========================================================================
+% Section 2: Signaling
+% =========================================================================
+\section{Signaling}
+\index{Signaling}
+
+Adverse selection arises from information deficiency. \textbf{Signaling} allows the informed party (e.g., the seller or worker) to credibly convey private information to the uninformed party.
+
+\subsection{Mechanisms}
+\begin{itemize}
+    \item \textbf{Warranties:} A high-quality seller offers a strong warranty (e.g., "replacement without repair"). This is costly for low-quality sellers to mimic, making the signal credible.
+    \item \textbf{Education:} In the labor market, high-ability workers acquire education to signal their productivity.
+\end{itemize}
+
+\subsection{The Educational Signaling Model}
+Consider a labor market with two types of workers:
+\begin{itemize}
+    \item \textbf{High-ability ($H$):} Marginal Product $a_H$. Fraction of population $h$.
+    \item \textbf{Low-ability ($L$):} Marginal Product $a_L$. Fraction $1-h$.
+    \item Note: $a_L < a_H$.
+\end{itemize}
+
+If firms cannot distinguish types, they pay the \textbf{pooling wage} equal to the expected marginal product:
+\[
+w_P = (1-h)a_L + h a_H
+\]
+Since $w_P < a_H$, high-ability workers are underpaid and have an incentive to signal their type.
+
+\subsubsection{Cost of Signaling}
+Workers can acquire education level $e$. Assume education does \textbf{not} increase productivity (it is a pure signal), but it is costly.
+\begin{itemize}
+    \item Cost for High-ability: $c_H$ per unit.
+    \item Cost for Low-ability: $c_L$ per unit.
+    \item \textbf{Crucial Assumption:} $c_L > c_H$ (Education is more "painful" or costly for low-ability workers).
+\end{itemize}
+
+\subsubsection{Separating Equilibrium}
+In a separating equilibrium, high-ability workers acquire education $e_H$ and are paid $w_H = a_H$, while low-ability workers choose $e=0$ and are paid $w_L = a_L$.
+
+For this to be an equilibrium, two self-selection constraints must be satisfied:
+
+\begin{enumerate}
+    \item \textbf{Participation constraint for High-ability:}
+    The net benefit of acquiring education and getting the high wage must exceed the benefit of acting like a low type.
+    \[
+    w_H - c_H e_H > w_L \implies a_H - a_L > c_H e_H
+    \]
+    \item \textbf{Incentive compatibility for Low-ability:}
+    The low-ability worker must prefer the low wage with no education over the high wage with the high education cost.
+    \[
+    w_L > w_H - c_L e_H \implies c_L e_H > a_H - a_L
+    \]
+\end{enumerate}
+
+Combining these inequalities, a credible signal $e_H$ must satisfy:
+\begin{equation}
+\frac{a_H - a_L}{c_L} < e_H < \frac{a_H - a_L}{c_H}
+\end{equation}
+
+\begin{remark}[Inefficiency of Signaling]
+Although signaling solves the information asymmetry (allowing firms to distinguish types), it generates a \textbf{deadweight loss}. Resources are spent on education ($c_H e_H$) that does not increase total output ($a_H$ and $a_L$ remain unchanged). The information is improved, but the gains from trade may not necessarily increase.
+\end{remark}
+
+% =========================================================================
+% Section 3: Moral Hazard
+% =========================================================================
+\section{Moral Hazard}
+\index{Moral Hazard}
+
+While adverse selection concerns hidden information \textit{before} a transaction, \textbf{moral hazard} concerns hidden actions \textit{after} the transaction.
+
+\begin{definition}[Moral Hazard]
+Moral hazard is a reaction to incentives to increase the risk of a loss, resulting from asymmetric information regarding the agent's behavior.
+\end{definition}
+
+\begin{example}
+\textbf{Car Insurance:} If an individual has full car insurance, they have less incentive to lock their car or park in safe locations. The probability of theft increases because the insurer cannot perfectly monitor the driver's actions.
+\end{example}
+
+\subsection{Market Implications}
+If insurers cannot distinguish behavior (or risk types) perfectly:
+\begin{itemize}
+    \item They must offer a single contract to all insurees.
+    \item High-risk and low-risk types are pooled.
+    \item Low-risk individuals effectively subsidize high-risk individuals.
+    \item This can lead to premiums rising so high that low-risk people drop out (similar to adverse selection), potentially causing market failure.
+\end{itemize}

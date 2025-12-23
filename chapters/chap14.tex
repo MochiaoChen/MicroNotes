@@ -1,0 +1,208 @@
+\chapter{Monopoly}
+\label{ch:monopoly}
+
+In the previous chapters, we studied the case of pure competition, where each firm is small relative to the market and takes the market price as given. In this chapter, we study the other extreme market structure: \textbf{Monopoly}.
+
+\section{Pure Monopoly}
+
+\begin{definition}[Monopoly]
+\index{Monopoly}
+A monopolized market is a market structure characterized by a single seller.
+\end{definition}
+
+Because the monopolist is the sole supplier in the market, it faces the entire market demand curve. Unlike a competitive firm which faces a flat (perfectly elastic) demand curve, the monopolist's demand curve is \textbf{downward sloping}. This implies that the monopolist has the power to alter the market price by adjusting its output level.
+
+\begin{itemize}
+    \item Higher output $y$ causes a lower market price $p(y)$.
+    \item Lower output $y$ allows for a higher market price $p(y)$.
+\end{itemize}
+
+\section{Profit Maximization}
+
+Suppose the monopolist seeks to maximize its economic profit. The profit maximization problem can be stated as:
+\begin{equation}
+    \max_{y} \Pi(y) = p(y)y - c(y)
+\end{equation}
+where:
+\begin{itemize}
+    \item $p(y)$ is the inverse demand function.
+    \item $p(y)y = R(y)$ is the total revenue.
+    \item $c(y)$ is the total cost function.
+\end{itemize}
+
+To find the optimal output level $y^*$, we take the derivative of the profit function with respect to $y$ and set it to zero (First Order Condition):
+\begin{equation}
+    \frac{d\Pi(y)}{dy} = \frac{d}{dy}(p(y)y) - \frac{dc(y)}{dy} = 0
+\end{equation}
+
+This yields the fundamental condition for profit maximization:
+\begin{equation}
+    \frac{d}{dy}(p(y)y) = \frac{dc(y)}{dy} \implies \text{MR}(y^*) = \text{MC}(y^*)
+\end{equation}
+
+\begin{proposition}[Optimality Condition]
+\index{Marginal Revenue}\index{Marginal Cost}
+At the profit-maximizing output level $y^*$, the Marginal Revenue (MR) must equal the Marginal Cost (MC). Graphically, this is where the slope of the Total Revenue curve equals the slope of the Total Cost curve.
+\end{proposition}
+
+\subsection{Marginal Revenue}
+
+Marginal revenue is the rate of change of revenue as the output level increases. Using the product rule on $R(y) = p(y)y$:
+\begin{equation}
+    \text{MR}(y) = \frac{d}{dy}(p(y)y) = p(y) + y \frac{dp(y)}{dy}
+\end{equation}
+
+Since the market demand curve is downward sloping, $\frac{dp(y)}{dy} < 0$. Therefore, for any $y > 0$:
+\begin{equation}
+    \text{MR}(y) < p(y)
+\end{equation}
+Intuitively, to sell an additional unit, the monopolist must lower the price not just for that marginal unit, but for all previous units sold (assuming no price discrimination).
+
+\begin{examplebox}{Linear Demand Case}
+\index{Linear Demand}
+Suppose the inverse demand function is linear:
+\[ p(y) = a - by \]
+The total revenue is:
+\[ R(y) = p(y)y = ay - by^2 \]
+The marginal revenue is:
+\[ \text{MR}(y) = a - 2by \]
+Notice that the Marginal Revenue curve has the same vertical intercept ($a$) as the demand curve but is twice as steep (slope $-2b$ vs $-b$).
+\end{examplebox}
+
+\begin{examplebox}{Linear Example with Costs}
+Suppose $p(y) = a - by$ and marginal cost is linear: $\text{MC}(y) = \alpha + 2\beta y$ (derived from $c(y) = F + \alpha y + \beta y^2$).
+Equating MR and MC:
+\[ a - 2by = \alpha + 2\beta y \]
+Solving for $y^*$:
+\[ y^* = \frac{a - \alpha}{2(b + \beta)} \]
+\end{examplebox}
+
+\section{Monopolistic Pricing and Elasticity}
+
+We can express Marginal Revenue in terms of the own-price elasticity of demand, $\varepsilon$.
+\index{Elasticity of Demand}
+
+Recall the formula for marginal revenue:
+\[ \text{MR}(y) = p(y) + y \frac{dp(y)}{dy} = p(y) \left[ 1 + \frac{y}{p(y)} \frac{dp(y)}{dy} \right] \]
+
+Since the price elasticity of demand is defined as $\varepsilon = \frac{p(y)}{y} \frac{dy}{dp}$, the term inside the bracket is the reciprocal of elasticity:
+\begin{equation}
+    \text{MR}(y) = p(y) \left[ 1 + \frac{1}{\varepsilon} \right]
+\end{equation}
+
+At the optimal point, $\text{MR} = \text{MC}$. Assuming constant marginal cost $k$:
+\begin{equation}
+    p(y^*) \left[ 1 + \frac{1}{\varepsilon} \right] = k \implies p(y^*) = \frac{k}{1 + \frac{1}{\varepsilon}}
+\end{equation}
+
+\begin{remark}[Elasticity and Output]
+Since marginal cost is positive ($k > 0$), marginal revenue must also be positive at the optimum.
+\[ \text{MR} > 0 \implies 1 + \frac{1}{\varepsilon} > 0 \implies \frac{1}{\varepsilon} > -1 \]
+Since $\varepsilon$ is negative for normal goods, this implies $\varepsilon < -1$.
+\textbf{Conclusion:} A profit-maximizing monopolist always selects an output level where the demand is elastic ($|\varepsilon| > 1$).
+\end{remark}
+
+\subsection{Markup Pricing}
+\index{Markup Pricing}
+The monopolist sets a price that is a "markup" over marginal cost.
+\[ p(y^*) = \frac{\text{MC}}{1 + \frac{1}{\varepsilon}} \]
+The size of the markup depends on the elasticity. As demand becomes less sensitive (more inelastic, $\varepsilon$ rises towards -1), the markup increases.
+
+\subsection{Lerner Index}
+\index{Lerner Index}
+The Lerner Index ($L$) measures the market power of a firm:
+\begin{equation}
+    L = \frac{p - \text{MC}}{p} = -\frac{1}{\varepsilon} = \frac{1}{|\varepsilon|}
+\end{equation}
+The higher the Lerner index (closer to 1), the greater the monopoly power. In perfect competition, $\varepsilon \to -\infty$, so $L = 0$ (Price = MC).
+
+\section{Taxes on Monopoly}
+
+\subsection{Profits Tax}
+\index{Profits Tax}
+A profits tax levied at rate $t$ reduces profit from $\Pi(y)$ to $(1-t)\Pi(y)$.
+The objective function becomes:
+\[ \max_y (1-t) [R(y) - c(y)] \]
+Since $(1-t)$ is a constant ($0 < t < 1$), the value $y^*$ that maximizes $\Pi(y)$ also maximizes $(1-t)\Pi(y)$.
+\textbf{Result:} A pure profits tax is neutral; it does not change the monopolist's output or price.
+
+\subsection{Quantity Tax}
+\index{Quantity Tax}
+A quantity tax of $t$ dollars per unit raises the marginal cost of production by $t$.
+\[ \text{MC}_{new} = \text{MC}_{old} + t \]
+The optimality condition becomes:
+\[ \text{MR}(y) = \text{MC}(y) + t \]
+
+Effect of quantity tax:
+\begin{itemize}
+    \item Output ($y^*$) decreases.
+    \item Price ($p(y^*)$) increases.
+\end{itemize}
+
+\begin{proposition}[Tax Pass-Through]
+Can a monopolist pass on \textit{more} than the tax amount to consumers?
+Suppose constant marginal cost $k$ and constant elasticity $\varepsilon$.
+The price without tax is $p^* = \frac{k}{1 + 1/\varepsilon}$.
+The price with tax is $p_t = \frac{k+t}{1+1/\varepsilon}$.
+The change in price is:
+\[ \Delta p = p_t - p^* = \frac{t}{1 + 1/\varepsilon} \]
+Since the monopolist operates where $\varepsilon < -1$, the denominator $(1 + 1/\varepsilon)$ is a fraction between 0 and 1.
+Therefore, $\Delta p > t$.
+\textbf{Result:} The monopolist passes on \textbf{more} than the tax to the consumers in the case of iso-elastic demand.
+\end{proposition}
+
+\section{The Inefficiency of Monopoly}
+\index{Pareto Efficiency}\index{Deadweight Loss}
+
+A market is Pareto efficient if it maximizes total gains-to-trade. This occurs where the marginal willingness to pay equals the marginal cost:
+\[ p(y^e) = \text{MC}(y^e) \]
+This is the competitive outcome.
+
+However, the monopolist produces where $\text{MR} = \text{MC}$. Since $\text{MR} < p$, it follows that:
+\[ p(y^*) > \text{MC}(y^*) \]
+The monopolist restricts output ($y^* < y^e$) to raise prices.
+
+\begin{itemize}
+    \item For units between $y^*$ and $y^e$, the consumer's valuation ($p$) is strictly greater than the cost of production (MC).
+    \item Not producing these units results in a loss of potential surplus.
+    \item This loss is called the \textbf{Deadweight Loss (DWL)}.
+\end{itemize}
+Graphically, the DWL is the triangle area between the demand curve and the MC curve, bounded by $y^*$ and $y^e$.
+
+\section{Natural Monopoly}
+\index{Natural Monopoly}\index{Economies of Scale}
+
+A natural monopoly arises when a single firm can supply the entire market at a lower average total cost (ATC) than two or more firms. This typically happens due to large \textbf{economies of scale} (e.g., high fixed costs and low marginal costs), resulting in a continuously decreasing ATC curve.
+
+\subsection{The Regulation Dilemma}
+If the government forces a natural monopolist to produce at the efficient level ($p = \text{MC}$):
+\begin{enumerate}
+    \item Efficiency requires $p = \text{MC}$.
+    \item Because of high fixed costs and decreasing ATC, $\text{MC} < \text{ATC}$.
+    \item Therefore, $p < \text{ATC}$.
+    \item The firm incurs an \textbf{economic loss} and will exit the market in the long run.
+\end{enumerate}
+
+To sustain the efficient output, the government must subsidize the firm. Alternatively, regulators may allow "Average Cost Pricing" ($p = \text{ATC}$), which yields zero profit but implies $p > \text{MC}$ (some deadweight loss remains). Examples include public utilities like water, electricity, and rail.
+
+\section{Causes of Monopolies}
+\index{Minimum Efficient Scale}
+
+What determines whether an industry is competitive or monopolistic? A key factor is the relationship between the market demand size and the \textbf{Minimum Efficient Scale (MES)}.
+
+\begin{itemize}
+    \item \textbf{MES} is the output level where the Average Cost (AC) is minimized.
+    \item If demand is large relative to MES, many firms can operate efficiently (Competitive Market).
+    \item If demand is small relative to MES (the MES is a large fraction of total market demand), the market can only support one or a few firms (Monopoly or Oligopoly).
+\end{itemize}
+
+\section{Summary}
+\begin{enumerate}
+    \item A monopolist maximizes profit where $\text{MR} = \text{MC}$.
+    \item Since $\text{MR} < p$, the monopoly price exceeds marginal cost.
+    \item The markup depends on the elasticity of demand: $p = \text{MC}/(1+1/\varepsilon)$.
+    \item Monopolists only operate on the elastic portion of the demand curve ($\varepsilon < -1$).
+    \item A profits tax is neutral, but a quantity tax reduces output and raises prices (potentially by more than the tax).
+    \item Monopoly results in a Deadweight Loss because $p > \text{MC}$.
+    \item Natural monopolies exist due to economies of scale; marginal cost pricing leads to losses for such firms.
+\end{enumerate}

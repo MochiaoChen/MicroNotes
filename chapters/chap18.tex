@@ -1,0 +1,221 @@
+\chapter{Exchange}
+
+In the previous parts of the course, we have analyzed consumer theory and production theory separately. We are now entering Part 3: \textbf{General Equilibrium Theory}\index{General Equilibrium}. Unlike partial equilibrium analysis, which looks at a single market in isolation, general equilibrium analysis studies how demand and supply conditions interact in several markets to determine the prices of many goods.
+
+We begin our study with the simplest form of general equilibrium: a pure \textbf{exchange economy}\index{Exchange Economy}. In this model, there is no production; economic agents trade their initial endowments of goods to achieve a more preferred allocation.
+
+\section{The Edgeworth Box}
+
+To analyze the exchange of goods between two consumers, Edgeworth and Bowley devised a diagrammatic tool known as the \textbf{Edgeworth Box}\index{Edgeworth Box}. This diagram allows us to depict the endowments, preferences, and possible allocations of two consumers simultaneously.
+
+\subsection{Constructing the Box}
+Consider an economy with two consumers, denoted by $A$ and $B$, and two goods, denoted by $1$ and $2$.
+\begin{itemize}
+    \item Let $\omega^A = (\omega_1^A, \omega_2^A)$ be consumer A's initial endowment.
+    \item Let $\omega^B = (\omega_1^B, \omega_2^B)$ be consumer B's initial endowment.
+\end{itemize}
+
+The total quantity available of good 1 and good 2 in the economy is fixed by the sum of individual endowments:
+\begin{align}
+    \text{Total Good 1: } & \quad W_1 = \omega_1^A + \omega_1^B \\
+    \text{Total Good 2: } & \quad W_2 = \omega_2^A + \omega_2^B
+\end{align}
+
+The Edgeworth box is a rectangle formed by these total quantities:
+\begin{itemize}
+    \item The \textbf{width} of the box represents the total amount of good 1 ($W_1$).
+    \item The \textbf{height} of the box represents the total amount of good 2 ($W_2$).
+\end{itemize}
+
+\begin{remark}
+    The origin for consumer A ($O_A$) is located at the bottom-left corner. Consumer A's consumption increases as we move to the right (for good 1) and upward (for good 2).
+    
+    The origin for consumer B ($O_B$) is located at the \textbf{top-right} corner. Crucially, consumer B's axes are reversed: his consumption of good 1 increases as we move to the \textit{left}, and his consumption of good 2 increases as we move \textit{down}.
+\end{remark}
+
+\subsection{Feasible Allocations}
+An allocation is a specific distribution of goods between the consumers, denoted by $(x_1^A, x_2^A)$ for consumer A and $(x_1^B, x_2^B)$ for consumer B.
+
+\begin{definition}[Feasible Allocation]\index{Feasible Allocation}
+    An allocation is \textbf{feasible} if the total amount consumed equals the total amount available:
+    \begin{align*}
+        x_1^A + x_1^B &= \omega_1^A + \omega_1^B = W_1 \\
+        x_2^A + x_2^B &= \omega_2^A + \omega_2^B = W_2
+    \end{align*}
+\end{definition}
+
+Every point \textit{inside} or on the boundary of the Edgeworth box represents a feasible allocation. The initial \textbf{endowment allocation}\index{Endowment Allocation} is simply one specific point in this box, often marked as $\omega$.
+
+\section{Preferences and Trade}
+
+We can represent the preferences of both consumers by drawing their indifference curves inside the box.
+\begin{itemize}
+    \item \textbf{Consumer A's Indifference Curves:} Look like standard convex curves relative to $O_A$. Utility increases as curves move further away from $O_A$ (up and to the right).
+    \item \textbf{Consumer B's Indifference Curves:} Are convex relative to $O_B$. Utility increases as curves move further away from $O_B$ (down and to the left).
+\end{itemize}
+
+\subsection{Pareto Improvement}
+Starting from the endowment point $\omega$, consumers can trade. If consumer A gives up some good 1 in exchange for some good 2 from consumer B, they move to a new point in the box.
+
+\begin{definition}[Pareto Improvement]\index{Pareto Improvement}
+    An allocation is a \textbf{Pareto improvement} over the initial endowment if:
+    \begin{enumerate}
+        \item At least one consumer is strictly better off (higher utility), and
+        \item The other consumer is strictly no worse off (utility is at least constant).
+    \end{enumerate}
+\end{definition}
+
+Geometrically, the set of Pareto-improving allocations forms a "lens" shape bounded by the indifference curves of A and B passing through the initial endowment point. Trade will naturally occur within this lens because rational consumers will refuse any trade that lowers their utility.
+
+\section{Pareto Efficiency}
+
+As consumers continue to trade, they will eventually reach a point where no further Pareto improvements are possible.
+
+\begin{definition}[Pareto Efficiency]\index{Pareto Efficiency}
+    An allocation is \textbf{Pareto Efficient} (or Pareto Optimal) if there is no way to make one consumer better off without making the other consumer strictly worse off.
+\end{definition}
+
+\subsection{The Tangency Condition}
+In the interior of the Edgeworth box, Pareto efficiency typically occurs where the indifference curves of the two consumers are \textbf{tangent} to each other.
+\begin{itemize}
+    \item If the curves intersect (cross each other), there is a "lens" area between them, indicating room for Pareto improvement.
+    \item If they are tangent, their slopes are equal.
+\end{itemize}
+
+Since the slope of an indifference curve is the Marginal Rate of Substitution (MRS), the condition for Pareto efficiency is:
+\begin{equation}
+    MRS^A_{1,2} = MRS^B_{1,2}
+\end{equation}
+Intuitively, this means both consumers value the trade-off between good 1 and good 2 identically at the margin.
+
+\section{The Contract Curve and The Core}
+
+\subsection{The Contract Curve}
+There are infinitely many Pareto efficient points in the box. If we connect all such points (all the points of tangency between A's and B's indifference curves), we trace out a line.
+
+\begin{definition}[Contract Curve]\index{Contract Curve}
+    The \textbf{Contract Curve} is the set of all Pareto-efficient allocations in the Edgeworth box.
+\end{definition}
+
+Note that the contract curve extends from consumer A's origin ($O_A$) to consumer B's origin ($O_B$). Being on the contract curve implies efficiency, but it does not say anything about equity or fairness.
+
+\subsection{The Core}
+While the contract curve represents all \textit{possible} efficient outcomes, rational consumers will only agree to trades that leave them at least as well off as they were with their initial endowments. They can always "block" a trade by simply refusing to participate and consuming their endowment.
+
+\begin{definition}[The Core]\index{The Core}
+    The \textbf{Core} of an exchange economy is the subset of the contract curve where allocations are Pareto-efficient \textit{and} constitute a welfare improvement (or at least no loss) for both consumers relative to their initial endowments.
+\end{definition}
+
+Geometrically, the Core is the segment of the Contract Curve that lies \textit{inside} the lens formed by the indifference curves passing through the endowment point $\omega$. We expect the outcome of rational bargaining or market trade to settle somewhere within the Core.
+\chapter{Market Equilibrium and Welfare}
+
+Previously, we determined that rational trade should lead to an allocation in the \textit{Core}. However, the Edgeworth box alone does not tell us exactly \textit{which} point in the Core will be reached. This depends on the trading mechanism. We now analyze the specific mechanism of \textbf{perfectly competitive markets}\index{Competitive Markets}.
+
+\section{Trade in Competitive Markets}
+
+Suppose there is a market mechanism where an "auctioneer" calls out prices $p_1$ and $p_2$ for good 1 and good 2. Consumers $A$ and $B$ are \textbf{price-takers}.
+
+\subsection{The Budget Constraint}
+Given prices $(p_1, p_2)$ and the initial endowment $\omega^i = (\omega_1^i, \omega_2^i)$, the value of a consumer $i$'s endowment determines their budget. The budget constraint is:
+\begin{equation}
+    p_1 x_1^i + p_2 x_2^i = p_1 \omega_1^i + p_2 \omega_2^i
+\end{equation}
+This line passes through the endowment point $\omega$. The slope of the budget line is $-\frac{p_1}{p_2}$.
+
+\subsection{Optimal Choice}
+Each consumer chooses the bundle $(x_1^{*i}, x_2^{*i})$ that maximizes their utility subject to this budget constraint. Geometrically, this occurs where the budget line is tangent to the highest attainable indifference curve.
+
+We define the \textbf{Net Demand} (or Excess Demand) for consumer $i$ and good $j$ as:
+\begin{equation}
+    e_j^i = x_j^{*i} - \omega_j^i
+\end{equation}
+\begin{itemize}
+    \item If $e_j^i > 0$, the consumer is a net buyer of good $j$.
+    \item If $e_j^i < 0$, the consumer is a net seller of good $j$.
+\end{itemize}
+
+\section{General Equilibrium}
+
+A general equilibrium requires that supply equals demand in all markets simultaneously.
+
+\begin{definition}[Walrasian Equilibrium]\index{Walrasian Equilibrium}
+    A price vector $(p_1^*, p_2^*)$ is a \textbf{General Equilibrium} if it causes both markets to clear:
+    \begin{align}
+        x_1^{*A} + x_1^{*B} &= \omega_1^A + \omega_1^B \quad (\text{Market for Good 1 clears}) \\
+        x_2^{*A} + x_2^{*B} &= \omega_2^A + \omega_2^B \quad (\text{Market for Good 2 clears})
+    \end{align}
+\end{definition}
+
+If markets do not clear (disequilibrium), prices will adjust. For instance, if there is excess demand for good 2, $p_2$ will rise relative to $p_1$, flattening the budget line until supply matches demand.
+
+\section{Walras' Law}
+
+Walras' Law is a fundamental identity in general equilibrium theory. It states that the value of aggregate excess demand is identically zero for \textit{any} set of prices, not just equilibrium prices.
+
+\subsection{Derivation}
+Consider the budget constraint for each consumer. Since preferences are well-behaved, consumers spend their entire income:
+\begin{align}
+    \text{Consumer A: } & p_1 x_1^{*A} + p_2 x_2^{*A} = p_1 \omega_1^A + p_2 \omega_2^A \\
+    \text{Consumer B: } & p_1 x_1^{*B} + p_2 x_2^{*B} = p_1 \omega_1^B + p_2 \omega_2^B
+\end{align}
+
+Summing these equations gives the aggregate value of expenditure equals the aggregate value of endowments:
+\begin{equation}
+    p_1 (x_1^{*A} + x_1^{*B}) + p_2 (x_2^{*A} + x_2^{*B}) = p_1 (\omega_1^A + \omega_1^B) + p_2 (\omega_2^A + \omega_2^B)
+\end{equation}
+
+Rearranging terms to group by goods:
+\begin{equation}
+    p_1 \underbrace{(x_1^{*A} + x_1^{*B} - \omega_1^A - \omega_1^B)}_{z_1(p_1, p_2)} + p_2 \underbrace{(x_2^{*A} + x_2^{*B} - \omega_2^A - \omega_2^B)}_{z_2(p_1, p_2)} = 0
+\end{equation}
+
+Here, $z_1$ and $z_2$ represent the aggregate \textbf{excess demand functions} for good 1 and good 2. Thus, we arrive at Walras' Law:
+
+\begin{proposition}[Walras' Law]\index{Walras' Law}
+    For any positive prices $(p_1, p_2)$:
+    \begin{equation}
+        p_1 z_1(p_1, p_2) + p_2 z_2(p_1, p_2) \equiv 0
+    \end{equation}
+\end{proposition}
+
+\subsection{Implications}
+Walras' Law has powerful implications for finding equilibrium:
+\begin{enumerate}
+    \item \textbf{Market Redundancy:} If the market for good 1 is in equilibrium ($z_1 = 0$), then:
+    \[ p_1(0) + p_2 z_2 = 0 \implies z_2 = 0 \]
+    Therefore, if $n-1$ markets clear, the $n$-th market must also clear automatically.
+    \item \textbf{Inverse Relationship:} An excess supply in one market ($z_1 < 0$) mathematically implies an excess demand in the other market ($z_2 > 0$) to keep the sum zero.
+\end{enumerate}
+
+\section{The Fundamental Theorems of Welfare Economics}
+
+We conclude this chapter by linking the market mechanism back to the concept of Pareto Efficiency.
+
+\subsection{The First Fundamental Theorem}
+\begin{proposition}[First Welfare Theorem]\index{First Welfare Theorem}
+    Given that consumers' preferences are well-behaved, any competitive equilibrium allocation is \textbf{Pareto Efficient}.
+\end{proposition}
+
+\textbf{Intuition:} In equilibrium, both consumers maximize utility subject to the \textit{same} prices. Thus:
+\[ MRS^A = -\frac{p_1}{p_2} \quad \text{and} \quad MRS^B = -\frac{p_1}{p_2} \]
+Since $MRS^A = MRS^B$, the tangency condition for Pareto efficiency is met. This theorem confirms Adam Smith's "Invisible Hand" hypothesis: separate agents pursuing self-interest leads to an efficient social outcome.
+
+\subsection{The Second Fundamental Theorem}
+The First Theorem deals with efficiency, but the outcome might be inequitable (e.g., Consumer A gets everything). Can we achieve a \textit{specific}, fair efficient outcome using markets?
+
+\begin{proposition}[Second Welfare Theorem]\index{Second Welfare Theorem}
+    Given well-behaved (convex) preferences, any Pareto Optimal allocation can be supported as a competitive equilibrium, provided the initial endowments are redistributed appropriately.
+\end{proposition}
+
+\textbf{Implication:} This theorem suggests a separation between \textit{efficiency} and \textit{distribution}. If society prefers a different efficient allocation (e.g., one that is more equal), it does not need to abandon the price mechanism. Instead, the government can transfer wealth (lump-sum transfers) to shift the endowment point $\omega$ to $\omega'$, and then let the market trade to the desired efficient point on the contract curve.
+
+\begin{examplebox}{Summary of Key Concepts}
+\begin{itemize}
+    \item \textbf{Edgeworth Box:} Tool to analyze exchange.
+    \item \textbf{Pareto Efficiency:} Cannot make someone better off without hurting another.
+    \item \textbf{Contract Curve:} Locus of all Pareto efficient points.
+    \item \textbf{Walras' Law:} Value of excess demands sums to zero.
+    \item \textbf{First Welfare Theorem:} Markets $\to$ Efficiency.
+    \item \textbf{Second Welfare Theorem:} Transfers + Markets $\to$ Any Efficient Outcome.
+\end{itemize}
+\end{examplebox}
