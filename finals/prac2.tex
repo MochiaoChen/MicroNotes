@@ -1,0 +1,373 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{setspace}
+\onehalfspacing
+
+\title{\textbf{Intermediate Microeconomics Practice }}
+\author{Mochiao Chen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\noindent \textbf{Instructions:}
+\begin{itemize}
+    \item Answer all questions in English.
+    \item Write your calculation process clearly for computational problems.
+    \item For graphing questions, clearly label all axes, curves, and equilibrium points.
+    \item Total points: 100
+    \item Time allowed: 120 minutes
+\end{itemize}
+
+\section*{Part I: True or False (5 points)}
+\textit{Indicate whether the following statements are True (T) or False (F). Briefly explain your reasoning for any False statements.}
+
+\begin{enumerate}
+    \item \textbf{[ \quad ]} Walras' Law Implications: In a two-commodity exchange economy with strictly positive prices, if there is an excess supply of Commodity 1, Walras' Law implies there must be a corresponding excess demand for Commodity 2.
+    
+    \item \textbf{[ \quad ]} If a monopolist faces a constant elasticity demand curve (with $\epsilon < -1$) and constant marginal cost, the imposition of a specific quantity tax $t$ will cause the price paid by consumers to rise by an amount strictly less than $t$.
+    
+    \item \textbf{[ \quad ]} To achieve Pareto efficiency in a market characterized by a natural monopoly, the regulator should mandate that the firm set its price equal to its Marginal Cost ($P = MC$). Under this pricing scheme, the firm will earn zero economic profit (break-even).
+    
+    \item \textbf{[ \quad ]}  A profit-maximizing monopolist practicing third-degree price discrimination will charge a higher price in the market segment that exhibits the more negative (i.e., more elastic) own-price elasticity of demand.
+    
+    \item \textbf{[ \quad ]} According to the Coase Theorem, the efficient level of an externality (such as pollution) is invariant to the assignment of property rights, even if the agents' preferences are not quasilinear (i.e., even if there are significant income effects).
+    
+    \item \textbf{[ \quad ]}  A profit-maximizing monopolist with positive marginal costs will always choose an output level where the demand is unit elastic ($\epsilon = -1$) to maximize total revenue, rather than where it is elastic.
+    
+    \item \textbf{[ \quad ]} \textit{Adverse selection} is a market failure caused by hidden action (post-contractual), whereas \textit{moral hazard} is a market failure caused by hidden information (pre-contractual).
+    
+    \item \textbf{[ \quad ]} The Second Fundamental Theorem of Welfare Economics states that any Pareto-optimal allocation can be achieved as a competitive equilibrium with appropriate lump-sum transfers, provided that consumers' preferences and production sets are convex.
+    
+    \item \textbf{[ \quad ]} The Pareto efficiency condition for a public good ($\sum |MRS_i| = MC(G)$) implies that the optimal quantity of the public good $G^*$ is always independent of the distribution of initial endowments (wealth), regardless of the functional form of individual utilities.
+    
+    \item \textbf{[ \quad ]} In an exchange economy, the "Core" is defined as the set of all Pareto-optimal allocations that are welfare-improving (or at least not welfare-reducing) for both consumers relative to their initial endowment allocations.
+
+\end{enumerate}
+
+\section*{Part II: Multiple Choice (15 points)}
+\textit{Select the best answer for each question.}
+
+\begin{enumerate}
+    \item There are two types of workers in a labor market faced by a certain employer: the marginal product of "Unable" workers is 10 units, while the marginal product of "Able" workers is 16 units. The number of workers of each type is equal. A local university offers microeconomics training to workers. "Able" workers consider this training equivalent to a salary reduction of \$4/month, while "Unable" workers consider it equivalent to a salary reduction of \$8/month. Which of the following describes the equilibrium?
+    \begin{itemize}
+        \item[A.] Only a separating equilibrium exists: "Able" workers who participate in training receive a wage of \$16/month, while "Unable" workers who do not participate receive \$10/month.
+        \item[B.] Only a pooling equilibrium exists: The employer pays all workers a wage of \$13/month.
+        \item[C.] Only a separating equilibrium exists: "Able" workers who participate in training receive a wage of \$20/month, while "Unable" workers who do not participate receive \$10/month.
+        \item[D.] Both the separating equilibrium in Option A and the pooling equilibrium in Option C exist.
+    \end{itemize}
+
+\item In a used car market, the quality distribution is as follows: among 4000 used cars, the number of cars with a value less than $V$ is $V/3$. Owners must sell their cars. Owners know the value of their cars, but buyers cannot distinguish quality. Owners can spend \$100 to estimate (certify) the quality before selling, or sell directly. At equilibrium, an owner will choose to assess the quality and sell if and only if the value of the used car exceeds what amount?
+    \begin{itemize}
+        \item[A.] \$2000
+        \item[B.] \$100
+        \item[C.] \$300
+        \item[D.] \$200
+    \end{itemize}
+
+\item A payoff matrix for a game is given where $a, b, c,$ and $d$ are constants greater than zero. Player A chooses between Up and Down; Player B chooses between Left and Right. The payoffs are: (Up, Left) = $(a, 1)$, (Up, Right) = $(b, 1)$, (Down, Left) = $(1, c)$, (Down, Right) = $(1, d)$. If the unique Nash Equilibrium is (Down, Right), what conditions must $a, b, c,$ and $d$ satisfy?
+    \begin{itemize}
+        \item[A.] $b > 1$ and $d < 1$
+        \item[B.] $c < 1$ and $b < 1$
+        \item[C.] $b < 1$ and $c < d$
+        \item[D.] $b < c$ and $d < 1$
+    \end{itemize}
+
+\item The inverse demand function for an industry is $p = 20 - q$. The marginal cost for firms in the industry is constant at \$8/unit. Which of the following statements is completely correct?
+    \begin{itemize}
+        \item[A.] The Monopoly output is 6; the total Cournot Duopoly output is 8; in a Stackelberg model, the leader's output is 8.
+        \item[B.] The Monopoly output is 8; the total Cournot Duopoly output is 8; in a Stackelberg model, the leader's output is 8.
+        \item[C.] The Monopoly output is 6; the total Cournot Duopoly output is 6; in a Stackelberg model, the leader's output is 3.
+        \item[D.] The Monopoly output is 6; the total Cournot Duopoly output is 8; in a Stackelberg model, the leader's output is 6.
+    \end{itemize}
+
+\item A monopolist practices third-degree price discrimination in two markets. The demand function in the first market is $q_1 = 500 - 2p_1$, and the demand function in the second market is $q_2 = 1500 - 6p_2$. What pricing strategy should the monopolist adopt?
+    \begin{itemize}
+        \item[A.] Set a higher price in the first market.
+        \item[B.] Set a higher price in the second market.
+        \item[C.] Set the same price in both markets.
+        \item[D.] Sell products only in one market.
+    \end{itemize}
+
+\item A monopolist faces a constant marginal cost $c$. The firm faces two markets: Market A has a constant price elasticity of demand of $-2$, and Market B has a constant price elasticity of demand of $-3/2$. If the firm maximizes profit using third-degree price discrimination, what is the ratio of the prices in the two markets, $P_A / P_B$?
+    \begin{itemize}
+        \item[A.] $2/3$
+        \item[B.] $1/3$
+        \item[C.] $3/2$
+        \item[D.] $3$
+    \end{itemize}
+
+\item In a two-player game, each person has two strategies: Cooperate (C) and Defect (D). Each player writes C or D on a piece of paper. If both write C, each gets \$100; if both write D, each gets \$0. If one writes D and the other writes C, the one who writes C gets payoff $S$ and the one who writes D gets payoff $T$. Under what condition is Defect (D) a dominant strategy for both players?
+    \begin{itemize}
+        \item[A.] $S + T > 100$
+        \item[B.] $T > 2S$
+        \item[C.] $S < 0$ and $T > 100$
+        \item[D.] $S < T$ and $T > 100$
+    \end{itemize}
+
+\item Assume the price elasticity of demand in the airline market between two cities is constant at $-1.5$. If there are 4 airlines with identical costs in this industry and they reach a Cournot equilibrium, what is the ratio of the market price to the firm's marginal cost ($P/MC$)?
+    \begin{itemize}
+        \item[A.] $8/7$
+        \item[B.] $6/5$
+        \item[C.] $7/6$
+        \item[D.] $3/2$
+    \end{itemize}
+
+\item A monopolist faces a demand curve with constant elasticity $\varepsilon = -3$. If the marginal cost of production is constant at \$20, what is the profit-maximizing price?
+    \begin{itemize}
+        \item[A.] \$20
+        \item[B.] \$30
+        \item[C.] \$40
+        \item[D.] \$60
+    \end{itemize}
+
+    \item If the market demand for a certain good is price elastic at the previous price level, then moving along the demand curve:
+    \begin{itemize}
+        \item[A.] An increase in price leads to an increase in revenue.
+        \item[B.] A decrease in price leads to a decrease in revenue.
+        \item[C.] An increase in quantity sold leads to an increase in revenue.
+        \item[D.] An increase in quantity sold leads to a decrease in revenue.
+    \end{itemize}
+
+\item The supply curve for the tennis ball market is a horizontal line, and the demand curve is linear and downward sloping. Originally, the government levied a tax of $t$ yuan on every tennis ball sold. If the tax is doubled, then:
+    \begin{itemize}
+        \item[A.] The deadweight loss caused by the double tax is twice the original deadweight loss.
+        \item[B.] The deadweight loss caused by the double tax is more than twice the original deadweight loss.
+        \item[C.] The deadweight loss caused by the double tax is less than twice the original deadweight loss.
+        \item[D.] To determine if the deadweight loss is more than twice the original, we need to know the slope of the demand curve.
+    \end{itemize}
+
+\item All residents in a certain area spend 1\% of their income on salt. The distribution of income in this area follows a specific density function: for income levels $w > 1,000,000$, the number of residents at income level $w$ is given by $n(w) = \frac{1,000,000}{w}$. The price elasticity of demand for the salt market in this area is:
+    \begin{itemize}
+        \item[A.] -0.1
+        \item[B.] -0.01
+        \item[C.] -1
+        \item[D.] -0.4
+    \end{itemize}
+
+\item If the number of all consumers in the market doubles (keeping original income levels and preferences unchanged), then the change in market demand is:
+    \begin{itemize}
+        \item[A.] The slope of the demand curve remains unchanged, and the price elasticity of demand at the same price doubles.
+        \item[B.] The price elasticity of demand at the same price remains unchanged.
+        \item[C.] The slope of the demand curve increases by one time, and the price elasticity of demand at the same price increases by one time.
+        \item[D.] The slope of the demand curve remains unchanged, and the price elasticity of demand at the same price decreases by half.
+    \end{itemize}
+
+\item Assuming there are only two goods, when will an increase in the price of Good 1 lead to an increase in the demand for Good 2?
+    \begin{itemize}
+        \item[A.] When and only when the absolute value of the price elasticity of demand for Good 1 is greater than 1.
+        \item[B.] When both goods are normal goods.
+        \item[C.] Only when the two goods are perfect substitutes.
+        \item[D.] Never.
+    \end{itemize}
+
+\item A small town has 100 consumers, and each consumer's demand function for bananas is $q = 20 - 1.5p$. If 10 consumers with identical demand functions are added to the town, then the price elasticity of demand for bananas will:
+    \begin{itemize}
+        \item[A.] Increase by 10\%
+        \item[B.] Decrease by 10\%
+        \item[C.] Remain unchanged
+        \item[D.] Increase by 1\%
+    \end{itemize}
+
+\end{enumerate}
+
+\section*{Part III: Term Definitions (10 points)}
+\textit{Briefly explain the following terms in the context of microeconomics (2-3 sentences each).}
+
+\begin{enumerate}
+    \item \textbf{Public Goods}
+    \item \textbf{Isoprofit Curve}
+    \item \textbf{Pareto Efficiency}
+    \item \textbf{deadweight Loss}
+    \item \textbf{Nash Equilibrium}
+    \item \textbf{Adverse Selection}
+    \item \textbf{Moral Hazard}
+    \item \textbf{Monopolistic Competition} 
+    \item \textbf{Walras’ Law}
+    \item \textbf{Coase Theorem}
+\end{enumerate}
+
+\section*{Part IV: Calculations (50 points)}
+\textit{Show all steps of your work.}
+
+\subsection*{Question 1: Job Market Signaling}
+Suppose that in the job market, students from UIBE  have a productivity of \$5,000 and CUFE have a productivity of \$1,000 per month. Employers can't tell UIBE  students (UIBE s) from CUFE students (CUFEs) by looking at them or asking them, and it is too expensive to monitor individual productivity. UIBE s, however, have more patience than CUFEs. Listening to an hour of dull lectures is as bad as losing \$250 for any CUFEs and \$100 for any UIBE s.
+\begin{enumerate}
+    \item[(a)] Try to find a separating equilibrium in which anybody who attends a course of $H$ hours of lectures is paid \$5,000 per month and anybody who does not is paid \$1,000 per month.
+\end{enumerate}
+
+\subsection*{Question 2: Monopoly with Demand Uncertainty}
+A monopolist faces a market demand function $p = A - q$. The parameter $A$ is uncertain: there is a $\frac{1}{2}$ probability that $A=10$ and a $\frac{1}{2}$ probability that $A=8$. The manufacturer's marginal cost is zero ($MC=0$).
+\begin{enumerate}
+    \item[(a)] Find the monopoly price that maximizes the expected profit.
+    \item[(b)] If a consulting firm can determine the exact market demand (the value of $A$) through research, what is the maximum amount the monopolist is willing to pay for this consulting report?
+\end{enumerate}
+
+\subsection*{Question 3: Production Externalities (The Baijiu Problem)}
+There are two shops that make Chinese Baijiu in a town. Their techniques for Baijiu-making have been passed down for thousands of years, and the equipment cannot be upgraded. The main factor determining the output is manpower. Both shops need groundwater to make Baijiu, so they will inevitably affect each other. The output of Baijiu is given by:
+\[ Q_a = L_a^{0.5} - \frac{1}{18}L_b \]
+\[ Q_b = L_b^{0.5} - \frac{1}{18}L_a \]
+where $L_a$ and $L_b$ are the workers used by the two shops every day, and $Q_a$ and $Q_b$ are their daily output respectively. Assume that each worker needs 1 Yuan of silver per day, and the unit price of each jug of Baijiu in the town is 12 Yuan.
+\begin{enumerate}
+    \item[(a)] If the two shops make production decisions independently, what are their daily output and profit?
+    \item[(b)] If a foreign merchant buys the two shops and tries to maximize total profits, how will the merchant determine the daily output of the two shops after the acquisition, and what is his total daily profit?
+\end{enumerate}
+
+\subsection*{Question 4: Oligopoly Models}
+A commodity market is a duopoly. The total market demand function is known to be $Q = 240 - 2p$ (which implies the inverse demand function $p = 120 - 0.5Q$, where $Q = q_1 + q_2$). Firm 1 has no production cost ($MC_1 = 0$). Firm 2's cost function is $C(q_2) = \frac{1}{4}q_2^2$ (implying $MC_2 = 0.5q_2$).
+\begin{enumerate}
+    \item[(a)] \textbf{Cournot Model:} If the two firms determine output simultaneously, find the reaction function for each firm and the equilibrium output levels.
+    \item[(b)] \textbf{Stackelberg Model (Quantity Leadership):} If Firm 1 is the quantity leader and Firm 2 is the quantity follower, find the equilibrium output levels for each firm.
+    \item[(c)] \textbf{Price Leadership Model:} If Firm 1 is the price leader and Firm 2 is the price follower, find the equilibrium output levels for each firm.
+    \item[(d)] \textbf{Collusion:} If the two firms collude to maximize joint profits, find the equilibrium output levels for each firm.
+\end{enumerate}
+
+\subsection*{Question 5: Production Functions and Price Discrimination}
+A monopolist's production function is given by 
+\[Q = \min\left\{\frac{x}{3}, y\right\}\], where $x$ and $y$ represent the usage of two factors of production. The prices of these factors are $p_x = 1$ and $p_y = 5$. The firm has no other costs aside from these two inputs. The monopolist faces two markets with the following demand functions:
+\[ \text{Senior Market (Age }> 65\text{): } Q_O = 500 p_O^{-3/2} \]
+\[ \text{Junior Market (Age }< 65\text{): } Q_Y = 50 p_Y^{-5} \]
+\begin{enumerate}
+    \item[(a)] If the monopolist can practice third-degree price discrimination, calculate the optimal prices for the Senior Market ($p_O$) and the Junior Market ($p_Y$).
+\end{enumerate}
+
+\subsection*{Question 6: Labor Supply and Utility Maximization}
+A consumer's utility function is $U = C - H^2$, where $C$ represents consumption and $H$ represents daily working hours. The consumer has two options for employment:
+\begin{itemize}
+    \item \textbf{Option 1 (City):} Work 8 hours per day to earn a fixed income of 100 Yuan.
+    \item \textbf{Option 2 (Farm):} Rent a small farm. If he rents the farm, he can freely choose his working hours ($H$). He earns $20H$ Yuan per day but must pay a daily rent of $R$.
+\end{itemize}
+\begin{enumerate}
+    \item[(a)] What is the maximum rent $R$ the consumer is willing to pay for the small farm?
+\end{enumerate}
+
+\subsection*{Question 7: Job Market Signaling and Screening}
+A company hires equal numbers of two types of workers, type $a$ and type $b$. A type-$a$ worker generates a monthly output value of 3000 Yuan, while a type-$b$ worker generates 2500 Yuan. The firm cannot distinguish between the two types ex-ante. The company decides to use a test to screen workers:
+\begin{itemize}
+    \item If a worker answers at least 60 questions correctly, the wage is set at 3000 Yuan/month.
+    \item Otherwise, the wage is set at 2500 Yuan/month.
+\end{itemize}
+The cost of signaling (studying for the test) differs between the two types:
+\begin{itemize}
+    \item Type-$a$ workers need 0.5 hours of study per correct answer.
+    \item Type-$b$ workers need 1 hour of study per correct answer.
+    \item The opportunity cost of 1 hour of study is equivalent to foregoing 20 Yuan of income.
+\end{itemize}
+\begin{enumerate}
+    \item[(a)] Determine the final equilibrium outcome. (Hint: Calculate the costs and benefits for each type to determine if they will choose to take the test).
+\end{enumerate}
+
+\subsection*{Question 8: Third-Degree Price Discrimination (Variation)}
+Two different consumers are willing to consume a monopolist's product. Their inverse demand functions are given by:
+\[ p_1 = 25 - 2q_1 \]
+\[ p_2 = 17 - \frac{1}{3}q_2 \]
+The monopolist's marginal cost is constant at $MC = 1$.
+\begin{enumerate}
+    \item[(a)] Under third-degree price discrimination, calculate the prices faced by the two consumers ($p_1, p_2$) and the monopolist's total profit.
+\end{enumerate}
+
+\section*{Part V: Graphing and Analysis (20 points)}
+
+\textit{Instructions: Use clear, labeled diagrams to support your answers. Precision in labeling axes, curves, and equilibrium points is essential.}
+
+% --- Question 1: Production, Costs, and Rent ---
+\subsection*{Question 1: Economic Rent and Cost Dynamics (5 points)}
+\textbf{Topic: Short-run vs. Long-run Costs and Economic Rent}
+
+Consider a competitive industry where all firms are identical in the long run. However, in the short run, incumbent firms utilize a specific scarce factor of production (e.g., a prime location or specialized talent) that generates Economic Rent.
+
+\begin{enumerate}
+    \item[(a)] Draw a diagram consisting of two panels:
+    \begin{itemize}
+        \item \textbf{Left Panel (The Firm):} Draw the Short-run Marginal Cost ($SMC$), Short-run Average Total Cost ($SATC$), Long-run Marginal Cost ($LMC$), and Long-run Average Cost ($LAC$). Mark the initial long-run equilibrium point $e_1$ where profits are zero.
+        \item \textbf{Right Panel (The Market):} Draw the Market Demand ($D$) and Short-run Market Supply ($S_{SR}$).
+    \end{itemize}
+    \item[(b)] Suppose Market Demand increases permanently. Illustrate the new short-run equilibrium. On the \textbf{Left Panel}, shade the area representing the firm's \textbf{Producer Surplus} (Short-run Profit). Explain the relationship between Price ($P$) and $SMC$ at this stage.
+    \item[(c)] As the industry transitions to the long run, distinguish between \textbf{Accounting Profit} and \textbf{Economic Rent}. If the supply of the scarce factor is perfectly inelastic, shade the area representing \textbf{Economic Rent} in the final equilibrium.
+    \item[(d)] Explain why the $LMC$ curve is flatter (more elastic) than the $SMC$ curve using the concept of input flexibility.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\subsection*{Question 2: Oligopoly and Isoprofit Curves (5 points)}
+\textbf{Topic: Cournot vs. Stackelberg Equilibrium Analysis}
+
+Consider a duopoly consisting of Firm 1 and Firm 2 producing a homogenous good. Firm 1 is the quantity leader (Stackelberg Leader), and Firm 2 is the follower.
+
+\begin{enumerate}
+    \item[(a)] Draw a diagram with Firm 1's quantity ($q_1$) on the horizontal axis and Firm 2's quantity ($q_2$) on the vertical axis.
+    \item[(b)] Sketch the \textbf{Reaction Functions} (Best-Response Curves) for both firms, labeled $R_1(q_2)$ and $R_2(q_1)$. Identify and label the \textbf{Cournot Equilibrium} ($C$).
+    \item[(c)] Draw a set of \textbf{Isoprofit Curves} for Firm 1. Clearly indicate the direction of increasing profit for Firm 1.
+    \item[(d)] Using the Isoprofit curves, determine the \textbf{Stackelberg Equilibrium} ($S$).
+    \begin{itemize}
+        \item Illustrate the geometric condition that must hold at point $S$ between Firm 1's Isoprofit curve and Firm 2's Reaction Function.
+        \item Explain why Firm 1 achieves a higher profit at point $S$ compared to point $C$.
+    \end{itemize}
+    \item[(e)] Draw at least two \textbf{Isoprofit Curves for Firm 2}. Show that the peak of each of Firm 2's Isoprofit curves lies exactly on Firm 2's Reaction Function $R_2(q_1)$.
+\end{enumerate}
+
+\vspace{0.5cm}
+
+% --- Question 3: Collusion ---
+\subsection*{Question 3: Cartel Profit Maximization and Cheating (5 points)}
+\textbf{Topic: Multi-plant Monopoly Solution and Stability}
+
+Two firms, Firm A and Firm B, form a Cartel to maximize joint profits. Assume Firm A has a significantly higher Marginal Cost ($MC_A$) than Firm B ($MC_B$).
+
+\begin{enumerate}
+    \item[(a)] Draw a three-panel diagram:
+    \begin{itemize}
+        \item \textbf{Left Panel:} Firm A's $MC_A$.
+        \item \textbf{Center Panel:} Firm B's $MC_B$.
+        \item \textbf{Right Panel:} The Industry Demand ($D$), Marginal Revenue ($MR$), and the combined Marginal Cost ($\Sigma MC$).
+    \end{itemize}
+    \item[(b)] Determine the profit-maximizing Cartel Price ($P_{cartel}$) and Total Quantity ($Q_{total}$) in the Right Panel.
+    \item[(c)] Project this solution back to the individual firms to find the production quotas $q_A$ and $q_B$.
+    \begin{itemize}
+        \item Explain the condition relating $MC_A$, $MC_B$, and Industry $MR$ at the optimal allocation.
+        \item Why is $q_B > q_A$ in this scenario?
+    \end{itemize}
+    \item[(d)] Focus on Firm B (the low-cost firm). On its panel, illustrate the incentive to \textbf{cheat} on the cartel agreement.
+    \begin{itemize}
+        \item Identify the price Firm B would want to charge or the quantity it would want to produce if it ignored the quota (assuming it takes the cartel price as fixed).
+        \item Shade the area representing the \textbf{additional profit} Firm B could gain by cheating in the short run.
+    \end{itemize}
+\end{enumerate}
+
+\vspace{0.5cm}
+
+% --- Question 4: General Equilibrium (Your Original) ---
+\subsection*{Question 4: General Equilibrium and Efficiency (5 points)}
+\textbf{Topic: The Edgeworth Box}
+
+Consider an exchange economy with two consumers, A and B, and two goods, 1 and 2. Consumer A has an initial endowment $\omega_A = (8, 2)$ and Consumer B has an initial endowment $\omega_B = (2, 8)$. Their preferences are standard (convex indifference curves).
+
+\begin{enumerate}
+    \item[(a)] Draw an \textbf{Edgeworth Box} diagram. Clearly label the following:
+    \begin{itemize}
+        \item The dimensions of the box (total quantity of Good 1 and Good 2).
+        \item The endowment point $W$.
+        \item An indifference curve for A ($U_A$) and an indifference curve for B ($U_B$) passing through the endowment point.
+    \end{itemize}
+    \item[(b)] On your diagram, shade the area representing the \textbf{Lens of Trade} (the set of allocations that make both consumers better off).
+    \item[(c)] Illustrate and label the \textbf{Contract Curve}. Explain what condition regarding the Marginal Rate of Substitution ($MRS$) holds true at every point on the Contract Curve.
+    \item[(d)] Identify the \textbf{Core} of the economy on the Contract Curve.
+    \item[(e)] Draw a budget line and a potential \textbf{Competitive Equilibrium} point. Explain the geometric relationship between the price ratio ($P_1/P_2$) and the indifference curves at this equilibrium.
+\end{enumerate}
+
+\end{document}
